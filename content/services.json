@@ -1,0 +1,96 @@
+[
+  {
+    "slug": "lap-dat-man-hinh-led",
+    "name": "Lắp đặt màn hình LED",
+    "icon": "Monitor",
+    "headline": "Lắp đặt màn hình LED. Trọn gói, đúng tiến độ.",
+    "subhead": "Từ khảo sát, thiết kế, cung cấp thiết bị đến thi công và bàn giao – trong nhà và ngoài trời, trên toàn quốc.",
+    "summary": "Thi công trọn gói màn hình LED trong nhà, ngoài trời với thiết bị chính hãng.",
+    "hero": "/images/services/lap-dat-man-hinh-led.webp",
+    "intro": "Một màn hình LED đẹp bắt đầu từ **khảo sát đúng và thi công chuẩn**. Đội ngũ kỹ thuật SKV làm chủ toàn bộ quy trình – từ khung thép, tủ điện đến cân chỉnh màu sắc – để màn hình vận hành ổn định trong nhiều năm.",
+    "benefits": [
+      { "icon": "BadgeCheck", "title": "Thiết bị chính hãng", "text": "Nhà phân phối độc quyền BOE MLED và phân phối chính hãng NovaStar tại Việt Nam; nhập khẩu chính ngạch, nguồn gốc rõ ràng." },
+      { "icon": "HandCoins", "title": "Đa dạng phân khúc", "text": "Nhiều dòng sản phẩm, nhiều mức ngân sách – tư vấn cấu hình phù hợp nhất với nhu cầu thực tế." },
+      { "icon": "Headset", "title": "Hậu mãi tận tâm", "text": "Hỗ trợ kỹ thuật nhanh chóng, xử lý sự cố tận nơi, bảo hành dài hạn theo chính sách hãng." }
+    ],
+    "process": [
+      { "title": "Khảo sát", "text": "Đo đạc mặt bằng, khoảng cách quan sát, điều kiện ánh sáng và nguồn điện." },
+      { "title": "Tư vấn & thiết kế", "text": "Đề xuất cấu hình, bản vẽ kết cấu và phương án đấu nối." },
+      { "title": "Báo giá & ký kết", "text": "Báo giá minh bạch theo từng hạng mục, tiến độ rõ ràng." },
+      { "title": "Thi công", "text": "Làm khung, đi điện, lắp cabin/module, đấu nối tín hiệu." },
+      { "title": "Cân chỉnh & bàn giao", "text": "Hiệu chỉnh màu, độ sáng; đào tạo vận hành cho người sử dụng." },
+      { "title": "Bảo hành & bảo trì", "text": "Kiểm tra định kỳ, hỗ trợ kỹ thuật trong suốt vòng đời sản phẩm." }
+    ],
+    "solutions": ["hoi-truong", "phong-hop", "quang-cao-ngoai-troi", "truong-hoc-co-quan"]
+  },
+  {
+    "slug": "lap-dat-den-san-khau",
+    "name": "Lắp đặt đèn sân khấu",
+    "icon": "Lightbulb",
+    "headline": "Lắp đặt đèn sân khấu. Ánh sáng đúng ý đồ.",
+    "subhead": "Thiết kế và thi công hệ thống đèn sân khấu cho sự kiện, tiệc cưới, bar, karaoke, hội trường và nhà hát.",
+    "summary": "Thiết kế, thi công hệ thống ánh sáng sân khấu cho mọi quy mô.",
+    "hero": "/images/services/lap-dat-den-san-khau.webp",
+    "intro": "Ánh sáng không chỉ để nhìn thấy – nó tạo nên **cảm xúc của chương trình**. SKV giúp bạn chọn đúng loại đèn, bố trí đúng vị trí và lập trình đúng kịch bản cho từng không gian.",
+    "benefits": [
+      { "icon": "Package", "title": "Luôn sẵn hàng", "text": "Đa dạng chủng loại, công suất, kiểu sáng; giao hàng nhanh, kịp lịch chương trình." },
+      { "icon": "ClipboardCheck", "title": "Kiểm tra trước bàn giao", "text": "Mọi thiết bị đều được kỹ thuật viên kiểm tra kỹ trước khi lắp đặt." },
+      { "icon": "Headset", "title": "Hỗ trợ 24/7", "text": "Sẵn sàng tư vấn và xử lý kỹ thuật bất cứ khi nào bạn cần." }
+    ],
+    "process": [
+      { "title": "Tìm hiểu nhu cầu", "text": "Loại hình chương trình, quy mô sân khấu, phong cách mong muốn." },
+      { "title": "Thiết kế ánh sáng", "text": "Bố trí đèn, tính toán công suất, phương án treo và điều khiển." },
+      { "title": "Cung cấp thiết bị", "text": "Moving head, par LED, profile, laser, thiết bị hiệu ứng chính hãng." },
+      { "title": "Lắp đặt & lập trình", "text": "Treo đèn, đi dây DMX, lập trình kịch bản trên bàn điều khiển." },
+      { "title": "Bàn giao & hướng dẫn", "text": "Chạy thử chương trình, hướng dẫn vận hành và bảo dưỡng." }
+    ],
+    "solutions": ["san-khau-su-kien", "bar-karaoke", "tiec-cuoi-nha-hang", "hoi-truong"]
+  },
+  {
+    "slug": "cho-thue-man-hinh-led",
+    "name": "Cho thuê màn hình LED",
+    "icon": "CalendarClock",
+    "headline": "Cho thuê màn hình LED. Linh hoạt cho mọi sự kiện.",
+    "subhead": "Gói thuê theo ngày, tuần, tháng hoặc theo dự án – đã bao gồm vận chuyển, lắp đặt và kỹ thuật viên vận hành.",
+    "summary": "Thuê màn LED theo ngày, tuần, dự án – trọn gói vận chuyển, lắp đặt, vận hành.",
+    "hero": "/images/services/cho-thue-man-hinh-led.webp",
+    "intro": "Không phải sự kiện nào cũng cần đầu tư một màn hình riêng. Với dịch vụ cho thuê của SKV, bạn có **màn hình LED chất lượng cao đúng kích thước, đúng thời điểm** – mà không phải lo vận chuyển, lắp đặt hay vận hành.",
+    "benefits": [
+      { "icon": "Truck", "title": "Trọn gói tận nơi", "text": "Vận chuyển, lắp dựng, tháo dỡ tại Hà Nội và các tỉnh thành." },
+      { "icon": "UserCog", "title": "Kỹ thuật viên tại chỗ", "text": "Vận hành, xử lý sự cố ngay trong suốt chương trình." },
+      { "icon": "Expand", "title": "Kích thước linh hoạt", "text": "Ghép cabin theo kích thước sân khấu, phẳng hoặc cong." }
+    ],
+    "process": [
+      { "title": "Xác định mục đích", "text": "Loại sự kiện, nội dung trình chiếu và số lượng khán giả." },
+      { "title": "Đánh giá không gian", "text": "Đo kích thước, vị trí lắp đặt, nguồn điện tại địa điểm." },
+      { "title": "Chọn cấu hình", "text": "Kích thước, độ phân giải, phương án dựng khung hoặc treo." },
+      { "title": "Lắp đặt & chạy thử", "text": "Dựng màn trước chương trình, kiểm tra nội dung cùng ban tổ chức." },
+      { "title": "Vận hành & tháo dỡ", "text": "Kỹ thuật viên trực suốt sự kiện và thu hồi thiết bị sau khi kết thúc." }
+    ],
+    "solutions": ["san-khau-su-kien", "tiec-cuoi-nha-hang", "hoi-truong"]
+  },
+  {
+    "slug": "sua-chua-man-hinh-led",
+    "name": "Sửa chữa & bảo trì màn hình LED",
+    "icon": "Wrench",
+    "headline": "Sửa chữa màn hình LED. Đúng lỗi, đúng giá, đúng hẹn.",
+    "subhead": "Bảo trì, bảo dưỡng và sửa chữa màn hình LED trong nhà, ngoài trời – mọi thương hiệu, đời mới và đời cũ.",
+    "summary": "Chẩn đoán, sửa chữa, bảo trì định kỳ màn hình LED mọi thương hiệu.",
+    "hero": "/images/services/sua-chua-man-hinh-led.webp",
+    "intro": "Màn hình LED bền đến **100.000 giờ** – nếu được chăm sóc đúng cách. SKV nhận bảo trì định kỳ và sửa chữa màn hình của mọi thương hiệu, thay thế linh kiện chính hãng và bảo hành sau sửa chữa.",
+    "benefits": [
+      { "icon": "Search", "title": "Báo đúng lỗi, đúng giá", "text": "Chẩn đoán rõ ràng, báo giá và thời gian hoàn thành trước khi sửa." },
+      { "icon": "Cpu", "title": "Linh kiện chính hãng", "text": "Module, card nhận, nguồn, bộ xử lý thay thế từ kho chính hãng của SKV." },
+      { "icon": "ShieldCheck", "title": "Bảo hành sau sửa chữa", "text": "Cam kết bảo hành cho linh kiện thay thế và hạng mục sửa chữa." }
+    ],
+    "issues": ["Màn hình mất tín hiệu, không lên hình", "Sọc màn, nhiễu, chớp nháy", "Điểm chết, mảng tối trên module", "Lệch màu giữa các module, cabin", "Hỏng nguồn, card nhận, card phát", "Lỗi phần mềm điều khiển, cấu hình"],
+    "process": [
+      { "title": "Tiếp nhận", "text": "Ghi nhận hiện tượng qua điện thoại, Zalo hoặc hình ảnh, video." },
+      { "title": "Kiểm tra tận nơi", "text": "Kỹ thuật viên chẩn đoán lỗi bằng thiết bị chuyên dụng." },
+      { "title": "Báo giá", "text": "Báo rõ nguyên nhân, phương án, chi phí và thời gian." },
+      { "title": "Sửa chữa", "text": "Thay thế linh kiện, cập nhật phần mềm, cân chỉnh lại màu." },
+      { "title": "Bàn giao & bảo hành", "text": "Chạy thử, bàn giao và bảo hành hạng mục sửa chữa." }
+    ],
+    "solutions": ["hoi-truong", "quang-cao-ngoai-troi", "the-thao-cong-cong"]
+  }
+]

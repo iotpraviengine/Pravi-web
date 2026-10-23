@@ -1,0 +1,312 @@
+[
+  {
+    "slug": "hoi-truong",
+    "name": "Hội trường & Nhà văn hóa",
+    "short": "Hội trường",
+    "headline": "Hội trường. Rõ nét đến tận hàng ghế cuối.",
+    "subhead": "Màn hình LED, ánh sáng sân khấu và hệ thống điều khiển đồng bộ cho hội nghị, lễ kỷ niệm và biểu diễn nghệ thuật.",
+    "tileHeadline": "Rõ nét đến tận hàng ghế cuối.",
+    "theme": "dark",
+    "hero": "/images/solutions/hoi-truong.webp",
+    "gallery": ["/images/solutions/hoi-truong-2.webp", "/images/solutions/hoi-truong-3.webp", "/images/solutions/hoi-truong-4.webp"],
+    "intro": "Máy chiếu mờ đi khi bật đèn, phông in phải thay sau mỗi sự kiện. **Màn hình LED hội trường** hiển thị sắc nét trong mọi điều kiện ánh sáng, thay nội dung chỉ trong vài giây và vận hành bền bỉ **hơn 10 năm**.",
+    "highlights": [
+      { "value": "800–1.500", "unit": "nits", "label": "Độ sáng đủ rõ ngay cả khi bật toàn bộ đèn hội trường" },
+      { "value": "100.000", "unit": "giờ", "label": "Tuổi thọ LED, tương đương 8–10 năm sử dụng" },
+      { "value": "P1.86–P3", "unit": "", "label": "Khoảng cách điểm ảnh phù hợp từng tầm nhìn" }
+    ],
+    "needs": [
+      { "icon": "Presentation", "title": "Hội nghị, hội thảo", "text": "Trình chiếu slide, báo cáo, biểu đồ rõ ràng cho cả khán phòng hàng trăm chỗ ngồi." },
+      { "icon": "PartyPopper", "title": "Lễ kỷ niệm, văn nghệ", "text": "Phông nền động thay phông in, đổi chủ đề theo từng tiết mục chỉ bằng một cú nhấp." },
+      { "icon": "Video", "title": "Truyền hình trực tiếp", "text": "Ghép camera, livestream và nhiều nguồn video trên cùng một màn hình lớn." }
+    ],
+    "system": [
+      { "icon": "Monitor", "title": "Màn hình LED indoor", "text": "Cabin P1.86–P3 từ BOE, Ledman, GLOSHINE; ghép liền mạch theo kích thước sân khấu." },
+      { "icon": "Cpu", "title": "Bộ xử lý hình ảnh", "text": "NovaStar, PixelHue chia nhiều cửa sổ, chuyển cảnh mượt, hiệu chỉnh màu chuẩn." },
+      { "icon": "Lightbulb", "title": "Ánh sáng sân khấu", "text": "Đèn par LED, moving head, đèn follow tạo chiều sâu cho người phát biểu và tiết mục." },
+      { "icon": "SlidersHorizontal", "title": "Tủ điện & điều khiển", "text": "Tủ điện riêng, bật tắt theo trình tự, phần mềm điều khiển đơn giản cho người vận hành." }
+    ],
+    "compare": {
+      "title": "Màn hình LED hay máy chiếu?",
+      "columns": ["Màn hình LED hội trường", "Máy chiếu hội trường"],
+      "rows": [
+        ["Độ sáng", "800 – 1.500 nits, rõ cả khi bật đèn", "Thấp, mờ khi có ánh sáng xung quanh"],
+        ["Kích thước", "Ghép module linh hoạt, không giới hạn", "Giới hạn bởi màn chiếu"],
+        ["Tuổi thọ", "80.000 – 100.000 giờ", "3.000 – 5.000 giờ bóng đèn"],
+        ["Chi phí vận hành", "Ít bảo trì, tiết kiệm lâu dài", "Thay bóng, bảo trì định kỳ"],
+        ["Nội dung", "Slide, video, livestream, camera trực tiếp", "Chủ yếu slide và video"]
+      ]
+    },
+    "productGroups": ["man-hinh-led", "xu-ly-hinh-anh", "den-san-khau"],
+    "faq": [
+      { "q": "Hội trường của tôi nên chọn màn hình P mấy?", "a": "Khoảng cách điểm ảnh phụ thuộc vào khoảng cách từ hàng ghế đầu đến màn hình. Hàng ghế đầu cách 3–5 m thường phù hợp P2–P2.5; hội trường lớn trên 8 m có thể dùng P3. SKV sẽ khảo sát thực tế và đề xuất cấu hình tối ưu chi phí." },
+      { "q": "Thi công một màn hình hội trường mất bao lâu?", "a": "Với màn hình 20–40 m², thời gian thi công thường từ 3–7 ngày kể từ khi hàng về, bao gồm làm khung, đi điện, lắp module, cân chỉnh và bàn giao." },
+      { "q": "Sau bàn giao, ai sẽ vận hành màn hình?", "a": "SKV hướng dẫn trực tiếp cho cán bộ phụ trách, cung cấp tài liệu vận hành và hỗ trợ kỹ thuật từ xa trong suốt thời gian bảo hành." }
+    ]
+  },
+  {
+    "slug": "phong-hop",
+    "name": "Phòng họp & Họp trực tuyến",
+    "short": "Phòng họp",
+    "headline": "Phòng họp. Mọi chi tiết đều hiện rõ.",
+    "subhead": "Màn hình LED điểm ảnh siêu nhỏ cho phòng họp điều hành, họp trực tuyến và trung tâm chỉ huy.",
+    "tileHeadline": "Mọi chi tiết đều hiện rõ.",
+    "theme": "light",
+    "hero": "/images/solutions/phong-hop.webp",
+    "gallery": ["/images/solutions/phong-hop-2.webp", "/images/solutions/phong-hop-3.webp"],
+    "intro": "Không còn đường viền giữa các tấm màn ghép, không còn lóa sáng khi nhìn gần. **Cabin LED COB điểm ảnh nhỏ** cho hình ảnh liền mạch như một chiếc TV khổng lồ, đủ sắc nét để đọc từng con số trong bảng tính.",
+    "highlights": [
+      { "value": "P0.9", "unit": "", "label": "Điểm ảnh siêu nhỏ, xem rõ ở khoảng cách 1 mét" },
+      { "value": "0", "unit": "mm", "label": "Đường viền – hình ảnh liền mạch tuyệt đối" },
+      { "value": "COB", "unit": "", "label": "Bề mặt phủ keo, chống va đập, chống bụi ẩm" }
+    ],
+    "needs": [
+      { "icon": "Users", "title": "Họp trực tuyến đa điểm", "text": "Hiển thị đồng thời nhiều điểm cầu và tài liệu, kết nối camera, micro hội nghị." },
+      { "icon": "Presentation", "title": "Trình chiếu dữ liệu", "text": "Bảng tính, bản đồ, bản vẽ kỹ thuật hiển thị rõ từng chi tiết nhỏ." },
+      { "icon": "Building2", "title": "Trung tâm điều hành", "text": "Giám sát nhiều nguồn tín hiệu 24/7 trên một bề mặt hiển thị lớn." }
+    ],
+    "system": [
+      { "icon": "Monitor", "title": "Cabin LED fine-pitch", "text": "BOE MLED COB P0.9–P1.5, tỉ lệ 16:9 chuẩn, ghép thành màn 2K, 4K." },
+      { "icon": "Cpu", "title": "Bộ xử lý đa cửa sổ", "text": "NovaStar, PixelHue hiển thị nhiều nguồn cùng lúc, chuyển layout theo kịch bản." },
+      { "icon": "Camera", "title": "Thiết bị hội nghị", "text": "Kết nối camera, micro, loa và hệ thống họp trực tuyến sẵn có của đơn vị." },
+      { "icon": "SlidersHorizontal", "title": "Điều khiển một chạm", "text": "Bật tắt, chọn nguồn, chuyển bố cục bằng bảng điều khiển hoặc điện thoại." }
+    ],
+    "productGroups": ["man-hinh-led", "xu-ly-hinh-anh"],
+    "faq": [
+      { "q": "Màn hình LED có thay được TV ghép hoặc màn LCD ghép không?", "a": "Có. Màn LED fine-pitch không có viền ghép, độ sáng đồng đều và kích thước linh hoạt hơn LCD ghép, phù hợp cho phòng họp từ 20 m² trở lên." },
+      { "q": "Nhìn gần màn LED có bị mỏi mắt không?", "a": "Dòng COB của BOE có bề mặt tối, chống chói và tần số quét cao, cho trải nghiệm xem gần thoải mái trong các buổi họp dài." },
+      { "q": "Có kết nối được với Zoom, Teams hay hệ thống họp hiện có?", "a": "Có. Màn hình nhận tín hiệu HDMI/DP từ máy tính hoặc codec hội nghị, nên dùng được với mọi nền tảng họp trực tuyến." }
+    ]
+  },
+  {
+    "slug": "san-khau-su-kien",
+    "name": "Sân khấu & Sự kiện",
+    "short": "Sân khấu",
+    "headline": "Sân khấu. Ánh sáng làm nên khoảnh khắc.",
+    "subhead": "Trọn bộ màn hình LED, đèn moving head và hiệu ứng khói, CO2, pháo điện cho sự kiện, biểu diễn và trường quay.",
+    "tileHeadline": "Ánh sáng làm nên khoảnh khắc.",
+    "theme": "dark",
+    "hero": "/images/solutions/san-khau-su-kien.webp",
+    "gallery": ["/images/solutions/san-khau-su-kien-2.webp", "/images/solutions/san-khau-su-kien-3.webp"],
+    "intro": "Một sân khấu ấn tượng là sự phối hợp chính xác giữa **hình ảnh, ánh sáng và hiệu ứng**. SKV thiết kế, cung cấp và vận hành trọn gói – để bạn tập trung vào chương trình, còn chúng tôi lo phần còn lại.",
+    "highlights": [
+      { "value": "1", "unit": "đầu mối", "label": "Màn LED, đèn và hiệu ứng từ một đơn vị duy nhất" },
+      { "value": "24/7", "unit": "", "label": "Kỹ thuật viên sẵn sàng hỗ trợ trước và trong chương trình" },
+      { "value": "Sẵn kho", "unit": "", "label": "Thiết bị luôn có sẵn, đáp ứng kịp lịch sự kiện" }
+    ],
+    "needs": [
+      { "icon": "PartyPopper", "title": "Sự kiện, ra mắt sản phẩm", "text": "Màn LED phông nền, hiệu ứng mở màn bằng CO2, kim tuyến, pháo điện." },
+      { "icon": "Music", "title": "Biểu diễn âm nhạc", "text": "Moving head beam, wash, strobe và laser đồng bộ theo nhạc qua DMX." },
+      { "icon": "Video", "title": "Trường quay, game show", "text": "Màn LED điểm ảnh nhỏ thân thiện camera, ánh sáng đạt chuẩn ghi hình." }
+    ],
+    "system": [
+      { "icon": "Monitor", "title": "Cabin LED sự kiện", "text": "Lắp ráp nhanh, ghép phẳng hoặc cong, treo hoặc dựng trên sân khấu." },
+      { "icon": "Lightbulb", "title": "Đèn moving head", "text": "Beam, spot, wash, profile Yellow River – công suất 200–800W." },
+      { "icon": "Sparkles", "title": "Thiết bị hiệu ứng", "text": "Máy khói, haze, CO2, phun lửa, pháo điện, tuyết, kim tuyến DJPOWER & SKV." },
+      { "icon": "SlidersHorizontal", "title": "Điều khiển DMX", "text": "Bàn điều khiển ánh sáng, lập trình kịch bản theo từng phần của chương trình." }
+    ],
+    "productGroups": ["den-san-khau", "hieu-ung", "man-hinh-led"],
+    "faq": [
+      { "q": "SKV có cho thuê trọn gói theo sự kiện không?", "a": "Có. SKV cho thuê màn hình LED theo ngày, tuần hoặc theo dự án, bao gồm vận chuyển, lắp đặt và kỹ thuật viên vận hành tại chỗ." },
+      { "q": "Hiệu ứng khói, lửa có an toàn trong nhà không?", "a": "Mỗi thiết bị có khoảng cách an toàn riêng. Kỹ thuật viên SKV khảo sát không gian, đề xuất loại hiệu ứng phù hợp và vận hành trực tiếp trong chương trình." }
+    ]
+  },
+  {
+    "slug": "bar-karaoke",
+    "name": "Bar, Club & Karaoke",
+    "short": "Bar & Karaoke",
+    "headline": "Bar & Karaoke. Không gian biết chuyển động.",
+    "subhead": "Màn hình LED, đèn hiệu ứng và laser đồng bộ theo nhạc – thiết kế riêng cho từng sàn diễn, từng phòng hát.",
+    "tileHeadline": "Không gian biết chuyển động.",
+    "theme": "dark",
+    "hero": "/images/solutions/bar-karaoke.webp",
+    "gallery": ["/images/solutions/bar-karaoke-2.webp", "/images/solutions/bar-karaoke-3.webp"],
+    "intro": "Khách quay lại vì **trải nghiệm**. Ánh sáng chuyển động theo nhịp nhạc, màn LED kể câu chuyện thương hiệu và hiệu ứng CO2 đúng lúc cao trào – tất cả được SKV tính toán từ bản vẽ đến buổi khai trương.",
+    "highlights": [
+      { "value": "Theo nhạc", "unit": "", "label": "Đèn, laser và hiệu ứng tự động đồng bộ với âm thanh" },
+      { "value": "3D", "unit": "", "label": "Phối cảnh ánh sáng trước khi thi công" },
+      { "value": "Trọn gói", "unit": "", "label": "Từ mặt tiền, sảnh đến từng phòng VIP" }
+    ],
+    "needs": [
+      { "icon": "Music", "title": "Sàn bar, club", "text": "Màn LED DJ booth, moving head, strobe matrix và CO2 cho những đêm cao trào." },
+      { "icon": "MicVocal", "title": "Phòng karaoke VIP", "text": "Đèn KTV, laser mini, màn LED trần hoặc tường tạo không gian riêng cho mỗi phòng." },
+      { "icon": "Store", "title": "Mặt tiền & biển hiệu", "text": "Màn LED ngoài trời, đèn chiếu logo dẫn lối khách ngay từ ngoài phố." }
+    ],
+    "system": [
+      { "icon": "Monitor", "title": "Màn hình LED trang trí", "text": "Màn LED sân khấu, DJ booth, trần hoặc cột với nội dung theo chủ đề." },
+      { "icon": "Lightbulb", "title": "Đèn hiệu ứng & laser", "text": "Moving head mini, đèn KTV, laser RGB, đèn strobe điều khiển theo nhạc." },
+      { "icon": "CloudFog", "title": "Khói & CO2", "text": "Máy haze cho tia sáng rõ nét, CO2 và kim tuyến cho khoảnh khắc cao trào." },
+      { "icon": "Projector", "title": "Đèn chiếu logo", "text": "Chiếu logo thương hiệu lên vỉa hè, tường, sảnh đón." }
+    ],
+    "productGroups": ["den-san-khau", "hieu-ung", "den-chieu-logo"],
+    "faq": [
+      { "q": "Có thiết kế ánh sáng riêng cho mô hình quán của tôi không?", "a": "Có. SKV khảo sát mặt bằng, lên phương án bố trí thiết bị và phối cảnh trước khi thi công, phù hợp ngân sách và phong cách quán." },
+      { "q": "Nhân viên quán có tự vận hành được không?", "a": "Hệ thống được cài sẵn các chương trình tự động theo nhạc; nhân viên chỉ cần chọn chế độ. SKV hướng dẫn và hỗ trợ kỹ thuật sau bàn giao." }
+    ]
+  },
+  {
+    "slug": "tiec-cuoi-nha-hang",
+    "name": "Tiệc cưới & Nhà hàng",
+    "short": "Tiệc cưới",
+    "headline": "Tiệc cưới. Mỗi khoảnh khắc đều đáng nhớ.",
+    "subhead": "Phông nền LED thay phông in, ánh sáng sảnh tiệc và hiệu ứng khói lạnh, bong bóng, kim tuyến cho trung tâm tiệc cưới, nhà hàng, khách sạn.",
+    "tileHeadline": "Mỗi khoảnh khắc đều đáng nhớ.",
+    "theme": "light",
+    "hero": "/images/solutions/tiec-cuoi-nha-hang.webp",
+    "gallery": ["/images/solutions/tiec-cuoi-nha-hang-2.webp", "/images/solutions/tiec-cuoi-nha-hang-3.webp"],
+    "intro": "Mỗi tiệc cưới một chủ đề, mỗi ngày nhiều sảnh tiệc. **Phông nền LED** giúp nhà hàng đổi không gian trong vài phút, hiển thị tên cô dâu chú rể, ảnh cưới, video – và loại bỏ hoàn toàn chi phí in phông.",
+    "highlights": [
+      { "value": "Vài phút", "unit": "", "label": "Đổi chủ đề sảnh tiệc, không in ấn, không tháo lắp" },
+      { "value": "P2.5–P4", "unit": "", "label": "Cấu hình tối ưu chi phí cho sảnh tiệc" },
+      { "value": "0đ", "unit": "", "label": "Chi phí in phông cho mỗi tiệc" }
+    ],
+    "needs": [
+      { "icon": "Heart", "title": "Sảnh tiệc cưới", "text": "Phông LED, đèn follow cô dâu chú rể, khói lạnh và bong bóng cho màn chào sân." },
+      { "icon": "UtensilsCrossed", "title": "Nhà hàng, khách sạn", "text": "Màn LED quảng bá thực đơn, sự kiện; ánh sáng trang trí sảnh và sân vườn." },
+      { "icon": "Users", "title": "Hội nghị khách hàng", "text": "Chuyển sảnh tiệc thành hội trường chỉ bằng thay đổi nội dung trình chiếu." }
+    ],
+    "system": [
+      { "icon": "Monitor", "title": "Phông nền LED", "text": "Màn LED P2.5–P4 theo kích thước sân khấu, có thể chia nhiều màn." },
+      { "icon": "Lightbulb", "title": "Ánh sáng sảnh tiệc", "text": "Đèn par, moving head, follow và đèn trang trí theo phong cách sảnh." },
+      { "icon": "Snowflake", "title": "Hiệu ứng tiệc cưới", "text": "Khói lạnh, bong bóng, tuyết, kim tuyến, pháo điện an toàn trong nhà." },
+      { "icon": "Projector", "title": "Đèn chiếu tên & logo", "text": "Chiếu tên cô dâu chú rể, logo nhà hàng lên sàn, tường hoặc sân khấu." }
+    ],
+    "productGroups": ["man-hinh-led", "hieu-ung", "den-san-khau"],
+    "faq": [
+      { "q": "Nhà hàng có cần người kỹ thuật riêng không?", "a": "Không bắt buộc. Nội dung được chuẩn bị trên máy tính và phát bằng phần mềm đơn giản; SKV đào tạo nhân viên nhà hàng vận hành sau bàn giao." },
+      { "q": "Màn LED có dùng được cho sân vườn ngoài trời không?", "a": "Có. Với khu vực ngoài trời, SKV dùng cabin outdoor chống nước IP65 và độ sáng cao để hiển thị rõ cả ban ngày." }
+    ]
+  },
+  {
+    "slug": "truong-hoc-co-quan",
+    "name": "Trường học & Cơ quan",
+    "short": "Trường học",
+    "headline": "Trường học & Cơ quan. Truyền thông rõ ràng, bền bỉ mỗi ngày.",
+    "subhead": "Màn hình LED hội trường, sân trường và bảng tin điện tử cho trường học, học viện và cơ quan nhà nước.",
+    "tileHeadline": "Truyền thông rõ ràng, bền bỉ mỗi ngày.",
+    "theme": "light",
+    "hero": "/images/solutions/truong-hoc-co-quan.webp",
+    "gallery": ["/images/solutions/truong-hoc-co-quan-2.webp", "/images/solutions/truong-hoc-co-quan-3.webp"],
+    "intro": "Từ lễ khai giảng ngoài sân trường đến hội nghị trong hội trường, **một hệ thống LED được thiết kế đúng** phục vụ hàng nghìn sự kiện trong nhiều năm. SKV đã triển khai cho học viện, trường phổ thông, UBND và các đơn vị lực lượng vũ trang trên khắp miền Bắc.",
+    "highlights": [
+      { "value": "Indoor", "unit": "& Outdoor", "label": "Một đơn vị cho cả hội trường và sân trường" },
+      { "value": "Hồ sơ", "unit": "đầy đủ", "label": "CO, CQ, chứng từ nhập khẩu chính ngạch" },
+      { "value": "Bảo trì", "unit": "định kỳ", "label": "Kiểm tra, vệ sinh, cập nhật phần mềm theo lịch" }
+    ],
+    "needs": [
+      { "icon": "School", "title": "Sân trường, lễ khai giảng", "text": "Màn LED ngoài trời phục vụ chào cờ, khai giảng, hoạt động ngoại khóa." },
+      { "icon": "Presentation", "title": "Giảng đường, hội thảo", "text": "Màn LED hội trường cho giảng dạy, hội thảo khoa học, sự kiện lớn." },
+      { "icon": "Megaphone", "title": "Bảng tin, tuyên truyền", "text": "Lập lịch phát nội dung tự động: thông báo, khẩu hiệu, video tuyên truyền." }
+    ],
+    "system": [
+      { "icon": "Monitor", "title": "Màn hình LED indoor/outdoor", "text": "Cấu hình theo không gian, từ P2.5 hội trường đến P5–P10 ngoài trời." },
+      { "icon": "CalendarClock", "title": "Phát nội dung theo lịch", "text": "Phần mềm lập lịch, quản lý nội dung tập trung cho nhiều màn hình." },
+      { "icon": "Lightbulb", "title": "Âm thanh – ánh sáng hội trường", "text": "Đồng bộ đèn sân khấu cho các buổi lễ, văn nghệ." },
+      { "icon": "ShieldCheck", "title": "Hồ sơ & bảo hành", "text": "Đầy đủ chứng từ cho dự án sử dụng ngân sách, bảo hành theo chính sách hãng." }
+    ],
+    "productGroups": ["man-hinh-led", "xu-ly-hinh-anh"],
+    "faq": [
+      { "q": "SKV có cung cấp đủ hồ sơ cho dự án sử dụng ngân sách nhà nước không?", "a": "Có. Sản phẩm nhập khẩu chính ngạch, có CO, CQ và hồ sơ kỹ thuật đầy đủ; SKV hỗ trợ báo giá, cấu hình kỹ thuật theo yêu cầu của chủ đầu tư." },
+      { "q": "Màn hình ngoài trời có chịu được mưa bão không?", "a": "Cabin outdoor đạt chuẩn IP65, kết cấu khung thép được tính toán chịu gió và có tiếp địa chống sét." }
+    ]
+  },
+  {
+    "slug": "the-thao-cong-cong",
+    "name": "Nhà thi đấu & Công trình công cộng",
+    "short": "Công cộng",
+    "headline": "Công trình công cộng. Thông tin đến đúng người, đúng lúc.",
+    "subhead": "Màn hình LED cho nhà thi đấu, bến xe, sân bay và bệnh viện – vận hành liên tục, quản lý tập trung.",
+    "tileHeadline": "Thông tin đến đúng người, đúng lúc.",
+    "theme": "dark",
+    "hero": "/images/solutions/the-thao-cong-cong.webp",
+    "gallery": ["/images/solutions/the-thao-cong-cong-2.webp", "/images/solutions/the-thao-cong-cong-3.webp"],
+    "intro": "Ở nơi có hàng nghìn lượt người qua lại mỗi ngày, màn hình phải **sáng rõ, hoạt động liên tục và dễ quản lý**. SKV đã triển khai hệ thống LED cho nhà thi đấu, bến xe Giáp Bát và Mỹ Đình – những công trình không được phép gián đoạn.",
+    "highlights": [
+      { "value": "24/7", "unit": "", "label": "Thiết kế cho vận hành liên tục nhiều năm" },
+      { "value": "Nhiều", "unit": "màn hình", "label": "Quản lý tập trung trên một hệ thống" },
+      { "value": "Dự phòng", "unit": "", "label": "Nguồn và tín hiệu dự phòng cho khu vực quan trọng" }
+    ],
+    "needs": [
+      { "icon": "Trophy", "title": "Nhà thi đấu, sân vận động", "text": "Màn hình chính, bảng tỉ số và LED viền sân quảng cáo cho giải đấu." },
+      { "icon": "Bus", "title": "Bến xe, sân bay", "text": "Bảng thông tin lịch trình, hướng dẫn hành khách, quảng cáo khu chờ." },
+      { "icon": "Hospital", "title": "Bệnh viện, cơ sở y tế", "text": "Màn hình gọi số, thông tin hướng dẫn và truyền thông sức khỏe." }
+    ],
+    "system": [
+      { "icon": "Monitor", "title": "Màn hình LED cỡ lớn", "text": "P3.91 cho sân đấu, P2–P2.5 cho khu chờ và sảnh thông tin." },
+      { "icon": "Tv", "title": "Màn hình thông tin", "text": "Kết hợp màn LED và TV hiển thị lịch trình, gọi số." },
+      { "icon": "Cpu", "title": "Điều khiển tập trung", "text": "Bộ xử lý và phần mềm quản lý nhiều màn hình từ một phòng điều khiển." },
+      { "icon": "Zap", "title": "Nguồn dự phòng", "text": "Thiết kế điện, nguồn và đường tín hiệu dự phòng giảm thiểu gián đoạn." }
+    ],
+    "productGroups": ["man-hinh-led", "xu-ly-hinh-anh", "phu-kien-led"],
+    "faq": [
+      { "q": "Có lắp được màn LED viền sân cho nhà thi đấu không?", "a": "Có. SKV cung cấp màn LED viền sân với lớp bảo vệ mềm, đồng bộ nội dung với màn hình chính." },
+      { "q": "Nhiều màn hình ở các khu vực khác nhau có quản lý chung được không?", "a": "Được. Hệ thống điều khiển cho phép cập nhật nội dung cho toàn bộ màn hình từ một phòng điều khiển trung tâm." }
+    ]
+  },
+  {
+    "slug": "quang-cao-ngoai-troi",
+    "name": "Quảng cáo ngoài trời & Mặt tiền",
+    "short": "Ngoài trời",
+    "headline": "Ngoài trời. Sáng rõ giữa ban ngày.",
+    "subhead": "Màn hình LED outdoor, màn hình lưới và màn hình trong suốt cho mặt tiền tòa nhà, trung tâm thương mại, showroom và biển quảng cáo.",
+    "tileHeadline": "Sáng rõ giữa ban ngày.",
+    "theme": "light",
+    "hero": "/images/solutions/quang-cao-ngoai-troi.webp",
+    "gallery": ["/images/solutions/quang-cao-ngoai-troi-2.webp", "/images/solutions/quang-cao-ngoai-troi-3.webp"],
+    "intro": "Màn hình ngoài trời phải chống chọi với **nắng, mưa, gió và bụi** mỗi ngày. SKV chọn cabin chuẩn IP65, tính toán kết cấu thép, chống sét và điều chỉnh độ sáng tự động – để thông điệp của bạn luôn nổi bật mà vẫn tiết kiệm điện.",
+    "highlights": [
+      { "value": "IP65", "unit": "", "label": "Chống nước, chống bụi cho vận hành ngoài trời" },
+      { "value": "95%", "unit": "", "label": "Độ trong suốt của màn LED kính MUXWAVE" },
+      { "value": "P3.91–P10", "unit": "", "label": "Dải cấu hình cho từng khoảng cách quan sát" }
+    ],
+    "needs": [
+      { "icon": "Megaphone", "title": "Biển quảng cáo", "text": "Màn LED tấm lớn tại ngã tư, mặt đường, tòa nhà cao tầng." },
+      { "icon": "Building2", "title": "Mặt tiền tòa nhà, TTTM", "text": "Màn hình lưới nhẹ, thoáng gió, phủ diện tích lớn trên mặt tiền." },
+      { "icon": "Store", "title": "Showroom, cửa hàng", "text": "Màn LED trong suốt, poster LED thu hút khách mà không che tầm nhìn vào trong." }
+    ],
+    "system": [
+      { "icon": "Monitor", "title": "Cabin LED outdoor", "text": "Cabin chống nước IP65, độ sáng cao, bảo trì mặt trước hoặc mặt sau." },
+      { "icon": "Layers", "title": "Màn hình lưới & trong suốt", "text": "GLOSHINE VA MAX, MUXWAVE – nhẹ, thoáng gió, thẩm mỹ cho kiến trúc kính." },
+      { "icon": "Hammer", "title": "Kết cấu & chống sét", "text": "Khung thép sơn tĩnh điện, tính toán tải gió, hệ thống tiếp địa chống sét." },
+      { "icon": "Sun", "title": "Tự động điều chỉnh độ sáng", "text": "Cảm biến ánh sáng giảm độ sáng ban đêm, tiết kiệm điện và tăng tuổi thọ." }
+    ],
+    "productGroups": ["man-hinh-led", "phu-kien-led"],
+    "faq": [
+      { "q": "Lắp màn LED quảng cáo ngoài trời có cần xin phép không?", "a": "Có. Biển quảng cáo ngoài trời cần giấy phép xây dựng và phê duyệt nội dung theo quy định địa phương. SKV hỗ trợ hồ sơ kỹ thuật để chủ đầu tư làm thủ tục." },
+      { "q": "Màn hình trong suốt có nhìn xuyên qua được không?", "a": "Có. Màn LED trong suốt MUXWAVE đạt độ trong suốt đến 95%, vẫn giữ tầm nhìn từ trong ra ngoài và ánh sáng tự nhiên cho cửa hàng." }
+    ]
+  },
+  {
+    "slug": "nha-xuong",
+    "name": "Chỉ dẫn nhà xưởng bằng đèn Gobo",
+    "short": "Nhà xưởng",
+    "headline": "Nhà xưởng. An toàn được chiếu sáng.",
+    "subhead": "Đèn chiếu Gobo chỉ dẫn lối đi, phân luồng xe nâng và cảnh báo khu vực nguy hiểm – rõ ràng, không phai mòn như sơn kẻ vạch.",
+    "tileHeadline": "An toàn được chiếu sáng.",
+    "theme": "light",
+    "hero": "/images/solutions/nha-xuong.webp",
+    "gallery": ["/images/solutions/nha-xuong-2.webp", "/images/solutions/nha-xuong-3.webp"],
+    "intro": "Sơn kẻ vạch mờ dần sau vài tháng, biển báo dễ bị che khuất. **Đèn chiếu Gobo** chiếu trực tiếp mũi tên, biển cảnh báo, lối đi bộ xuống sàn với độ sáng cao – dễ nhận biết từ xa, không mài mòn và thay đổi nội dung bất cứ lúc nào.",
+    "highlights": [
+      { "value": "15–150", "unit": "W", "label": "Dải công suất cho mọi chiều cao lắp đặt" },
+      { "value": "Theo yêu cầu", "unit": "", "label": "Khắc ký hiệu, logo, nội dung riêng của nhà máy" },
+      { "value": "0", "unit": "", "label": "Mài mòn – thay thế cho sơn kẻ vạch truyền thống" }
+    ],
+    "needs": [
+      { "icon": "Forklift", "title": "Phân luồng xe nâng", "text": "Chiếu tuyến đường, giao cắt và cảnh báo xe nâng đang hoạt động." },
+      { "icon": "TriangleAlert", "title": "Khu vực nguy hiểm", "text": "Cảnh báo khu vực máy móc, điện áp cao, bắt buộc đồ bảo hộ." },
+      { "icon": "Footprints", "title": "Lối đi bộ, thoát hiểm", "text": "Chỉ dẫn lối đi dành cho người và hướng thoát hiểm rõ ràng." }
+    ],
+    "system": [
+      { "icon": "Projector", "title": "Đèn Gobo LED công suất cao", "text": "Đèn chiếu SKV 15–150W, trong nhà và ngoài trời, cố định hoặc xoay." },
+      { "icon": "Palette", "title": "Khuôn Gobo thiết kế riêng", "text": "Ký hiệu an toàn tiêu chuẩn hoặc theo bộ nhận diện của nhà máy." },
+      { "icon": "Ruler", "title": "Khảo sát & bố trí", "text": "Tính toán vị trí, góc chiếu và kích thước hình chiếu theo mặt bằng." },
+      { "icon": "Wrench", "title": "Lắp đặt & bảo hành", "text": "Treo trần, gắn tường, đấu nối điện và bảo hành tận nơi." }
+    ],
+    "productGroups": ["den-chieu-logo"],
+    "faq": [
+      { "q": "Hình chiếu có rõ trong nhà xưởng nhiều ánh sáng không?", "a": "Đèn Gobo LED công suất cao cho hình chiếu rõ trong điều kiện chiếu sáng công nghiệp thông thường. SKV sẽ chọn công suất theo độ cao treo và độ sáng thực tế của xưởng." },
+      { "q": "Có thay đổi nội dung chiếu được không?", "a": "Có. Chỉ cần thay khuôn Gobo để chuyển sang ký hiệu mới, không cần thay đèn." }
+    ]
+  }
+]

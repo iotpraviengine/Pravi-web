@@ -1,0 +1,14 @@
+[
+  { "name": "BOE", "badge": "Nhà phân phối độc quyền", "category": "Màn hình LED", "text": "Tập đoàn công nghệ hiển thị hàng đầu thế giới. SKV Lighting được BOE MLED Technology ủy quyền phân phối chính thức và độc quyền tại Việt Nam.", "featured": true },
+  { "name": "NovaStar", "badge": "Nhà phân phối chính hãng", "category": "Điều khiển LED", "text": "Thương hiệu hàng đầu thế giới về hệ thống điều khiển và xử lý hình ảnh cho màn hình LED.", "featured": true },
+  { "name": "PixelHue", "category": "Xử lý hình ảnh", "text": "Bộ xử lý video và bàn điều khiển trình chiếu chuyên nghiệp cho sự kiện, sân khấu." },
+  { "name": "Ledman", "category": "Màn hình LED", "text": "Màn hình LED COB cao cấp, điểm ảnh nhỏ cho hội trường và phòng họp." },
+  { "name": "MUXWAVE", "category": "Màn hình trong suốt", "text": "Màn hình LED trong suốt, poster LED cho showroom và mặt tiền kính." },
+  { "name": "GLOSHINE", "category": "Màn hình LED", "text": "Cabin LED trong nhà, ngoài trời và màn hình lưới cho quảng cáo." },
+  { "name": "Yellow River", "category": "Đèn sân khấu", "text": "Đèn moving head, par LED, profile cho sân khấu và sự kiện." },
+  { "name": "DJPOWER", "category": "Thiết bị hiệu ứng", "text": "Máy khói, haze, phun lửa, tuyết, pháo điện và dung dịch hiệu ứng." },
+  { "name": "MAGNIMAGE", "category": "Xử lý hình ảnh", "text": "Bộ xử lý video LED và giải pháp trình chiếu đa màn hình." },
+  { "name": "FILMBASE", "category": "Màn hình LED", "text": "Màn hình LED dạng phim, linh hoạt cho kính và bề mặt cong." },
+  { "name": "G-Energy", "category": "Nguồn LED", "text": "Nguồn điện chuyên dụng cho màn hình LED, ổn định và bền bỉ." },
+  { "name": "SKV", "category": "Thương hiệu riêng", "text": "Đèn chiếu logo, Gobo, máy CO2, máy phun tuyết, kim tuyến và pháo điện mang thương hiệu SKV." }
+]

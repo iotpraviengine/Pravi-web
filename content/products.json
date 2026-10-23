@@ -1,0 +1,1004 @@
+[
+  {
+    "id": "man-hinh-led",
+    "name": "Màn hình & Cabin LED",
+    "blurb": "Cabin COB, màn hình trong suốt và màn hình lưới ngoài trời từ BOE, MUXWAVE, GLOSHINE.",
+    "items": [
+      {
+        "slug": "boe-byh009v1-p0-9",
+        "name": "BOE BYH009V1 P0.9",
+        "brand": "BOE",
+        "image": "/images/products/boe-byh009v1-p0-9.webp",
+        "specs": [
+          {
+            "label": "Khoảng cách pixel",
+            "value": "0.9375 mm"
+          },
+          {
+            "label": "Mật độ điểm ảnh (dot)",
+            "value": "1,137,777 dot/m²"
+          },
+          {
+            "label": "Loại led",
+            "value": "COB ( Flip Chip)"
+          },
+          {
+            "label": "Kích thước cabin",
+            "value": "600 × 337.5 mm"
+          }
+        ]
+      },
+      {
+        "slug": "boe-byh012-pro-p1-25",
+        "name": "Cabin LED COB BOE BYH012 Pro P1.25",
+        "brand": "BOE",
+        "image": "/images/products/boe-byh012-pro-p1-25.webp",
+        "specs": [
+          {
+            "label": "Khoảng cách pixel",
+            "value": "1.25 mm"
+          },
+          {
+            "label": "Mật độ điểm ảnh (dot)",
+            "value": "640.000 dot/m²"
+          },
+          {
+            "label": "Loại led",
+            "value": "COB"
+          },
+          {
+            "label": "Kích thước cabin",
+            "value": "600 × 337.5 mm"
+          }
+        ]
+      },
+      {
+        "slug": "boe-byh015-pro-p1-5",
+        "name": "Cabin Led BOE BYH015 Pro P1.5",
+        "brand": "BOE",
+        "image": "/images/products/boe-byh015-pro-p1-5.webp",
+        "specs": [
+          {
+            "label": "Khoảng cách pixel",
+            "value": "1.5625 mm"
+          },
+          {
+            "label": "Mật độ điểm ảnh (dot)",
+            "value": "409.600 dot/m²"
+          },
+          {
+            "label": "Loại led",
+            "value": "COB 0407"
+          },
+          {
+            "label": "Kích thước cabin",
+            "value": "600 × 337.5 mm"
+          }
+        ]
+      },
+      {
+        "slug": "boe-cob-flexible-p1-25",
+        "name": "BOE COB Flexible P1.25",
+        "brand": "BOE",
+        "image": "/images/products/boe-cob-flexible-p1-25.webp",
+        "specs": [
+          {
+            "label": "Khoảng cách pixel",
+            "value": "1.25mm"
+          },
+          {
+            "label": "Kích thước module",
+            "value": "300 × 168.75 mm"
+          },
+          {
+            "label": "Độ tương phản",
+            "value": "7.700:1 @10lux"
+          },
+          {
+            "label": "Loại bóng led",
+            "value": "COB"
+          }
+        ]
+      },
+      {
+        "slug": "man-hinh-led-muxwave-m3-pro",
+        "name": "Màn hình LED MUXWAVE M3 Pro",
+        "brand": "MUXWAVE",
+        "image": "/images/products/man-hinh-led-muxwave-m3-pro.webp",
+        "specs": [
+          {
+            "label": "Khoảng cách pixel",
+            "value": "3.91mm"
+          },
+          {
+            "label": "Mật độ led",
+            "value": "65,536 dot/m2"
+          },
+          {
+            "label": "Cường độ sáng",
+            "value": "≥2000 cd/m²"
+          },
+          {
+            "label": "Độ trong suốt",
+            "value": "95%"
+          }
+        ]
+      },
+      {
+        "slug": "muxwave-p2-poster-led",
+        "name": "Màn hình Led MUXWAVE P2 – Poster LED",
+        "brand": "MUXWAVE",
+        "image": "/images/products/muxwave-p2-poster-led.webp",
+        "specs": [
+          {
+            "label": "Khoảng cách pixel",
+            "value": "2.5mm"
+          },
+          {
+            "label": "Mật độ led",
+            "value": "160.000 dot/m2"
+          },
+          {
+            "label": "Cường độ sáng",
+            "value": "≥1000 cd/m²(nền đen)"
+          },
+          {
+            "label": "Độ trong suốt",
+            "value": "85%"
+          }
+        ]
+      },
+      {
+        "slug": "gloshine-va-max-series-outdoor",
+        "name": "Màn Hình Led Lưới GLOSHINE VA MAX Series Outdoor",
+        "brand": "GLOSHINE",
+        "image": "/images/products/gloshine-va-max-series-outdoor.webp",
+        "specs": [
+          {
+            "label": "Loại led",
+            "value": "SMD1921"
+          },
+          {
+            "label": "Khoảng cách pixel",
+            "value": "3.9/3.9-7.8mm"
+          },
+          {
+            "label": "Bảo trì",
+            "value": "Mặt trước & sau, mô-đun từ tính"
+          },
+          {
+            "label": "Kích thước cabin",
+            "value": "1000×1000×98mm / 1000×500×98mm"
+          }
+        ]
+      },
+      {
+        "slug": "man-hinh-cabin-led-rb-indoor-series-gloshine",
+        "name": "Màn Hình Cabin LED RB Indoor Series",
+        "brand": "GLOSHINE",
+        "image": "/images/products/man-hinh-cabin-led-rb-indoor-series-gloshine.webp",
+        "specs": [
+          {
+            "label": "Loại led",
+            "value": "SMD1212/SMD1515/SMD2020"
+          },
+          {
+            "label": "Khoảng cách pixel",
+            "value": "1.95-2.6-2.97-3.91mm"
+          },
+          {
+            "label": "Mật độ điểm ảnh",
+            "value": "262,144/147,456/112,896/65,536 pixel/m²"
+          },
+          {
+            "label": "Kích thước cabin",
+            "value": "500 × 500 × 70 / 500 × 1000 × 70mm"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "xu-ly-hinh-anh",
+    "name": "Bộ xử lý & điều khiển",
+    "blurb": "Video processor, bộ điều khiển và bộ chuyển đổi chính hãng NovaStar, PixelHue.",
+    "items": [
+      {
+        "slug": "novastar-vc24-pro",
+        "name": "Novastar VC24 Pro",
+        "brand": "NovaStar",
+        "image": "/images/products/novastar-vc24-pro.webp",
+        "specs": [
+          {
+            "label": "Khả năng tải",
+            "value": "15.6 triệu pixel – (W-H) 16.384-8192 pixel."
+          },
+          {
+            "label": "Cổng đầu vào",
+            "value": "1xHDMI2.0, 4x HDMI1.31x DP1.2, 1x3G-SDI (IN+LOOP, optional)"
+          },
+          {
+            "label": "Cổng đầu ra",
+            "value": "24x Gigabit Ethernet"
+          },
+          {
+            "label": "Cổng điều khiển",
+            "value": "2x Ethernet, 1x USB, 1x RS232"
+          }
+        ]
+      },
+      {
+        "slug": "novastar-tu4k-pro",
+        "name": "Novastar TU4K Pro",
+        "brand": "NovaStar",
+        "image": "/images/products/novastar-tu4k-pro.webp",
+        "specs": [
+          {
+            "label": "Khả năng tải",
+            "value": "13.000,000 Pixel"
+          },
+          {
+            "label": "Độ phân giải (wxh)",
+            "value": "16384×8192pixel"
+          },
+          {
+            "label": "Cổng tín hiệu vào",
+            "value": "1xHDMI 1.3;2x1x HDMI 2.0, 2xUSB 2.0, 1xUSB 3.0"
+          },
+          {
+            "label": "Cổng tín hiệu ra",
+            "value": "1x HDMI 1.3, 20x Gigabit Ethernet, 2x OPT, 4x audio"
+          }
+        ]
+      },
+      {
+        "slug": "novastar-vx1000-pro",
+        "name": "Novastar VX1000 Pro",
+        "brand": "NovaStar",
+        "image": "/images/products/novastar-vx1000-pro.webp",
+        "specs": [
+          {
+            "label": "Output",
+            "value": "6x Ethernet, 2x OPT"
+          },
+          {
+            "label": "Điều khiển",
+            "value": "2x RJ45, USB-B"
+          },
+          {
+            "label": "Nguồn video",
+            "value": "8bit/10bit"
+          },
+          {
+            "label": "Độ phân giải",
+            "value": "4K"
+          }
+        ]
+      },
+      {
+        "slug": "novastar-tb20-plus",
+        "name": "Novastar TB20 Plus",
+        "brand": "NovaStar",
+        "image": "/images/products/novastar-tb20-plus.webp",
+        "specs": [
+          {
+            "label": "Khả năng tải",
+            "value": "650.000 Pixel"
+          },
+          {
+            "label": "Độ phân giải",
+            "value": "2048×2048 Pixel"
+          },
+          {
+            "label": "Cổng điều khiển",
+            "value": "1xUSB-A, 1x USB-B, 1x Ethernet"
+          },
+          {
+            "label": "Cổng tín hiệu ra",
+            "value": "Gigabit Ethernet, 1x Stereo audio"
+          }
+        ]
+      },
+      {
+        "slug": "pixelhue-p20",
+        "name": "PIXELHUE P20",
+        "brand": "PixelHue",
+        "image": "/images/products/pixelhue-p20.webp",
+        "specs": [
+          {
+            "label": "Cổng input",
+            "value": "8x DP 1.2/HDMI 2.0, 4x 12G-SDI"
+          },
+          {
+            "label": "Công output",
+            "value": "8x HDMI 2.0"
+          },
+          {
+            "label": "Lớp",
+            "value": "7 lớp (3 lớp 4K@60Hz và 4 lớp 2K@60Hz hoặc 4 lớp 4K@60Hz).."
+          },
+          {
+            "label": "Độ phân giải",
+            "value": "Full HD – 2K – 4K"
+          }
+        ]
+      },
+      {
+        "slug": "pixelhue-u5-mini",
+        "name": "PIXELHUE U5 MINI",
+        "brand": "PixelHue",
+        "image": "/images/products/pixelhue-u5-mini.webp",
+        "specs": [
+          {
+            "label": "Màn hình",
+            "value": "2 màn hình 7 inch"
+          },
+          {
+            "label": "Thanh t-bar",
+            "value": "Kiểm soát và chuyển đổi"
+          },
+          {
+            "label": "Số nút",
+            "value": "66 nút điều hiển"
+          },
+          {
+            "label": "Kích thước",
+            "value": "380 mm × 217 mm × 90 mm"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "phu-kien-led",
+    "name": "Module, card & nguồn",
+    "blurb": "Linh kiện thay thế chính hãng cho thi công và bảo trì màn hình LED.",
+    "items": [
+      {
+        "slug": "module-led-boe-btq025",
+        "name": "Module LED BOE BTQ025",
+        "brand": "BOE",
+        "image": "/images/products/module-led-boe-btq025.webp",
+        "specs": [
+          {
+            "label": "Khoảng cách pixel",
+            "value": "2.5 mm"
+          },
+          {
+            "label": "Kích thước module",
+            "value": "320×160mm"
+          },
+          {
+            "label": "Mật độ điểm ảnh (pixel/m²)",
+            "value": "160,000"
+          },
+          {
+            "label": "Loại bóng led",
+            "value": "SMD2121"
+          }
+        ]
+      },
+      {
+        "slug": "module-led-boe-btx-fl018a",
+        "name": "Module Led BOE BTX-FL018A",
+        "brand": "BOE",
+        "image": "/images/products/module-led-boe-btx-fl018a.webp",
+        "specs": [
+          {
+            "label": "Khoảng cách pixel",
+            "value": "1.86mm"
+          },
+          {
+            "label": "Kích thước module",
+            "value": "320×160mm"
+          },
+          {
+            "label": "Mật độ điểm ảnh (dot/m²)",
+            "value": "288,906"
+          },
+          {
+            "label": "Loại bóng led",
+            "value": "SMD1515"
+          }
+        ]
+      },
+      {
+        "slug": "novastar-mrv416-n",
+        "name": "NovaStar MRV416-N",
+        "brand": "NovaStar",
+        "image": "/images/products/novastar-mrv416-n.webp",
+        "specs": [
+          {
+            "label": "Khả năng tải (w*h)",
+            "value": "512 × 512 Pixel"
+          },
+          {
+            "label": "Cổng hub75e",
+            "value": "16 Cổng"
+          },
+          {
+            "label": "Điện áp đầu vào",
+            "value": "DC 3,8V – 5,5V"
+          },
+          {
+            "label": "Công suất",
+            "value": "2,5W"
+          }
+        ]
+      },
+      {
+        "slug": "novastar-a10s-pro",
+        "name": "Novastar A10s Pro",
+        "brand": "NovaStar",
+        "image": "/images/products/novastar-a10s-pro.webp",
+        "specs": [
+          {
+            "label": "Khả năng tải (w*h)",
+            "value": "512×512@60Hz"
+          },
+          {
+            "label": "Cổng socket",
+            "value": "2 Cổng"
+          },
+          {
+            "label": "Điện áp đầu vào",
+            "value": "DC 3,8V – 5,5V"
+          },
+          {
+            "label": "Công suất",
+            "value": "4W"
+          }
+        ]
+      },
+      {
+        "slug": "g-energy-j300v5-0a13-5v60a",
+        "name": "G-Energy J300V5.0A13 (5V60A)",
+        "brand": "G-Energy",
+        "image": "/images/products/g-energy-j300v5-0a13-5v60a.webp",
+        "specs": [
+          {
+            "label": "Điện áp vào",
+            "value": "200-240Vac"
+          },
+          {
+            "label": "Điện áp ra",
+            "value": "5V-60A"
+          },
+          {
+            "label": "Công suất",
+            "value": "300W"
+          },
+          {
+            "label": "Bảo vệ",
+            "value": "Thiếu điện áp, quá tải, ngắn mạch"
+          }
+        ]
+      },
+      {
+        "slug": "5v-60a-czcl",
+        "name": "Nguồn 5V-60A CZCL",
+        "brand": "CZCL",
+        "image": "/images/products/5v-60a-czcl.webp",
+        "specs": [
+          {
+            "label": "Điện áp vào",
+            "value": "200-240V 47-63Hz"
+          },
+          {
+            "label": "Điện áp ra",
+            "value": "5V-60A"
+          },
+          {
+            "label": "Công suất",
+            "value": "300W"
+          },
+          {
+            "label": "Bảo vệ",
+            "value": "Thiếu điện áp, quá tải, ngắn mạch"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "den-san-khau",
+    "name": "Đèn sân khấu",
+    "blurb": "Moving head, par LED, profile và laser cho sân khấu, bar, sự kiện.",
+    "items": [
+      {
+        "slug": "moving-head-beam-420w-yellowriver-yr-420b",
+        "name": "Đèn Moving Head Beam 420W YellowRiver YR-420B",
+        "brand": "Yellow River",
+        "image": "/images/products/moving-head-beam-420w-yellowriver-yr-420b.webp",
+        "specs": [
+          {
+            "label": "Dmx",
+            "value": "16/20CH"
+          },
+          {
+            "label": "Công suất bóng",
+            "value": "420W"
+          },
+          {
+            "label": "Nhiệt màu",
+            "value": "7600K"
+          },
+          {
+            "label": "Gobo",
+            "value": "17 gobo kim loại + ánh sáng trắng Gobo"
+          }
+        ]
+      },
+      {
+        "slug": "moving-head-spot-profile-yellowriver-yr-800q",
+        "name": "Đèn Moving Head Spot Profile 800w YellowRiver YR-800Q",
+        "brand": "Yellow River",
+        "image": "/images/products/moving-head-spot-profile-yellowriver-yr-800q.webp",
+        "specs": [
+          {
+            "label": "Điều khiển",
+            "value": "console, manual, master-slave, DMX512"
+          },
+          {
+            "label": "Công suất bóng",
+            "value": "800W"
+          },
+          {
+            "label": "Lăng kính",
+            "value": "8 lăng kính + 6 hàng gương"
+          },
+          {
+            "label": "Nhiệt màu",
+            "value": "6300K"
+          }
+        ]
+      },
+      {
+        "slug": "moving-head-beam-450w-outdoor-yellow-river-yr-ip450b",
+        "name": "Đèn Moving Head Beam 450w Outdoor Yellow River YR-IP450B",
+        "brand": "Yellow River",
+        "image": "/images/products/moving-head-beam-450w-outdoor-yellow-river-yr-ip450b.webp",
+        "specs": [
+          {
+            "label": "Nguồn sáng",
+            "value": "Philips 420W"
+          },
+          {
+            "label": "Dmx",
+            "value": "16/19CH"
+          },
+          {
+            "label": "Chế độ vận hành",
+            "value": "Bảng điều khiển, thủ công, Master/Slave"
+          },
+          {
+            "label": "Nhiệt màu",
+            "value": "7800K"
+          }
+        ]
+      },
+      {
+        "slug": "yellowriver-yr-n27q",
+        "name": "Đèn Par LED 27x10W RGBW YellowRiver YR-N27Q",
+        "brand": "Yellow River",
+        "image": "/images/products/yellowriver-yr-n27q.webp",
+        "specs": [
+          {
+            "label": "Công suất",
+            "value": "300w"
+          },
+          {
+            "label": "Số bóng",
+            "value": "27x10w RGBW 4 in 1"
+          },
+          {
+            "label": "Chế độ hoạt động",
+            "value": "Thủ công/DMX/ tự động/ Theo nhạc"
+          },
+          {
+            "label": "Trọng lượng",
+            "value": "2.8kg"
+          }
+        ]
+      },
+      {
+        "slug": "den-par-cob-led-4x50w-yellowriver-yr-e04m",
+        "name": "Đèn Par Cob LED 4x50w YellowRiver YR-E04M",
+        "brand": "Yellow River",
+        "image": "/images/products/den-par-cob-led-4x50w-yellowriver-yr-e04m.webp",
+        "specs": [
+          {
+            "label": "Công suất",
+            "value": "220w"
+          },
+          {
+            "label": "Số bóng",
+            "value": "4x50w 2 trắng lạnh và 2 trắng ấm"
+          },
+          {
+            "label": "Chế độ hoạt động",
+            "value": "Thủ công/DMX."
+          },
+          {
+            "label": "Trọng lượng",
+            "value": "2.9kg"
+          }
+        ]
+      },
+      {
+        "slug": "den-moving-strobe-led-matrix-yr-m960s",
+        "name": "Đèn Moving Strobe Led Matrix YR-M960S",
+        "brand": "Yellow River",
+        "image": "/images/products/den-moving-strobe-led-matrix-yr-m960s.webp",
+        "specs": [
+          {
+            "label": "Công suất",
+            "value": "400w"
+          },
+          {
+            "label": "Chế độ hoạt động",
+            "value": "RDM/Thủ công/tự động/Master/slave/DMX."
+          },
+          {
+            "label": "Trọng lượng",
+            "value": "3.1KG"
+          },
+          {
+            "label": "Tuổi thọ bóng",
+            "value": "50.000h"
+          }
+        ]
+      },
+      {
+        "slug": "profile-light-200w-yellowriver-yr-2001al",
+        "name": "Đèn Profile Light 200w LED YellowRiver YR-2001AL",
+        "brand": "Yellow River",
+        "image": "/images/products/profile-light-200w-yellowriver-yr-2001al.webp",
+        "specs": [
+          {
+            "label": "Nguồn sáng",
+            "value": "LED 200W COB"
+          },
+          {
+            "label": "Công suất",
+            "value": "220W"
+          },
+          {
+            "label": "Chế độ điều khiển",
+            "value": "Master-slave, Auto, DMX512"
+          },
+          {
+            "label": "Nhiệt độ màu",
+            "value": "3200K, 5600K, 3000K+6000K"
+          }
+        ]
+      },
+      {
+        "slug": "den-laser-12w-outdoor-i-tvs-f-12",
+        "name": "Đèn Laser 12w Outdoor TVS F-12",
+        "brand": "TVS",
+        "image": "/images/products/den-laser-12w-outdoor-i-tvs-f-12.webp",
+        "specs": [
+          {
+            "label": "Nguồn sáng",
+            "value": "Analog RGB"
+          },
+          {
+            "label": "Công suất",
+            "value": "12W (RGB Full Color)"
+          },
+          {
+            "label": "Chế độ điều khiển",
+            "value": "Animation (Hoạt ảnh), Auto, DMX512,ILDA"
+          },
+          {
+            "label": "Chuẩn điều khiển",
+            "value": "DMX512, ILDA"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "den-chieu-logo",
+    "name": "Đèn chiếu logo & Gobo",
+    "blurb": "Đèn chiếu thương hiệu SKV cho mặt tiền, sảnh và chỉ dẫn nhà xưởng.",
+    "items": [
+      {
+        "slug": "den-chieu-gobo-chi-dan",
+        "name": "Đèn chiếu Gobo chỉ dẫn",
+        "brand": "SKV",
+        "image": "/images/products/den-chieu-gobo-chi-dan.webp",
+        "specs": [
+          {
+            "label": "Điện áp",
+            "value": "AC 110V – 220V / 50–60Hz"
+          },
+          {
+            "label": "Công suất",
+            "value": "15-25-35-50-80-100-150W"
+          },
+          {
+            "label": "Kiểu dáng",
+            "value": "Đèn chiếu Trong nhà – Ngoài trời"
+          },
+          {
+            "label": "Chế độ hoạt động",
+            "value": "Xoay / Cố định, điều khiển từ xa"
+          }
+        ]
+      },
+      {
+        "slug": "den-chieu-logo-skv-tm100-100w",
+        "name": "Đèn Chiếu Logo SKV-TM100 100W Outdoor",
+        "brand": "SKV",
+        "image": "/images/products/den-chieu-logo-skv-tm100-100w.webp",
+        "specs": [
+          {
+            "label": "Điện áp",
+            "value": "AC 110V – 220V / 50–60Hz"
+          },
+          {
+            "label": "Công suất",
+            "value": "100W"
+          },
+          {
+            "label": "Kiểu dáng",
+            "value": "Đèn chiếu ngoài trời"
+          },
+          {
+            "label": "Chế độ hoạt động",
+            "value": "Xoay / Cố định, điều khiển từ xa"
+          }
+        ]
+      },
+      {
+        "slug": "den-chieu-logo-skv-w100-100w",
+        "name": "Đèn Chiếu Logo SKV-W100 100W Sóng Nước",
+        "brand": "SKV",
+        "image": "/images/products/den-chieu-logo-skv-w100-100w.webp",
+        "specs": [
+          {
+            "label": "Điện áp",
+            "value": "AC 110V – 220V / 50–60Hz"
+          },
+          {
+            "label": "Công suất",
+            "value": "100W"
+          },
+          {
+            "label": "Kiểu dáng",
+            "value": "Đèn chiếu ngoài trời, hiệu ứng sóng nước"
+          },
+          {
+            "label": "Chế độ hoạt động",
+            "value": "Xoay / Cố định, điều khiển từ xa"
+          }
+        ]
+      },
+      {
+        "slug": "den-chieu-logo-skv-g35-35w",
+        "name": "Đèn Chiếu Logo SKV-G35 35W Indoor",
+        "brand": "SKV",
+        "image": "/images/products/den-chieu-logo-skv-g35-35w.webp",
+        "specs": [
+          {
+            "label": "Điện áp",
+            "value": "AC 110V – 220V / 50–60Hz"
+          },
+          {
+            "label": "Công suất",
+            "value": "35W"
+          },
+          {
+            "label": "Kiểu dáng",
+            "value": "Đèn chiếu trong nhà"
+          },
+          {
+            "label": "Chế độ hoạt động",
+            "value": "Xoay / Cố định, điều khiển từ xa"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hieu-ung",
+    "name": "Thiết bị hiệu ứng",
+    "blurb": "Khói, CO2, lửa, tuyết, kim tuyến, pháo điện – DJPOWER và SKV.",
+    "items": [
+      {
+        "slug": "djpower-h-sw3000",
+        "name": "DJPOWER H-SW3000",
+        "brand": "DJPOWER",
+        "image": "/images/products/djpower-h-sw3000.webp",
+        "specs": [
+          {
+            "label": "Công suất",
+            "value": "3000W"
+          },
+          {
+            "label": "Dung tích dung dịch",
+            "value": "3.5kg"
+          },
+          {
+            "label": "Dung tích nước",
+            "value": "34 lít"
+          },
+          {
+            "label": "Thời gian làm nóng",
+            "value": "4-5 phút"
+          }
+        ]
+      },
+      {
+        "slug": "djpower-dsk-3000",
+        "name": "DJPOWER DSK-3000",
+        "brand": "DJPOWER",
+        "image": "/images/products/djpower-dsk-3000.webp",
+        "specs": [
+          {
+            "label": "Bình chứa dung dịch",
+            "value": "5 lít"
+          },
+          {
+            "label": "Công suất",
+            "value": "3000W"
+          },
+          {
+            "label": "Lưu lượng",
+            "value": "30.800 cuft/phút"
+          },
+          {
+            "label": "Thời gian làm nóng",
+            "value": "7 phút"
+          }
+        ]
+      },
+      {
+        "slug": "djpower-hf-210s",
+        "name": "DJPOWER HF-210S",
+        "brand": "DJPOWER",
+        "image": "/images/products/djpower-hf-210s.webp",
+        "specs": [
+          {
+            "label": "Bình chứa dung dịch",
+            "value": "10 lít"
+          },
+          {
+            "label": "Công suất",
+            "value": "600W"
+          },
+          {
+            "label": "Mức tiêu thụ",
+            "value": "0.48 phút/ lít"
+          },
+          {
+            "label": "Khoảng cách phun",
+            "value": "8–10 m"
+          }
+        ]
+      },
+      {
+        "slug": "djpower-snow-1500",
+        "name": "DJPOWER SNOW-1500",
+        "brand": "DJPOWER",
+        "image": "/images/products/djpower-snow-1500.webp",
+        "specs": [
+          {
+            "label": "Công suất",
+            "value": "1350W"
+          },
+          {
+            "label": "Dung tích dung dịch bong bóng",
+            "value": "5 L"
+          },
+          {
+            "label": "Chiều cao phun",
+            "value": "6 mét"
+          },
+          {
+            "label": "Khoảng cách đầu ra tối đa",
+            "value": "11 m2"
+          }
+        ]
+      },
+      {
+        "slug": "may-phun-co2-skv01-dmx",
+        "name": "Máy Phun CO2 SKV01-DMX",
+        "brand": "SKV",
+        "image": "/images/products/may-phun-co2-skv01-dmx.webp",
+        "specs": [
+          {
+            "label": "Áp lực",
+            "value": "1600 Psi"
+          },
+          {
+            "label": "Nhiên liệu",
+            "value": "Bình CO2"
+          },
+          {
+            "label": "Độ cao phun",
+            "value": "8-10m"
+          },
+          {
+            "label": "Trọng lượng",
+            "value": "3.5kg"
+          }
+        ]
+      },
+      {
+        "slug": "may-ban-kim-tuyen-confetti-skv-c04",
+        "name": "Máy Bắn Kim Tuyến Confetti SKV C04",
+        "brand": "SKV",
+        "image": "/images/products/may-ban-kim-tuyen-confetti-skv-c04.webp",
+        "specs": [
+          {
+            "label": "Khí",
+            "value": "C02/N2"
+          },
+          {
+            "label": "Độ cao phun",
+            "value": "10m"
+          },
+          {
+            "label": "Diện tích",
+            "value": "150m²"
+          },
+          {
+            "label": "Trong lượng",
+            "value": "28kg"
+          }
+        ]
+      },
+      {
+        "slug": "djpower-d-v3",
+        "name": "DJPOWER D-V3",
+        "brand": "DJPOWER",
+        "image": "/images/products/djpower-d-v3.webp",
+        "specs": [
+          {
+            "label": "Công suất",
+            "value": "450W"
+          },
+          {
+            "label": "Dung tích khoang chứa bột pháo",
+            "value": "255 g"
+          },
+          {
+            "label": "Khoảng cách phun cao",
+            "value": "5 mét"
+          },
+          {
+            "label": "Thời gian làm nóng",
+            "value": "4 phút 30 giây"
+          }
+        ]
+      },
+      {
+        "slug": "djpower-p-1000y",
+        "name": "DJPOWER P-1000Y",
+        "brand": "DJPOWER",
+        "image": "/images/products/djpower-p-1000y.webp",
+        "specs": [
+          {
+            "label": "Công suất",
+            "value": "60W"
+          },
+          {
+            "label": "Dung tích dung dịch bong bóng",
+            "value": "2,5 L"
+          },
+          {
+            "label": "Số lượng cửa",
+            "value": "2 cửa"
+          },
+          {
+            "label": "Chiều cao phun",
+            "value": "4 mét"
+          }
+        ]
+      }
+    ]
+  }
+]

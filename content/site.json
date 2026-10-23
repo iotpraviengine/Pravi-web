@@ -1,0 +1,47 @@
+{
+  "name": "SKV Lighting",
+  "legalName": "Công ty Cổ phần Phát triển Đầu tư Thương mại và Dịch vụ Hồ Gia",
+  "shortLegalName": "HO GIA ITS., JSC",
+  "tagline": "Giải pháp hiển thị & ánh sáng chuyên nghiệp",
+  "description": "SKV Lighting tư vấn, cung cấp và thi công trọn gói màn hình LED, đèn sân khấu và thiết bị hiệu ứng cho hội trường, phòng họp, sân khấu sự kiện, bar – karaoke, tiệc cưới và công trình công cộng trên toàn quốc.",
+  "url": "https://skv.lighting",
+  "taxCode": "0108234451",
+  "taxIssued": "Sở Kế hoạch và Đầu tư TP. Hà Nội cấp ngày 13/04/2018",
+  "founded": 2018,
+  "contact": {
+    "hotline": "0968 240 789",
+    "hotlineTel": "0968240789",
+    "hotline2": "0902 163 816",
+    "hotline2Tel": "0902163816",
+    "phone": "024 6686 3633",
+    "phoneTel": "02466863633",
+    "email": "ceo@skv.lighting",
+    "zalo": "https://zalo.me/0968240789",
+    "messenger": "https://m.me/skvlighting",
+    "hours": "Tư vấn và hỗ trợ kỹ thuật 24/7 qua hotline"
+  },
+  "offices": [
+    {
+      "label": "Trụ sở chính",
+      "address": "Số 2, ngách 20, ngõ 77 Phố Lụa, tổ dân phố Hồng Phong, phường Vạn Phúc, quận Hà Đông, Hà Nội",
+      "map": "https://www.google.com/maps/search/?api=1&query=Ng%C3%A1ch%2020%20Ng%C3%B5%2077%20Ph%E1%BB%91%20L%E1%BB%A5a%20V%E1%BA%A1n%20Ph%C3%BAc%20H%C3%A0%20%C4%90%C3%B4ng%20H%C3%A0%20N%E1%BB%99i"
+    },
+    {
+      "label": "Văn phòng đại diện",
+      "address": "Phố Biển 16-08 & 16-10, Vinhomes Ocean Park 3, Nghĩa Trụ, Hưng Yên",
+      "map": "https://www.google.com/maps/search/?api=1&query=Vinhomes%20Ocean%20Park%203%20Ph%E1%BB%91%20Bi%E1%BB%83n%2016"
+    }
+  ],
+  "social": [
+    { "name": "Facebook", "url": "https://www.facebook.com/skvlighting/" },
+    { "name": "YouTube", "url": "https://www.youtube.com/@skvlighting" },
+    { "name": "TikTok", "url": "https://www.tiktok.com/@skvlighting" },
+    { "name": "Zalo", "url": "https://zalo.me/0968240789" }
+  ],
+  "stats": [
+    { "value": "3.245+", "label": "dự án đã hoàn thành" },
+    { "value": "10+", "label": "năm kinh nghiệm trong ngành" },
+    { "value": "11.400+", "label": "khách hàng trên toàn quốc" },
+    { "value": "65+", "label": "đối tác và thương hiệu" }
+  ]
+}
