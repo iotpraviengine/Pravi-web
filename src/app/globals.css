@@ -1770,3 +1770,50 @@ a.tile-link:hover .title {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.3) 100%);
   }
 }
+
+/* wide banner panel (image already contains its own headline) */
+.showcase.banner {
+  min-height: 0;
+  aspect-ratio: 1903 / 590;
+  padding: 0;
+}
+.showcase.banner::after {
+  display: none;
+}
+.showcase.banner .showcase-eyebrow,
+.showcase.banner .showcase-title,
+.showcase.banner .showcase-line {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+@media (max-width: 733px) {
+  /* banner text is too small on phones: show our headline above, banner below at its own ratio */
+  .showcase.banner {
+    aspect-ratio: auto;
+    min-height: 0;
+    padding: 40px 0 0;
+  }
+  .showcase.banner .showcase-eyebrow,
+  .showcase.banner .showcase-title,
+  .showcase.banner .showcase-line {
+    position: static;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
+    padding-inline: var(--gutter);
+  }
+  .showcase.banner .showcase-media {
+    position: relative;
+    inset: auto;
+    order: 2;
+    width: 100%;
+    margin-top: 28px;
+    aspect-ratio: 1903 / 590;
+  }
+}

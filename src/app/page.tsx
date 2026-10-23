@@ -11,8 +11,10 @@ const showcase = [
     eyebrow: "BOE MLED · NovaStar",
     title: "Màn hình LED",
     line: "Sắc nét đến từng điểm ảnh.",
-    image: "/images/home/led-boe.webp",
-    alt: "Màn hình LED BOE MLED hiển thị phong cảnh rừng núi",
+    image: "/images/home/led-cob-banner.webp",
+    alt: "Màn hình LED COB – đỉnh cao công nghệ LED, độ phân giải 8K",
+    // a wide banner that carries its own headline: shown uncropped at its own aspect ratio
+    banner: true,
   },
   {
     href: "/san-pham#den-san-khau",
@@ -48,7 +50,7 @@ export default function HomePage() {
       <h1 className="sr-only">SKV Lighting – màn hình LED, đèn sân khấu và thiết bị hiệu ứng</h1>
 
       {showcase.map((s, i) => (
-        <Link key={s.href} href={s.href} className={`showcase${s.contain ? " contain" : ""}`}>
+        <Link key={s.href} href={s.href} className={`showcase${s.contain ? " contain" : ""}${s.banner ? " banner" : ""}`}>
           <div className="showcase-media">
             <Image src={s.image} alt={s.alt} fill priority={i === 0} sizes="100vw" />
           </div>

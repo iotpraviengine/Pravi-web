@@ -11,8 +11,8 @@ export const metadata: Metadata = {
 };
 
 // Banner photos for the three main product lines (same images as the home page showcase).
-const banners: Record<string, { src: string; contain?: boolean }> = {
-  "man-hinh-led": { src: "/images/home/led-boe.webp" },
+const banners: Record<string, { src: string; contain?: boolean; ratio?: string }> = {
+  "man-hinh-led": { src: "/images/home/led-cob-banner.webp", ratio: "1903 / 590" },
   "den-san-khau": { src: "/images/home/stage-light.webp" },
   "hieu-ung": { src: "/images/home/effects.webp", contain: true },
 };
@@ -48,7 +48,10 @@ export default function ProductsPage() {
               <p className="subhead">{g.blurb}</p>
             </div>
             {banners[g.id] && (
-              <div className={`group-banner reveal${banners[g.id].contain ? " contain" : ""}`}>
+              <div
+                className={`group-banner reveal${banners[g.id].contain ? " contain" : ""}`}
+                style={banners[g.id].ratio ? { aspectRatio: banners[g.id].ratio } : undefined}
+              >
                 <Image src={banners[g.id].src} alt="" fill sizes="(min-width: 1260px) 1180px, 94vw" />
               </div>
             )}
