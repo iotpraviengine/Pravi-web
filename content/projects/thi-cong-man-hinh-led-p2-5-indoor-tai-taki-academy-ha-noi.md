@@ -6,8 +6,8 @@ solution: truong-hoc-co-quan
 tags:
   - P2.5
   - Indoor
-cover: /images/projects/thi-cong-man-hinh-led-p2-5-indoor-tai-taki-academy-ha-noi/5.webp
-  /images/projects/thi-cong-man-hinh-led-p2-5-indoor-tai-taki-academy-ha-noi/0.webp
+cover: >-
+  /images/projects/thi-cong-man-hinh-led-p2-5-indoor-tai-taki-academy-ha-noi/5.webp
 gallery:
   - >-
     /images/projects/thi-cong-man-hinh-led-p2-5-indoor-tai-taki-academy-ha-noi/0.webp

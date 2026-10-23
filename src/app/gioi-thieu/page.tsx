@@ -118,25 +118,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="section-sm theme-alt">
-        <div className="container small muted">
-          <h2 className="title" style={{ color: "var(--text)", marginBottom: 16 }}>
-            Thông tin doanh nghiệp
-          </h2>
-          <p>
-            <strong style={{ color: "var(--text)" }}>{siteInfo.legalName}</strong> ({siteInfo.shortLegalName})
-          </p>
-          <p>
-            Mã số thuế: {siteInfo.taxCode} – {siteInfo.taxIssued}
-          </p>
-          {siteInfo.offices.map((o) => (
-            <p key={o.label}>
-              {o.label}: {o.address}
-            </p>
-          ))}
-        </div>
-      </section>
-
       <CtaBand alt={false} />
     </>
   );

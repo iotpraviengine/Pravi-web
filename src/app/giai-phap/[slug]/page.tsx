@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Icon } from "@/components/Icon";
-import { CtaBand, Emphasis, Faq, LocalNav, MoreLink, ProductCard, ProjectCard, SectionHead } from "@/components/ui";
+import { CtaBand, Emphasis, Faq, LinkedHeading, LocalNav, ProductCard, ProjectCard, SectionHead } from "@/components/ui";
 import { getProjectsBySolution, getSolution, productGroups, solutions } from "@/lib/content";
 
 export function generateStaticParams() {
@@ -45,7 +45,6 @@ export default async function SolutionPage({ params }: PageProps<"/giai-phap/[sl
           ...(projects.length ? [{ href: "#du-an", label: "Dự án" }] : []),
           { href: "#hoi-dap", label: "Hỏi đáp" },
         ]}
-        ctaHref={`/lien-he?giai-phap=${s.slug}`}
       />
 
       {/* Hero */}
@@ -56,16 +55,6 @@ export default async function SolutionPage({ params }: PageProps<"/giai-phap/[sl
           <p className="subhead reveal" data-delay="1">
             {s.subhead}
           </p>
-          <div className="actions center reveal" data-delay="2">
-            <Link href={`/lien-he?giai-phap=${s.slug}`} className="btn btn-primary">
-              Nhận tư vấn miễn phí
-            </Link>
-            {projects.length > 0 && (
-              <a href="#du-an" className="btn btn-secondary">
-                Xem dự án thực tế
-              </a>
-            )}
-          </div>
         </div>
         <div className="container">
           <div className="hero-media framed reveal" data-delay="2">
@@ -115,7 +104,7 @@ export default async function SolutionPage({ params }: PageProps<"/giai-phap/[sl
       {/* System */}
       <section id="he-thong" className={`section${dark ? " theme-dark" : ""}`}>
         <div className="container">
-          <SectionHead eyebrow="Hệ thống" title="Mọi thành phần. Hoạt động như một." subhead="SKV cung cấp, lắp đặt và đồng bộ toàn bộ hệ thống – bạn chỉ cần một đầu mối." />
+          <SectionHead eyebrow="Hệ thống" title="Mọi thành phần. Hoạt động như một." />
           <div className="grid grid-4">
             {s.system.map((f, i) => (
               <div key={f.title} className="feature reveal" data-delay={String(i)}>
@@ -178,13 +167,7 @@ export default async function SolutionPage({ params }: PageProps<"/giai-phap/[sl
       {products.length > 0 && (
         <section className={`section${s.compare ? "" : " theme-alt"}`}>
           <div className="container">
-            <div className="section-head reveal" style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between", alignItems: "end", gap: 16 }}>
-              <div>
-                <span className="eyebrow">Thiết bị gợi ý</span>
-                <h2 className="headline">Chính hãng, sẵn kho.</h2>
-              </div>
-              <MoreLink href={`/san-pham#${s.productGroups[0]}`}>Xem danh mục sản phẩm</MoreLink>
-            </div>
+            <LinkedHeading eyebrow="Thiết bị gợi ý" title="Chính hãng, sẵn kho" href={`/san-pham#${s.productGroups[0]}`} />
             <div className="grid grid-4">
               {products.map((p, i) => (
                 <div key={p.slug} className="reveal" data-delay={String(i)} style={{ display: "grid" }}>
@@ -200,13 +183,7 @@ export default async function SolutionPage({ params }: PageProps<"/giai-phap/[sl
       {projects.length > 0 && (
         <section id="du-an" className="section">
           <div className="container">
-            <div className="section-head reveal" style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between", alignItems: "end", gap: 16 }}>
-              <div>
-                <span className="eyebrow">Dự án thực tế</span>
-                <h2 className="headline">Đã triển khai bởi SKV.</h2>
-              </div>
-              <MoreLink href={`/du-an?giai-phap=${s.slug}`}>Xem thêm dự án</MoreLink>
-            </div>
+            <LinkedHeading eyebrow="Dự án thực tế" title="Đã triển khai bởi SKV" href={`/du-an?giai-phap=${s.slug}`} />
             <div className="grid grid-3">
               {projects.map((p, i) => (
                 <div key={p.slug} className="reveal" data-delay={String(i)}>

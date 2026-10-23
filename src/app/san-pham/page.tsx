@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { CtaBand, ProductCard } from "@/components/ui";
 import { productGroups } from "@/lib/content";
 
@@ -9,6 +10,13 @@ export const metadata: Metadata = {
   alternates: { canonical: "/san-pham" },
 };
 
+// Banner photos for the three main product lines (same images as the home page showcase).
+const banners: Record<string, { src: string; contain?: boolean }> = {
+  "man-hinh-led": { src: "/images/home/led.webp" },
+  "den-san-khau": { src: "/images/home/stage-light.webp" },
+  "hieu-ung": { src: "/images/home/effects.webp", contain: true },
+};
+
 export default function ProductsPage() {
   return (
     <>
@@ -16,8 +24,8 @@ export default function ProductsPage() {
         <div className="container">
           <span className="eyebrow reveal">Sản phẩm</span>
           <h1 className="display reveal">Thiết bị chính hãng cho mọi giải pháp.</h1>
-          <p className="subhead reveal" data-delay="1">
-            Một số sản phẩm tiêu biểu SKV đang phân phối. Mỗi dự án sẽ được tư vấn cấu hình và báo giá riêng.
+          <p className="subhead reveal muted" data-delay="1">
+            Chạm vào sản phẩm để nhận thông tin và báo giá.
           </p>
         </div>
       </section>
@@ -39,6 +47,11 @@ export default function ProductsPage() {
               <h2 className="headline">{g.name}</h2>
               <p className="subhead">{g.blurb}</p>
             </div>
+            {banners[g.id] && (
+              <div className={`group-banner reveal${banners[g.id].contain ? " contain" : ""}`}>
+                <Image src={banners[g.id].src} alt="" fill sizes="(min-width: 1260px) 1180px, 94vw" />
+              </div>
+            )}
             <div className="grid grid-4">
               {g.items.map((p, i) => (
                 <div key={p.slug} className="reveal" data-delay={String(i % 4)} style={{ display: "grid" }}>
@@ -50,10 +63,7 @@ export default function ProductsPage() {
         </section>
       ))}
 
-      <CtaBand
-        title="Cần thiết bị không có trong danh mục?"
-        subhead="SKV phân phối hơn 500 mã sản phẩm từ các thương hiệu hàng đầu. Gửi yêu cầu để nhận tư vấn và báo giá trong ngày."
-      />
+      <CtaBand title="Hơn 500 mã sản phẩm khác." />
     </>
   );
 }

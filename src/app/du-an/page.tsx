@@ -30,9 +30,8 @@ export default function ProjectsPage() {
         <div className="container">
           <span className="eyebrow reveal">Dự án</span>
           <h1 className="display reveal">Công trình nói thay lời.</h1>
-          <p className="subhead reveal" data-delay="1">
-            {siteInfo.stats[0].value} {siteInfo.stats[0].label} – từ hội trường cơ quan nhà nước, học viện, ngân hàng đến nhà hàng, nhà
-            thi đấu và trung tâm văn hóa.
+          <p className="subhead reveal muted" data-delay="1">
+            {siteInfo.stats[0].value} {siteInfo.stats[0].label}.
           </p>
         </div>
       </section>

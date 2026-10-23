@@ -4,8 +4,8 @@ date: '2023-12-21'
 location: bến xe Mỹ Đình
 solution: the-thao-cong-cong
 tags: []
-cover: /images/projects/skv-ban-giao-du-an-lap-dat-man-hinh-led-tivi-ghe-cho-tai-ben-xe-my-dinh/3.webp
-  /images/projects/skv-ban-giao-du-an-lap-dat-man-hinh-led-tivi-ghe-cho-tai-ben-xe-my-dinh/0.webp
+cover: >-
+  /images/projects/skv-ban-giao-du-an-lap-dat-man-hinh-led-tivi-ghe-cho-tai-ben-xe-my-dinh/3.webp
 gallery:
   - >-
     /images/projects/skv-ban-giao-du-an-lap-dat-man-hinh-led-tivi-ghe-cho-tai-ben-xe-my-dinh/0.webp

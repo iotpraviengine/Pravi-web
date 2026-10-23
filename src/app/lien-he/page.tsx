@@ -24,7 +24,7 @@ export default function ContactPage() {
           <span className="eyebrow reveal">Liên hệ</span>
           <h1 className="display reveal">Hãy cùng bắt đầu.</h1>
           <p className="subhead reveal" data-delay="1">
-            Gửi nhu cầu của bạn – kỹ thuật viên SKV sẽ liên hệ để khảo sát, tư vấn cấu hình và báo giá miễn phí.
+            Khảo sát, tư vấn và báo giá miễn phí.
           </p>
         </div>
       </section>

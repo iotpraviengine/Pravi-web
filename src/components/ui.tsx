@@ -55,19 +55,7 @@ export function Breadcrumb({ items }: { items: { href?: string; label: string }[
   );
 }
 
-export function LocalNav({
-  title,
-  links,
-  dark,
-  cta = "Nhận tư vấn",
-  ctaHref = "/lien-he",
-}: {
-  title: string;
-  links: { href: string; label: string }[];
-  dark?: boolean;
-  cta?: string;
-  ctaHref?: string;
-}) {
+export function LocalNav({ title, links, dark }: { title: string; links: { href: string; label: string }[]; dark?: boolean }) {
   return (
     <div className={`localnav${dark ? " theme-dark" : ""}`}>
       <div className="container localnav-inner">
@@ -78,9 +66,6 @@ export function LocalNav({
               {l.label}
             </a>
           ))}
-          <Link href={ctaHref} className="btn btn-primary btn-sm">
-            {cta}
-          </Link>
         </nav>
       </div>
     </div>
@@ -128,16 +113,20 @@ export function NewsCard({ post }: { post: Post }) {
 
 export function ProductCard({ product }: { product: Product }) {
   return (
-    <article className="product-card">
+    <Link
+      href={`/lien-he?san-pham=${encodeURIComponent(product.name)}`}
+      className="product-card"
+      aria-label={`${product.name} – yêu cầu thông tin và báo giá`}
+    >
       <div className="media">
-        <Image src={product.image} alt={product.name} fill sizes="(min-width: 1000px) 280px, (min-width: 640px) 45vw, 90vw" />
+        <Image src={product.image} alt="" fill sizes="(min-width: 1000px) 280px, (min-width: 640px) 45vw, 90vw" />
       </div>
       <div className="body">
         <span className="brand-name">{product.brand}</span>
         <h3>{product.name}</h3>
         {product.specs.length > 0 && (
           <dl>
-            {product.specs.map((s) => (
+            {product.specs.slice(0, 3).map((s) => (
               <div key={s.label}>
                 <dt>{s.label}</dt>
                 <dd>{s.value}</dd>
@@ -145,11 +134,8 @@ export function ProductCard({ product }: { product: Product }) {
             ))}
           </dl>
         )}
-        <Link href={`/lien-he?san-pham=${encodeURIComponent(product.name)}`} className="btn btn-secondary btn-sm">
-          Nhận báo giá
-        </Link>
       </div>
-    </article>
+    </Link>
   );
 }
 
@@ -169,41 +155,42 @@ export function Faq({ items }: { items: { q: string; a: string }[] }) {
   );
 }
 
-export function CtaBand({
-  title = "Bắt đầu dự án của bạn.",
-  subhead = "Kể cho chúng tôi về không gian và mục tiêu của bạn. Kỹ thuật viên SKV sẽ khảo sát, tư vấn cấu hình và báo giá miễn phí.",
-  alt = true,
-}: {
-  title?: string;
-  subhead?: string;
-  alt?: boolean;
-}) {
+export function CtaBand({ title = "Bắt đầu dự án của bạn.", alt = true }: { title?: string; alt?: boolean }) {
   const { contact } = siteInfo;
   return (
     <section className={`section cta-band${alt ? " theme-alt" : ""}`}>
       <div className="container reveal">
         <h2 className="headline">{title}</h2>
-        <p className="subhead">{subhead}</p>
-        <div className="actions center">
-          <Link href="/lien-he" className="btn btn-primary">
-            Nhận tư vấn miễn phí
-          </Link>
-          <a href={`tel:${contact.hotlineTel}`} className="btn btn-secondary">
-            Gọi {contact.hotline}
-          </a>
-        </div>
+        <p className="cta-phone">
+          <a href={`tel:${contact.hotlineTel}`}>{contact.hotline}</a>
+        </p>
         <div className="cta-contacts small muted">
           <a href={`mailto:${contact.email}`}>
             <Mail size={16} aria-hidden="true" /> {contact.email}
           </a>
           <a href={contact.zalo} target="_blank" rel="noopener noreferrer">
-            <Phone size={16} aria-hidden="true" /> Zalo {contact.hotline}
+            <Phone size={16} aria-hidden="true" /> Zalo
           </a>
           <span style={{ display: "inline-flex", alignItems: "center", gap: 8 }}>
-            <MapPin size={16} aria-hidden="true" /> Hà Nội · Hưng Yên · Thi công toàn quốc
+            <MapPin size={16} aria-hidden="true" /> Hà Nội · Hưng Yên · Toàn quốc
           </span>
         </div>
       </div>
     </section>
+  );
+}
+
+/** Section heading whose title is the link to the full list (replaces separate "see more" links). */
+export function LinkedHeading({ href, title, eyebrow }: { href: string; title: string; eyebrow?: string }) {
+  return (
+    <div className="section-head reveal">
+      {eyebrow && <span className="eyebrow">{eyebrow}</span>}
+      <h2 className="headline">
+        <Link href={href} className="title-link">
+          {title}
+          <ChevronRight size={36} strokeWidth={2} aria-hidden="true" />
+        </Link>
+      </h2>
+    </div>
   );
 }

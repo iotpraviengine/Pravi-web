@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { CtaBand, MoreLink, SectionHead } from "@/components/ui";
+import Link from "next/link";
+import { CtaBand, SectionHead } from "@/components/ui";
 import { brands } from "@/lib/content";
 
 export const metadata: Metadata = {
@@ -21,8 +22,7 @@ export default function PartnersPage() {
           <span className="eyebrow reveal">Đối tác & thương hiệu</span>
           <h1 className="display reveal">Chính hãng. Từ gốc.</h1>
           <p className="subhead reveal" data-delay="1" style={{ color: "var(--text-2)" }}>
-            Hợp tác trực tiếp với các tập đoàn hiển thị và ánh sáng hàng đầu – để mỗi thiết bị trong dự án của bạn có nguồn gốc rõ ràng,
-            bảo hành đúng chính sách hãng.
+            Hợp tác trực tiếp với các tập đoàn hiển thị và ánh sáng hàng đầu thế giới.
           </p>
           <div className="hero-media framed reveal" data-delay="2">
             <Image
@@ -58,7 +58,7 @@ export default function PartnersPage() {
 
       <section className="section theme-alt">
         <div className="container">
-          <SectionHead title="Hệ sinh thái thương hiệu." subhead="Đầy đủ thiết bị cho một hệ thống hiển thị – ánh sáng hoàn chỉnh." />
+          <SectionHead title="Hệ sinh thái thương hiệu." />
           <div className="grid grid-3">
             {others.map((b, i) => (
               <article key={b.name} className="card reveal" data-delay={String(i % 3)}>
@@ -80,19 +80,19 @@ export default function PartnersPage() {
           </div>
           <div className="reveal" data-delay="1">
             <span className="eyebrow">Triển lãm & sự kiện</span>
-            <h2 className="headline">Luôn cập nhật công nghệ mới nhất.</h2>
+            <h2 className="headline">
+              <Link href="/tin-tuc" className="title-link">
+                Luôn cập nhật công nghệ mới nhất.
+              </Link>
+            </h2>
             <p className="muted" style={{ marginTop: 16, fontSize: 19 }}>
-              SKV thường xuyên tham gia PLASE Show, NPSE Show, ISLE và InfoComm Asia – mang những công nghệ hiển thị, ánh sáng mới nhất
-              về Việt Nam.
-            </p>
-            <p style={{ marginTop: 20, fontSize: 19 }}>
-              <MoreLink href="/tin-tuc">Xem tin tức sự kiện</MoreLink>
+              PLASE Show · NPSE Show · ISLE · InfoComm Asia
             </p>
           </div>
         </div>
       </section>
 
-      <CtaBand title="Hợp tác cùng SKV." subhead="Đại lý, nhà thầu và đơn vị tổ chức sự kiện – liên hệ để trao đổi về chính sách hợp tác và hỗ trợ kỹ thuật." />
+      <CtaBand title="Hợp tác cùng SKV." />
     </>
   );
 }

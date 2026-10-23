@@ -4,7 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { CircleCheck } from "lucide-react";
 import { Icon } from "@/components/Icon";
-import { CtaBand, Emphasis, LocalNav, MoreLink, ProjectCard, SectionHead } from "@/components/ui";
+import { CtaBand, Emphasis, LinkedHeading, LocalNav, ProjectCard, SectionHead } from "@/components/ui";
 import { getProjects, getService, getSolution, services } from "@/lib/content";
 
 export function generateStaticParams() {
@@ -42,8 +42,6 @@ export default async function ServicePage({ params }: PageProps<"/dich-vu/[slug]
           { href: "#quy-trinh", label: "Quy trình" },
           { href: "#du-an", label: "Dự án" },
         ]}
-        cta="Yêu cầu báo giá"
-        ctaHref={`/lien-he?dich-vu=${s.slug}`}
       />
 
       <section className="hero" style={{ paddingBottom: "clamp(56px, 8vw, 96px)" }}>
@@ -53,14 +51,6 @@ export default async function ServicePage({ params }: PageProps<"/dich-vu/[slug]
           <p className="subhead reveal" data-delay="1">
             {s.subhead}
           </p>
-          <div className="actions center reveal" data-delay="2">
-            <Link href={`/lien-he?dich-vu=${s.slug}`} className="btn btn-primary">
-              Yêu cầu báo giá
-            </Link>
-            <a href="#quy-trinh" className="btn btn-secondary">
-              Xem quy trình
-            </a>
-          </div>
           <div className="hero-media framed reveal" data-delay="2">
             <Image src={s.hero} alt={s.name} fill priority sizes="(min-width: 1260px) 1180px, 94vw" />
           </div>
@@ -134,13 +124,7 @@ export default async function ServicePage({ params }: PageProps<"/dich-vu/[slug]
       {projects.length > 0 && (
         <section id="du-an" className="section">
           <div className="container">
-            <div className="section-head reveal" style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between", alignItems: "end", gap: 16 }}>
-              <div>
-                <span className="eyebrow">Dự án</span>
-                <h2 className="headline">Công trình đã thực hiện.</h2>
-              </div>
-              <MoreLink href="/du-an">Xem tất cả dự án</MoreLink>
-            </div>
+            <LinkedHeading eyebrow="Dự án" title="Công trình đã thực hiện" href="/du-an" />
             <div className="grid grid-3">
               {projects.map((p, i) => (
                 <div key={p.slug} className="reveal" data-delay={String(i)}>

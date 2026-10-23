@@ -6,8 +6,8 @@ solution: hoi-truong
 tags:
   - P2
   - Indoor
-cover: /images/projects/skv-thi-cong-100m2-man-hinh-led-p2-indoor-tai-trung-tam-van-hoa-tinh-ninh-binh/4.webp
-  /images/projects/skv-thi-cong-100m2-man-hinh-led-p2-indoor-tai-trung-tam-van-hoa-tinh-ninh-binh/0.webp
+cover: >-
+  /images/projects/skv-thi-cong-100m2-man-hinh-led-p2-indoor-tai-trung-tam-van-hoa-tinh-ninh-binh/4.webp
 gallery:
   - >-
     /images/projects/skv-thi-cong-100m2-man-hinh-led-p2-indoor-tai-trung-tam-van-hoa-tinh-ninh-binh/0.webp

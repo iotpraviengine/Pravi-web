@@ -34,11 +34,6 @@ export function Footer() {
   return (
     <footer className="footer">
       <div className="container">
-        <p className="footer-note">
-          Thông số kỹ thuật trên website mang tính tham khảo và có thể thay đổi theo từng phiên bản của nhà sản xuất. Vui lòng liên
-          hệ SKV Lighting để được tư vấn cấu hình và báo giá chính xác cho dự án của bạn.
-        </p>
-
         <div className="footer-cols">
           {columns.map((col) => (
             <div className="footer-col" key={col.title}>
@@ -55,7 +50,7 @@ export function Footer() {
         </div>
 
         <div className="footer-note" style={{ borderBottom: 0 }}>
-          <strong style={{ color: "#1d1d1f" }}>{siteInfo.legalName}</strong>
+          <strong style={{ color: "#f5f5f7" }}>{siteInfo.legalName}</strong>
           <br />
           {offices.map((o) => (
             <span key={o.label}>
