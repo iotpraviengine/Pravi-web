@@ -11,10 +11,8 @@ const showcase = [
     eyebrow: "BOE MLED · NovaStar",
     title: "Màn hình LED",
     line: "Sắc nét đến từng điểm ảnh.",
-    image: "/images/home/led.webp",
-    alt: "Màn hình LED BOE MLED lắp đặt trong không gian trưng bày",
-    // keep the ceiling visible so the headline sits above the screen, not on it
-    position: "center top",
+    image: "/images/home/led-boe.webp",
+    alt: "Màn hình LED BOE MLED hiển thị phong cảnh rừng núi",
   },
   {
     href: "/san-pham#den-san-khau",
@@ -52,7 +50,7 @@ export default function HomePage() {
       {showcase.map((s, i) => (
         <Link key={s.href} href={s.href} className={`showcase${s.contain ? " contain" : ""}`}>
           <div className="showcase-media">
-            <Image src={s.image} alt={s.alt} fill priority={i === 0} sizes="100vw" style={s.position ? { objectPosition: s.position } : undefined} />
+            <Image src={s.image} alt={s.alt} fill priority={i === 0} sizes="100vw" />
           </div>
           <span className="showcase-eyebrow">{s.eyebrow}</span>
           <h2 className="showcase-title">{s.title}</h2>

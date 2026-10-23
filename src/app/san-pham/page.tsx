@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 // Banner photos for the three main product lines (same images as the home page showcase).
 const banners: Record<string, { src: string; contain?: boolean }> = {
-  "man-hinh-led": { src: "/images/home/led.webp" },
+  "man-hinh-led": { src: "/images/home/led-boe.webp" },
   "den-san-khau": { src: "/images/home/stage-light.webp" },
   "hieu-ung": { src: "/images/home/effects.webp", contain: true },
 };
