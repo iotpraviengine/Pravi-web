@@ -76,7 +76,7 @@ export default async function HomePage() {
         {/* The whole picture links to the LED products; the copy sits above it and lets clicks through except on the call button. */}
         <Link href={href("/san-pham#man-hinh-led")} className="hero-video-link" aria-label={h.heroLink} />
         {mp4 ? (
-          <HeroVideo mp4={mp4} webm={videoFile("led-hero.webm")} mobileMp4={videoFile("led-hero-mobile.mp4")} poster={ledPoster} />
+          <HeroVideo mp4={mp4} webm={videoFile("led-hero.webm")} mobileMp4={videoFile("led-hero-mobile.mp4")} poster={videoFile("led-hero-poster.jpg") ?? ledPoster} />
         ) : (
           <LedPoster alt={h.posterAlt} />
         )}
