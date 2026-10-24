@@ -3,6 +3,8 @@ import path from "node:path";
 import Image, { getImageProps } from "next/image";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
+import type { CSSProperties } from "react";
+import { AmbientPlay } from "@/components/AmbientPlay";
 import { HeroVideo } from "@/components/HeroVideo";
 import { SolutionRail } from "@/components/SolutionRail";
 import { CtaBand, ProjectCard } from "@/components/ui";
@@ -51,6 +53,20 @@ const duo = [
   },
 ];
 
+// Ambient light inside the two panels. Values feed CSS custom properties (see "Living stage light" in globals.css).
+const beams = [
+  { x: 4, from: -24, to: 16, dur: 4.6, delay: 1.2 },
+  { x: 37, from: 18, to: -18, dur: 5.4, delay: 3 },
+  { x: 70, from: -12, to: 24, dur: 5, delay: 2 },
+];
+const hazes = [
+  { x: 44, dx: 18, dur: 8, delay: 0 },
+  { x: 30, dx: -12, dur: 9, delay: 3 },
+  { x: 52, dx: 8, dur: 8.5, delay: 5.5 },
+  { x: 38, dx: 22, dur: 9.5, delay: 7 },
+];
+const vars = (o: Record<string, number>) => Object.fromEntries(Object.entries(o).map(([k, v]) => [`--${k}`, v])) as CSSProperties;
+
 // Hand-picked: projects whose cover photo is a clean, finished shot.
 const featuredProjects = [
   "skv-thi-cong-man-hinh-led-co-lon-p2-5-indoor-tai-hoc-vien-chinh-sach",
@@ -88,11 +104,19 @@ export default function HomePage() {
       </section>
 
       {/* Stage lighting + effects: two columns that together match the LED panel */}
-      <section className="duo" aria-label="Đèn sân khấu và thiết bị hiệu ứng">
+      <section className="duo" data-ambient aria-label="Đèn sân khấu và thiết bị hiệu ứng">
         {duo.map((d) => (
           <Link key={d.href} href={d.href} className={`duo-panel duo-${d.tone}`}>
             <div className="duo-media">
               <Image src={d.image} alt={d.alt} fill sizes="(min-width: 734px) 50vw, 50vw" />
+            </div>
+            <div className="duo-fx" aria-hidden="true">
+              {d.tone === "violet"
+                ? beams.map((b, i) => <span key={i} style={vars(b)} />)
+                : [
+                    <span key="glow" className="glow" />,
+                    ...hazes.map((h, i) => <span key={i} className="haze" style={vars(h)} />),
+                  ]}
             </div>
             <div className="duo-copy">
               <span className="duo-eyebrow">{d.eyebrow}</span>
@@ -102,6 +126,7 @@ export default function HomePage() {
           </Link>
         ))}
       </section>
+      <AmbientPlay />
 
       {/* Solutions: one horizontal, swipeable row */}
       <SolutionRail

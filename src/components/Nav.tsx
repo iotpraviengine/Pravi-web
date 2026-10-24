@@ -80,14 +80,14 @@ export function Nav({ hotline, hotlineTel }: { hotline: string; hotlineTel: stri
       {open && (
         <div id="mobile-menu" className="mobile-menu">
           <ul>
-            {navItems.map((item) => (
-              <li key={item.href}>
+            {navItems.map((item, i) => (
+              <li key={item.href} style={{ "--i": i } as React.CSSProperties}>
                 <Link href={item.href} aria-current={isCurrent(item.href) ? "page" : undefined}>
                   {item.label}
                 </Link>
               </li>
             ))}
-            <li>
+            <li style={{ "--i": navItems.length } as React.CSSProperties}>
               <Link href="/lien-he">Liên hệ</Link>
             </li>
           </ul>
