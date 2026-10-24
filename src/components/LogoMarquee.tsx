@@ -4,7 +4,7 @@ import type { Brand } from "@/lib/content";
 type WithLogo = Brand & { logo: NonNullable<Brand["logo"]> };
 
 /**
- * Partner logos gliding sideways in an endless loop (pure CSS: the list is rendered twice and the
+ * Partner logos, in their own colours, gliding sideways in an endless loop (pure CSS: the list is rendered twice and the
  * track slides by exactly one copy). Wide wordmarks are drawn shorter than compact marks so every
  * logo carries about the same visual weight. Hovering holds it still; it rests off screen
  * (via AmbientPlay) and, for visitors who prefer reduced motion, becomes a still, wrapped row.
@@ -21,7 +21,8 @@ export function LogoMarquee({ brands, label }: { brands: Brand[]; label: string 
             alt={hidden ? "" : b.name}
             width={b.logo.width}
             height={b.logo.height}
-            sizes="320px"
+            unoptimized // served as prepared: crisp edges, no re-encode at a smaller width
+            loading="eager" // they slide into view; lazy loading would make them pop in
             style={{ height: `calc(var(--logo-h) * ${(1 / Math.pow(aspect, 0.35)).toFixed(3)})` }}
           />
         </li>

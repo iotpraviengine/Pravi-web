@@ -1821,11 +1821,6 @@ a.tile-link:hover .title {
 .marquee-item img {
   display: block;
   width: auto;
-  opacity: 0.82;
-  transition: opacity var(--dur-fast) var(--ease);
-}
-.marquee-item img:hover {
-  opacity: 1;
 }
 .marquee:hover .marquee-track,
 .marquee:not([data-playing="true"]) .marquee-track {

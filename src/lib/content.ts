@@ -65,7 +65,7 @@ export type Brand = {
   category: string;
   text: string;
   featured?: boolean;
-  /** White-on-transparent mark for dark backgrounds (public/images/brands/logos/). */
+  /** Mark on a transparent backdrop, readable on dark pages (public/images/brands/logos/). */
   logo?: { src: string; width: number; height: number };
 };
 
