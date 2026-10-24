@@ -91,6 +91,7 @@ Mọi nội dung nằm trong thư mục `content/`. Sửa file, chạy thử `np
 | Dự án | `content/projects/*.md` (mỗi dự án một file) |
 | Tin tức | `content/news/*.md` (mỗi bài một file) |
 | Hình ảnh | `public/images/…` |
+| Video nền khối Màn hình LED (trang chủ) | `public/videos/led-hero.mp4` – xem `public/videos/README.md` |
 
 ### Thêm một dự án mới
 

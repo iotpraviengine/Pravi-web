@@ -1,21 +1,18 @@
+import fs from "node:fs";
+import path from "node:path";
 import Image from "next/image";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
+import { HeroVideo } from "@/components/HeroVideo";
 import { CtaBand, ProjectCard } from "@/components/ui";
 import { brands, getProjects, solutions } from "@/lib/content";
 
-// The three product lines, in the order they appear. Each panel links to its group on /san-pham.
-const showcase = [
-  {
-    href: "/san-pham#man-hinh-led",
-    eyebrow: "BOE MLED · NovaStar",
-    title: "Màn hình LED",
-    line: "Sắc nét đến từng điểm ảnh.",
-    image: "/images/home/led-cob-banner.webp",
-    alt: "Màn hình LED COB – đỉnh cao công nghệ LED, độ phân giải 8K",
-    // a wide banner that carries its own headline: shown uncropped at its own aspect ratio
-    banner: true,
-  },
+// Background video for the LED panel: drop files into public/videos/ and they are picked up at build time.
+const videoFile = (name: string) => (fs.existsSync(path.join(process.cwd(), "public/videos", name)) ? `/videos/${name}` : undefined);
+const ledPoster = "/images/home/led-boe-poster.webp";
+
+// The two product lines below the LED video, side by side, each in its own colour world.
+const duo = [
   {
     href: "/san-pham#den-san-khau",
     eyebrow: "Moving head · Par · Laser",
@@ -23,15 +20,16 @@ const showcase = [
     line: "Ánh sáng làm nên khoảnh khắc.",
     image: "/images/home/stage-light.webp",
     alt: "Hệ thống đèn moving head chiếu tia trên sân khấu biểu diễn",
+    tone: "violet",
   },
   {
     href: "/san-pham#hieu-ung",
     eyebrow: "DJPOWER · SKV",
     title: "Thiết bị hiệu ứng",
-    line: "Khói, lửa, CO2 – cảm xúc bùng nổ.",
+    line: "Khói, lửa, CO2 – bùng nổ cảm xúc.",
     image: "/images/home/effects.webp",
     alt: "Máy tạo khói DJPOWER DSK-2000",
-    contain: true,
+    tone: "ember",
   },
 ];
 
@@ -43,22 +41,43 @@ const featuredProjects = [
 ];
 
 export default function HomePage() {
+  const mp4 = videoFile("led-hero.mp4");
   const projects = featuredProjects.map((slug) => getProjects().find((p) => p.slug === slug)).filter((p) => p !== undefined);
 
   return (
     <>
       <h1 className="sr-only">SKV Lighting – màn hình LED, đèn sân khấu và thiết bị hiệu ứng</h1>
 
-      {showcase.map((s, i) => (
-        <Link key={s.href} href={s.href} className={`showcase${s.contain ? " contain" : ""}${s.banner ? " banner" : ""}`}>
-          <div className="showcase-media">
-            <Image src={s.image} alt={s.alt} fill priority={i === 0} sizes="100vw" />
-          </div>
-          <span className="showcase-eyebrow">{s.eyebrow}</span>
-          <h2 className="showcase-title">{s.title}</h2>
-          <p className="showcase-line">{s.line}</p>
-        </Link>
-      ))}
+      {/* LED: full-screen video (or poster photo until the video is supplied) */}
+      <Link href="/san-pham#man-hinh-led" className="hero-video" aria-label="Màn hình LED – xem sản phẩm">
+        {mp4 ? (
+          <HeroVideo mp4={mp4} webm={videoFile("led-hero.webm")} mobileMp4={videoFile("led-hero-mobile.mp4")} poster={ledPoster} />
+        ) : (
+          <Image src={ledPoster} alt="Màn hình LED BOE MLED hiển thị phong cảnh rừng núi" fill priority sizes="100vw" className="hero-video-media" />
+        )}
+        <div className="hero-video-copy">
+          <span className="hero-video-eyebrow">Màn hình LED · BOE MLED · NovaStar</span>
+          <h2 className="hero-video-title">
+            <span className="accent">Sống động</span> đến từng điểm ảnh.
+          </h2>
+        </div>
+      </Link>
+
+      {/* Stage lighting + effects: two columns that together match the LED panel */}
+      <section className="duo" aria-label="Đèn sân khấu và thiết bị hiệu ứng">
+        {duo.map((d) => (
+          <Link key={d.href} href={d.href} className={`duo-panel duo-${d.tone}`}>
+            <div className="duo-media">
+              <Image src={d.image} alt={d.alt} fill sizes="(min-width: 734px) 50vw, 50vw" />
+            </div>
+            <div className="duo-copy">
+              <span className="duo-eyebrow">{d.eyebrow}</span>
+              <h2 className="duo-title">{d.title}</h2>
+              <p className="duo-line">{d.line}</p>
+            </div>
+          </Link>
+        ))}
+      </section>
 
       {/* Solutions */}
       <section className="section" aria-labelledby="solutions-title">

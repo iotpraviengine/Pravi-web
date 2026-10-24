@@ -1554,84 +1554,6 @@ a.card:hover {
   }
 }
 
-/* ---------- full-screen product showcase (home) ---------- */
-
-.showcase {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: min(calc(100svh - var(--nav-h)), 980px);
-  padding: clamp(40px, 6vh, 72px) var(--gutter) 40px;
-  overflow: hidden;
-  background: #000;
-  color: #f5f5f7;
-  text-align: center;
-  text-decoration: none !important;
-  isolation: isolate;
-}
-.showcase + .showcase {
-  border-top: 1px solid #000;
-}
-.showcase-media {
-  position: absolute;
-  inset: 0;
-  z-index: -2;
-}
-.showcase-media img {
-  object-fit: cover;
-  transition: transform 1.6s var(--ease-out);
-}
-.showcase.contain .showcase-media {
-  inset: 22% 0 0;
-}
-.showcase.contain .showcase-media img {
-  object-fit: contain;
-}
-.showcase:hover .showcase-media img {
-  transform: scale(1.03);
-}
-/* darkens the top so white headlines stay readable on bright photos */
-.showcase::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.72) 0%, rgba(0, 0, 0, 0.32) 32%, rgba(0, 0, 0, 0) 55%, rgba(0, 0, 0, 0.35) 100%);
-}
-.showcase-eyebrow {
-  font-size: clamp(14px, 1.3vw, 17px);
-  font-weight: 600;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: rgba(245, 245, 247, 0.72);
-}
-.showcase-title {
-  margin-top: 10px;
-  font-size: clamp(44px, 7.4vw, 96px);
-  line-height: 1.02;
-  font-weight: 600;
-  letter-spacing: -0.03em;
-}
-.showcase-line {
-  margin-top: 14px;
-  font-size: clamp(19px, 2.1vw, 28px);
-  line-height: 1.25;
-  color: rgba(245, 245, 247, 0.86);
-}
-.showcase-cue {
-  margin-top: auto;
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  font-size: 15px;
-  color: rgba(245, 245, 247, 0.7);
-  transition: color var(--dur) var(--ease);
-}
-.showcase:hover .showcase-cue {
-  color: #fff;
-}
-
 /* ---------- solution grid (image tiles with names) ---------- */
 
 .solution-grid {
@@ -1757,63 +1679,174 @@ a.tile-link:hover .title {
   }
 }
 
-/* phones: text on black above, the photo below it, so the product isn't cropped away */
-@media (max-width: 733px) {
-  .showcase {
-    min-height: 620px;
-  }
-  .showcase-media,
-  .showcase.contain .showcase-media {
-    inset: 220px 0 0;
-  }
-  .showcase::after {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.3) 100%);
-  }
+/* ---------- home: LED video + stage/effects duo ---------- */
+
+:root {
+  /* the LED panel height; the stage + effects row below matches it */
+  --panel-h: min(calc(100svh - var(--nav-h)), 980px);
+  --font-mono: "SF Mono", "Geist Mono", ui-monospace, Menlo, Consolas, monospace;
 }
 
-/* wide banner panel (image already contains its own headline) */
-.showcase.banner {
-  min-height: 0;
-  aspect-ratio: 1903 / 590;
-  padding: 0;
-}
-.showcase.banner::after {
-  display: none;
-}
-.showcase.banner .showcase-eyebrow,
-.showcase.banner .showcase-title,
-.showcase.banner .showcase-line {
-  position: absolute;
-  width: 1px;
-  height: 1px;
+.hero-video {
+  position: relative;
+  display: block;
+  height: var(--panel-h);
+  min-height: 520px;
   overflow: hidden;
-  clip: rect(0 0 0 0);
-  white-space: nowrap;
+  background: #000;
+  color: #fff;
+  text-decoration: none !important;
+  isolation: isolate;
 }
+.hero-video-media {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+/* darkens the lower-left corner where the headline sits */
+.hero-video::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.82) 0%, rgba(0, 0, 0, 0.35) 38%, rgba(0, 0, 0, 0) 62%),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0) 55%);
+}
+.hero-video-copy {
+  position: absolute;
+  left: max(var(--gutter), calc((100% - var(--container)) / 2));
+  right: var(--gutter);
+  bottom: clamp(36px, 8vh, 88px);
+  max-width: 900px;
+}
+.hero-video-eyebrow,
+.duo-eyebrow {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+.hero-video-eyebrow {
+  color: rgba(255, 255, 255, 0.78);
+}
+.hero-video-title {
+  margin-top: 14px;
+  font-size: clamp(38px, 6.4vw, 88px);
+  line-height: 1.04;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  text-wrap: balance;
+}
+.hero-video-title .accent {
+  color: #ff5a3c;
+}
+
+.duo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  padding: 12px;
+  height: var(--panel-h);
+  min-height: 520px;
+  background: #000;
+}
+.duo-panel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: clamp(28px, 5vh, 64px) clamp(12px, 2.4vw, 40px) 0;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  color: #fff;
+  text-decoration: none !important;
+  isolation: isolate;
+}
+.duo-media {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+.duo-media img {
+  object-fit: cover;
+  transition: transform 1.2s var(--ease-out);
+}
+.duo-panel:hover .duo-media img {
+  transform: scale(1.04);
+}
+.duo-title {
+  margin-top: 10px;
+  font-size: clamp(24px, 4vw, 60px);
+  line-height: 1.05;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+.duo-line {
+  margin-top: 10px;
+  font-size: clamp(14px, 1.6vw, 21px);
+  line-height: 1.3;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+/* Stage lighting: violet → magenta world */
+.duo-violet {
+  background: radial-gradient(120% 80% at 50% 0%, #4a1470 0%, #1d0830 45%, #0a0312 100%);
+}
+.duo-violet .duo-eyebrow {
+  color: #e2b6ff;
+}
+.duo-violet::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: linear-gradient(180deg, rgba(29, 8, 48, 0.92) 0%, rgba(29, 8, 48, 0.4) 34%, rgba(29, 8, 48, 0) 58%, rgba(10, 3, 18, 0.55) 100%);
+}
+
+/* Effects: warm ember world – the machine floats on a fire-coloured glow */
+.duo-ember {
+  background: radial-gradient(70% 45% at 50% 66%, rgba(244, 64, 37, 0.6) 0%, rgba(140, 30, 12, 0.35) 40%, rgba(0, 0, 0, 0) 75%),
+    linear-gradient(180deg, #170704 0%, #060201 100%);
+}
+.duo-ember .duo-eyebrow {
+  color: #ffb48f;
+}
+.duo-ember .duo-media {
+  inset: 34% 6% 6%;
+  /* on the layer itself (not the img), so it blends with the panel: the photo's black backdrop drops out and the glow shows through */
+  mix-blend-mode: lighten;
+}
+.duo-ember .duo-media img {
+  object-fit: contain;
+}
+
 @media (max-width: 733px) {
-  /* banner text is too small on phones: show our headline above, banner below at its own ratio */
-  .showcase.banner {
-    aspect-ratio: auto;
-    min-height: 0;
-    padding: 40px 0 0;
+  .duo {
+    gap: 8px;
+    padding: 8px;
   }
-  .showcase.banner .showcase-eyebrow,
-  .showcase.banner .showcase-title,
-  .showcase.banner .showcase-line {
-    position: static;
-    width: auto;
-    height: auto;
-    overflow: visible;
-    clip: auto;
-    white-space: normal;
-    padding-inline: var(--gutter);
+  .duo-panel {
+    padding: 28px 10px 0;
+    border-radius: var(--radius-md);
   }
-  .showcase.banner .showcase-media {
-    position: relative;
-    inset: auto;
-    order: 2;
-    width: 100%;
-    margin-top: 28px;
-    aspect-ratio: 1903 / 590;
+  .duo-eyebrow {
+    display: none;
+  }
+  .duo-title {
+    margin-top: 0;
+  }
+  /* let the machine overflow the narrow column sideways – only its black backdrop gets cropped */
+  .duo-ember .duo-media {
+    inset: 34% -18% 4%;
+  }
+  /* portrait crop of the landscape poster: keep the forest side, not the on-screen text */
+  img.hero-video-media {
+    object-position: 100% 50%;
   }
 }
