@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Menu, Phone, X } from "lucide-react";
+import { ThemeToggle } from "./ThemeToggle";
 
 export const navItems = [
   { href: "/giai-phap", label: "Giải pháp" },
@@ -70,10 +71,13 @@ export function Nav({ hotline, hotlineTel }: { hotline: string; hotlineTel: stri
             ))}
           </ul>
   
-          <Link href="/lien-he" className="btn btn-primary btn-sm nav-cta">
-            Liên hệ tư vấn
-          </Link>
-  
+          <div className="nav-actions">
+            <ThemeToggle />
+            <Link href="/lien-he" className="btn btn-primary btn-sm nav-cta">
+              Liên hệ tư vấn
+            </Link>
+          </div>
+
           <button
             type="button"
             className="nav-toggle"

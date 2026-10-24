@@ -14,17 +14,28 @@ export function LogoMarquee({ brands, label }: { brands: Brand[]; label: string 
   const copy = (hidden: boolean) =>
     items.map((b) => {
       const aspect = b.logo.width / b.logo.height;
+      const style = { height: `calc(var(--logo-h) * ${(1 / Math.pow(aspect, 0.35)).toFixed(3)})` };
+      // one version per background: black ink lightened for dark pages, kept black for light ones.
+      // CSS hides the other, and a hidden lazy image is never fetched (the lazy-load margin is far
+      // wider than one logo, so the visible ones are in before they slide into view).
+      const variants = [
+        { src: b.logo.src, className: "logo-on-dark" },
+        { src: b.logo.src.replace(/\.png$/, "-light.png"), className: "logo-on-light" },
+      ];
       return (
         <li key={`${hidden ? "b" : "a"}-${b.name}`} className="marquee-item" aria-hidden={hidden || undefined}>
-          <Image
-            src={b.logo.src}
-            alt={hidden ? "" : b.name}
-            width={b.logo.width}
-            height={b.logo.height}
-            unoptimized // served as prepared: crisp edges, no re-encode at a smaller width
-            loading="eager" // they slide into view; lazy loading would make them pop in
-            style={{ height: `calc(var(--logo-h) * ${(1 / Math.pow(aspect, 0.35)).toFixed(3)})` }}
-          />
+          {variants.map((v) => (
+            <Image
+              key={v.className}
+              src={v.src}
+              alt={hidden ? "" : b.name}
+              width={b.logo.width}
+              height={b.logo.height}
+              unoptimized // served as prepared: crisp edges, no re-encode at a smaller width
+              className={v.className}
+              style={style}
+            />
+          ))}
         </li>
       );
     });
