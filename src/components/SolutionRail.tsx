@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useLayoutEffect, useRef, useState } from "react";
 import { ChevronRight, Pause, Play } from "lucide-react";
 
 export type RailItem = { slug: string; name: string; line: string; image: string; focus?: string };
@@ -14,6 +14,10 @@ const SLIDE_MS = 5000;
  * the active dot stretches into a progress bar, the other dots jump to their card, and a
  * pause/play button stops the rotation. It also holds still while off screen, while keyboard
  * focus is inside, and starts paused for visitors who prefer reduced motion. Swiping still works.
+ *
+ * The row is a loop: a copy of the last slide sits before the first and a copy of the first after
+ * the last, so there is always a neighbour on both sides. When the row comes to rest on a copy it
+ * jumps, without animation, to the real slide it shows (they look identical, so nothing moves).
  */
 export function SolutionRail({ items, title, href }: { items: RailItem[]; title: string; href: string }) {
   const section = useRef<HTMLElement>(null);
@@ -23,12 +27,15 @@ export function SolutionRail({ items, title, href }: { items: RailItem[]; title:
   const [paused, setPaused] = useState(false);
   const [inView, setInView] = useState(false);
   const [focusInside, setFocusInside] = useState(false);
+  // the copies are added after hydration (the server renders the plain row)
+  const [looped, setLooped] = useState(false);
   const elapsed = useRef(0);
-  const programmatic = useRef(0); // timestamp until which scroll events come from our own scrollTo
+  const n = items.length;
 
   useEffect(() => {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) setPaused(true);
-  }, []);
+    setLooped(n > 1);
+  }, [n]);
 
   // only rotate while the row is on screen
   useEffect(() => {
@@ -39,37 +46,55 @@ export function SolutionRail({ items, title, href }: { items: RailItem[]; title:
     return () => io.disconnect();
   }, []);
 
-  const goTo = useCallback((i: number) => {
-    const el = track.current;
-    const card = el?.children[i] as HTMLElement | undefined;
-    if (!el || !card) return;
+  /** Scroll position that brings the slide at track position `pos` into place. */
+  const leftOf = (el: HTMLElement, pos: number) => {
+    const card = el.children[pos] as HTMLElement | undefined;
     const inset = parseFloat(getComputedStyle(el).paddingLeft) || 0;
+    return card ? card.offsetLeft - inset : 0;
+  };
+  /** Track position of real slide i (shifted by one once the leading copy is in). */
+  const posOf = useCallback((i: number) => (looped ? i + 1 : i), [looped]);
+
+  // once the copies are in, start on the real first slide, before the browser paints
+  useLayoutEffect(() => {
+    const el = track.current;
+    if (looped && el) el.scrollLeft = leftOf(el, 1);
+  }, [looped]);
+
+  const scrollToPos = useCallback((pos: number, slide: number) => {
+    const el = track.current;
+    if (!el) return;
     const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    programmatic.current = performance.now() + 900;
-    el.scrollTo({ left: card.offsetLeft - inset, behavior: reduce ? "auto" : "smooth" });
+    el.scrollTo({ left: leftOf(el, pos), behavior: reduce ? "auto" : "smooth" });
     elapsed.current = 0;
-    setActive(i);
+    setActive(slide);
   }, []);
 
-  // keep the dots in step when the visitor swipes or scrolls the row by hand
+  const goTo = useCallback((i: number) => scrollToPos(posOf(i), i), [scrollToPos, posOf]);
+  // forward always moves right: from the last slide that is onto the copy of the first
+  const next = useCallback(() => scrollToPos(posOf(active) + 1, (active + 1) % n), [scrollToPos, posOf, active, n]);
+
+  // when the row comes to rest: hop off a copy onto its real slide, and keep the dots in step with swipes
   useEffect(() => {
     const el = track.current;
     if (!el) return;
     let t: ReturnType<typeof setTimeout>;
     const onScroll = () => {
-      if (performance.now() < programmatic.current) return;
       clearTimeout(t);
       t = setTimeout(() => {
-        const inset = parseFloat(getComputedStyle(el).paddingLeft) || 0;
-        const atEnd = el.scrollLeft + el.clientWidth >= el.scrollWidth - 4;
-        let best = 0;
+        let pos = 0;
         let dist = Infinity;
-        [...el.children].forEach((c, i) => {
-          const d = Math.abs((c as HTMLElement).offsetLeft - inset - el.scrollLeft);
-          if (d < dist) [dist, best] = [d, i];
+        for (let p = 0; p < el.children.length; p++) {
+          const d = Math.abs(leftOf(el, p) - el.scrollLeft);
+          if (d < dist) [dist, pos] = [d, p];
+        }
+        if (looped && pos === 0) el.scrollLeft = leftOf(el, (pos = n));
+        else if (looped && pos === n + 1) el.scrollLeft = leftOf(el, (pos = 1));
+        const slide = looped ? pos - 1 : pos;
+        setActive((a) => {
+          if (a !== slide) elapsed.current = 0;
+          return slide;
         });
-        elapsed.current = 0;
-        setActive(atEnd ? el.children.length - 1 : best);
       }, 120);
     };
     el.addEventListener("scroll", onScroll, { passive: true });
@@ -77,7 +102,7 @@ export function SolutionRail({ items, title, href }: { items: RailItem[]; title:
       el.removeEventListener("scroll", onScroll);
       clearTimeout(t);
     };
-  }, []);
+  }, [looped, n]);
 
   // the timer: drives the progress bar directly (no re-render per frame) and advances when full
   const running = !paused && inView && !focusInside;
@@ -91,14 +116,37 @@ export function SolutionRail({ items, title, href }: { items: RailItem[]; title:
       last = now;
       if (fill.current) fill.current.style.transform = `scaleX(${Math.min(elapsed.current / SLIDE_MS, 1)})`;
       if (elapsed.current >= SLIDE_MS) {
-        goTo((active + 1) % items.length);
+        next();
         return;
       }
       raf = requestAnimationFrame(tick);
     };
     raf = requestAnimationFrame(tick);
     return () => cancelAnimationFrame(raf);
-  }, [running, active, items.length, goTo]);
+  }, [running, next]);
+
+  const slide = (s: RailItem, i: number, copy?: "before" | "after") => (
+    <li
+      key={copy ? `${copy}-${s.slug}` : s.slug}
+      className={copy ? "rail-item" : "rail-item reveal"}
+      data-active={i === active ? "true" : undefined}
+      aria-roledescription={copy ? undefined : "slide"}
+      aria-label={copy ? undefined : `${i + 1} / ${n}: ${s.name}`}
+      aria-hidden={copy ? true : undefined}
+      inert={copy ? true : undefined}
+    >
+      {/* every slide shares one frame; the picture fills it, cropped around its focus, with the caption on a scrim */}
+      <Link href={`/giai-phap/${s.slug}`} className="rail-card">
+        <div className="rail-media">
+          <Image src={s.image} alt="" fill sizes="(min-width: 734px) 1100px, 92vw" style={{ objectPosition: s.focus }} />
+        </div>
+        <div className="rail-caption">
+          <h3 className="rail-name">{s.name}</h3>
+          <p className="rail-line">{s.line}</p>
+        </div>
+      </Link>
+    </li>
+  );
 
   return (
     <section
@@ -120,26 +168,9 @@ export function SolutionRail({ items, title, href }: { items: RailItem[]; title:
       </div>
 
       <ul ref={track} className="rail-track" aria-label={title}>
-        {items.map((s, i) => (
-          <li
-            key={s.slug}
-            className="rail-item reveal"
-            data-active={i === active ? "true" : undefined}
-            aria-roledescription="slide"
-            aria-label={`${i + 1} / ${items.length}: ${s.name}`}
-          >
-            {/* every slide shares one frame; the picture fills it, cropped around its focus, with the caption on a scrim */}
-            <Link href={`/giai-phap/${s.slug}`} className="rail-card">
-              <div className="rail-media">
-                <Image src={s.image} alt="" fill sizes="(min-width: 734px) 1100px, 92vw" style={{ objectPosition: s.focus }} />
-              </div>
-              <div className="rail-caption">
-                <h3 className="rail-name">{s.name}</h3>
-                <p className="rail-line">{s.line}</p>
-              </div>
-            </Link>
-          </li>
-        ))}
+        {looped && slide(items[n - 1], n - 1, "before")}
+        {items.map((s, i) => slide(s, i))}
+        {looped && slide(items[0], 0, "after")}
       </ul>
 
       <div className="rail-nav" role="group" aria-label="Điều khiển băng chuyền giải pháp">
