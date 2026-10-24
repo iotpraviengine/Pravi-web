@@ -44,7 +44,7 @@ export function SolutionRail({ items, title, href }: { items: RailItem[]; title:
 
   return (
     <section className="rail section" aria-labelledby="solutions-title">
-      <div className="container rail-head">
+      <div className="container rail-head reveal">
         <h2 id="solutions-title" className="headline">
           <Link href={href} className="title-link">
             {title}
@@ -63,7 +63,7 @@ export function SolutionRail({ items, title, href }: { items: RailItem[]; title:
 
       <ul ref={track} className="rail-track" aria-label={title}>
         {items.map((s) => (
-          <li key={s.slug} className="rail-item">
+          <li key={s.slug} className="rail-item reveal">
             <Link href={`/giai-phap/${s.slug}`} className="rail-card">
               <div className="rail-media">
                 <Image src={s.image} alt="" fill sizes="(min-width: 1000px) 400px, 78vw" />

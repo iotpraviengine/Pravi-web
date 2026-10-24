@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 import { FloatingContact } from "@/components/FloatingContact";
+import { ScrollReveal } from "@/components/ScrollReveal";
 import { siteInfo } from "@/lib/content";
 import "./globals.css";
 
@@ -63,6 +64,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <main id="main">{children}</main>
         <Footer />
         <FloatingContact contact={siteInfo.contact} />
+        <ScrollReveal />
       </body>
     </html>
   );

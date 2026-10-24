@@ -106,7 +106,7 @@ export default function HomePage() {
       {/* Stage lighting + effects: two columns that together match the LED panel */}
       <section className="duo" data-ambient aria-label="Đèn sân khấu và thiết bị hiệu ứng">
         {duo.map((d) => (
-          <Link key={d.href} href={d.href} className={`duo-panel duo-${d.tone}`}>
+          <Link key={d.href} href={d.href} className={`duo-panel duo-${d.tone} reveal`}>
             <div className="duo-media">
               <Image src={d.image} alt={d.alt} fill sizes="(min-width: 734px) 50vw, 50vw" />
             </div>
