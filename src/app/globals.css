@@ -2003,7 +2003,7 @@ a.tile-link:hover .title {
 :root[data-theme="light"] .marquee-item .logo-on-light {
   display: block;
 }
-.marquee:hover .marquee-track,
+/* rests only while off screen (hovering does not stop it) */
 .marquee:not([data-playing="true"]) .marquee-track {
   animation-play-state: paused;
 }

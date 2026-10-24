@@ -6,7 +6,7 @@ type WithLogo = Brand & { logo: NonNullable<Brand["logo"]> };
 /**
  * Partner logos, in their own colours, gliding sideways in an endless loop (pure CSS: the list is rendered twice and the
  * track slides by exactly one copy). Wide wordmarks are drawn shorter than compact marks so every
- * logo carries about the same visual weight. Hovering holds it still; it rests off screen
+ * logo carries about the same visual weight. It keeps moving under the pointer; it rests off screen
  * (via AmbientPlay) and, for visitors who prefer reduced motion, becomes a still, wrapped row.
  */
 export function LogoMarquee({ brands, label }: { brands: Brand[]; label: string }) {
