@@ -2077,13 +2077,22 @@ a.tile-link:hover .title {
 
 /* ---- 1. Opening of the LED panel (seen once per visit: expressive is fine) ---- */
 
-/* the picture settles from a slight push-in */
+/* the picture settles from a slight push-in; a video only fades in (scaling it while its first frames
+   decode is what makes a background video stutter) */
 .hero-video-media {
   animation: hero-settle 2.4s var(--ease-out-expo) both;
+}
+video.hero-video-media {
+  animation: hero-fade 1.2s var(--ease-out-expo) both;
 }
 @keyframes hero-settle {
   from {
     transform: scale(1.07);
+  }
+}
+@keyframes hero-fade {
+  from {
+    opacity: 0;
   }
 }
 /* headline → supporting line → call button materialise in order (opacity + rise + blur) */
@@ -2319,16 +2328,17 @@ a.tile-link:active .tile-media {
 }
 .globalnav.is-overlay::after {
   background: var(--glass);
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
-  backdrop-filter: saturate(180%) blur(20px);
   border-bottom: 1px solid var(--glass-line);
   opacity: 0;
 }
 .globalnav.is-overlay[data-solid="true"]::before {
   opacity: 0;
 }
+/* the frosted blur is only switched on once the bar turns solid, so it never re-blurs the playing video */
 .globalnav.is-overlay[data-solid="true"]::after {
   opacity: 1;
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
 }
 /* the LED panel now starts under the bar, so it takes the full first screen */
 .hero-video {

@@ -13,15 +13,16 @@ import { brands, getProjects, siteInfo, solutions } from "@/lib/content";
 
 // Background video for the LED panel: drop files into public/videos/ and they are picked up at build time.
 const videoFile = (name: string) => (fs.existsSync(path.join(process.cwd(), "public/videos", name)) ? `/videos/${name}` : undefined);
-// Wide screens: the poster with its on-screen text blurred out, so nothing competes with the headline.
-const ledPoster = "/images/home/led-boe-poster-clean.webp";
-// Narrow screens get the right-hand crop of the poster: the full photo carries on-screen text that clashes with our headline.
-const ledPosterNarrow = "/images/home/led-boe-poster-narrow.webp";
+// Stand-in until the video arrives: only the picture on the LED wall (no room around it), so it fills the panel edge to edge.
+// Its blurred-out on-screen text sits under the headline's scrim; narrow screens get the clean lower right part
+// (below the BOE mark printed on the picture, which would sit under the menu button).
+const ledPoster = "/images/home/led-boe-screen.webp";
+const ledPosterNarrow = "/images/home/led-boe-screen-portrait.webp";
 
 function LedPoster() {
   const common = { alt: "Màn hình LED BOE MLED hiển thị phong cảnh rừng núi", sizes: "100vw", priority: true };
-  const { props: { srcSet: wide, ...rest } } = getImageProps({ ...common, src: ledPoster, width: 1454, height: 910 });
-  const { props: { srcSet: narrow } } = getImageProps({ ...common, src: ledPosterNarrow, width: 594, height: 910 });
+  const { props: { srcSet: wide, ...rest } } = getImageProps({ ...common, src: ledPoster, width: 1196, height: 664 });
+  const { props: { srcSet: narrow } } = getImageProps({ ...common, src: ledPosterNarrow, width: 350, height: 564 });
   return (
     <picture>
       <source media="(max-width: 1023px)" srcSet={narrow} />
