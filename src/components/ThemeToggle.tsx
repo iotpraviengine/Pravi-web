@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { Moon, Sun } from "lucide-react";
+import { useUi } from "@/i18n/client";
 
 export const THEME_KEY = "skv-theme";
 type Theme = "dark" | "light";
@@ -11,6 +12,7 @@ export const themeScript = `try{if(localStorage.getItem("${THEME_KEY}")==="light
 
 /** Sun / moon switch in the bar: flips the whole site between dark and light and remembers the choice. */
 export function ThemeToggle() {
+  const ui = useUi().theme;
   // null until mounted: the server cannot know the saved choice
   const [theme, setTheme] = useState<Theme | null>(null);
 
@@ -36,8 +38,8 @@ export function ThemeToggle() {
       type="button"
       className="theme-toggle"
       onClick={flip}
-      aria-label={light ? "Chuyển sang nền tối" : "Chuyển sang nền sáng"}
-      title={light ? "Nền tối" : "Nền sáng"}
+      aria-label={light ? ui.toDark : ui.toLight}
+      title={light ? ui.dark : ui.light}
     >
       {/* both icons are drawn; CSS shows the one for the theme in effect, so it is right before hydration too */}
       <Sun size={18} aria-hidden="true" className="theme-icon-sun" />

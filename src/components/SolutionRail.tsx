@@ -4,6 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { useCallback, useEffect, useLayoutEffect, useRef, useState } from "react";
 import { ChevronRight, Pause, Play } from "lucide-react";
+import { fmt, localize } from "@/i18n/config";
+import { useLocalePath, useUi } from "@/i18n/client";
 
 export type RailItem = { slug: string; name: string; line: string; image: string; focus?: string };
 
@@ -20,6 +22,8 @@ const SLIDE_MS = 5000;
  * jumps, without animation, to the real slide it shows (they look identical, so nothing moves).
  */
 export function SolutionRail({ items, title, href }: { items: RailItem[]; title: string; href: string }) {
+  const ui = useUi().rail;
+  const { locale } = useLocalePath();
   const section = useRef<HTMLElement>(null);
   const track = useRef<HTMLUListElement>(null);
   const fill = useRef<HTMLSpanElement>(null);
@@ -136,7 +140,7 @@ export function SolutionRail({ items, title, href }: { items: RailItem[]; title:
       inert={copy ? true : undefined}
     >
       {/* every slide shares one frame; the picture fills it, cropped around its focus, with the caption on a scrim */}
-      <Link href={`/giai-phap/${s.slug}`} className="rail-card">
+      <Link href={localize(locale, `/giai-phap/${s.slug}`)} className="rail-card">
         <div className="rail-media">
           <Image src={s.image} alt="" fill sizes="(min-width: 734px) 1100px, 92vw" style={{ objectPosition: s.focus }} />
         </div>
@@ -173,7 +177,7 @@ export function SolutionRail({ items, title, href }: { items: RailItem[]; title:
         {looped && slide(items[0], 0, "after")}
       </ul>
 
-      <div className="rail-nav" role="group" aria-label="Điều khiển băng chuyền giải pháp">
+      <div className="rail-nav" role="group" aria-label={ui.controls}>
         <div className="rail-dots">
           {items.map((s, i) => (
             <button
@@ -181,7 +185,7 @@ export function SolutionRail({ items, title, href }: { items: RailItem[]; title:
               type="button"
               className="rail-dot"
               aria-current={i === active ? "true" : undefined}
-              aria-label={`Xem ${s.name}`}
+              aria-label={fmt(ui.show, { name: s.name })}
               onClick={() => goTo(i)}
             >
               {i === active && <span ref={fill} className="rail-dot-fill" />}
@@ -192,7 +196,7 @@ export function SolutionRail({ items, title, href }: { items: RailItem[]; title:
           type="button"
           className="rail-play"
           aria-pressed={paused}
-          aria-label={paused ? "Tiếp tục tự trượt" : "Tạm dừng tự trượt"}
+          aria-label={paused ? ui.play : ui.pause}
           onClick={() => setPaused((p) => !p)}
         >
           {paused ? <Play size={20} fill="currentColor" aria-hidden="true" /> : <Pause size={20} fill="currentColor" aria-hidden="true" />}

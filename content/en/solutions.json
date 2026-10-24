@@ -1,0 +1,321 @@
+[
+  {
+    "slug": "hoi-truong",
+    "name": "Auditoriums & Cultural Centers",
+    "short": "Auditoriums",
+    "headline": "Auditoriums. Sharp all the way to the back row.",
+    "subhead": "LED displays, stage lighting and an integrated control system for conferences, ceremonies and performances.",
+    "tileHeadline": "Sharp all the way to the back row.",
+    "theme": "dark",
+    "hero": "/images/solutions/hoi-truong.webp",
+    "heroFocus": "center 45%",
+    "gallery": ["/images/solutions/hoi-truong-2.webp", "/images/solutions/hoi-truong-3.webp", "/images/solutions/hoi-truong-4.webp"],
+    "intro": "Projectors wash out when the lights come on, and printed backdrops have to be replaced after every event. **An auditorium LED screen** stays sharp in any lighting, changes content in seconds and keeps running reliably for **more than 10 years**.",
+    "highlights": [
+      { "value": "800–1,500", "unit": "nits", "label": "Bright enough to stay clear with every house light on" },
+      { "value": "100,000", "unit": "hours", "label": "LED lifespan, equal to 8–10 years of use" },
+      { "value": "P1.86–P3", "unit": "", "label": "Pixel pitch matched to every viewing distance" }
+    ],
+    "needs": [
+      { "icon": "Presentation", "title": "Conferences & seminars", "text": "Slides, reports and charts shown clearly to a hall of hundreds." },
+      { "icon": "PartyPopper", "title": "Ceremonies & performances", "text": "Dynamic backdrops replace printed ones, changing theme for every act with a single click." },
+      { "icon": "Video", "title": "Live broadcast", "text": "Combine cameras, livestreams and multiple video sources on one large screen." }
+    ],
+    "system": [
+      { "icon": "Monitor", "title": "Indoor LED display", "text": "P1.86–P3 cabinets from BOE, Ledman and GLOSHINE, seamlessly tiled to fit your stage." },
+      { "icon": "Cpu", "title": "Video processor", "text": "NovaStar and PixelHue for multi-window layouts, smooth transitions and accurate color." },
+      { "icon": "Lightbulb", "title": "Stage lighting", "text": "LED pars, moving heads and follow spots that add depth to speakers and performances." },
+      { "icon": "SlidersHorizontal", "title": "Power & control", "text": "A dedicated electrical cabinet, sequenced power-up and simple control software for operators." }
+    ],
+    "compare": {
+      "title": "LED screen or projector?",
+      "columns": ["Auditorium LED screen", "Auditorium projector"],
+      "rows": [
+        ["Brightness", "800–1,500 nits, clear even with the lights on", "Low, washes out in ambient light"],
+        ["Size", "Modular and flexible, no size limit", "Limited by the projection screen"],
+        ["Lifespan", "80,000–100,000 hours", "3,000–5,000 lamp hours"],
+        ["Running costs", "Low maintenance, long-term savings", "Lamp replacement and regular servicing"],
+        ["Content", "Slides, video, livestreams, live cameras", "Mainly slides and video"]
+      ]
+    },
+    "productGroups": ["man-hinh-led", "xu-ly-hinh-anh", "den-san-khau"],
+    "faq": [
+      { "q": "Which pixel pitch is right for my auditorium?", "a": "Pixel pitch depends on the distance from the front row to the screen. With the front row 3–5 m away, P2–P2.5 is usually the right fit; large halls over 8 m can use P3. SKV will survey your venue and recommend the most cost-effective configuration." },
+      { "q": "How long does an auditorium screen installation take?", "a": "For a 20–40 m² screen, installation typically takes 3–7 days from equipment delivery, including framing, electrical work, module mounting, calibration and handover." },
+      { "q": "Who operates the screen after handover?", "a": "SKV trains your staff on site, provides operating documentation and offers remote technical support throughout the warranty period." }
+    ]
+  },
+  {
+    "slug": "phong-hop",
+    "name": "Meeting Rooms & Video Conferencing",
+    "short": "Meeting rooms",
+    "headline": "Meeting rooms. Every detail, crystal clear.",
+    "subhead": "Ultra-fine-pitch LED displays for boardrooms, video conferencing and command centers.",
+    "tileHeadline": "Every detail, crystal clear.",
+    "theme": "light",
+    "hero": "/images/solutions/phong-hop.webp",
+    "heroFocus": "center 55%",
+    "gallery": ["/images/solutions/phong-hop-2.webp", "/images/solutions/phong-hop-3.webp"],
+    "intro": "No more bezels between tiled panels, no more glare up close. **Fine-pitch COB LED cabinets** deliver a seamless image like one giant TV, sharp enough to read every figure in a spreadsheet.",
+    "highlights": [
+      { "value": "P0.9", "unit": "", "label": "Ultra-fine pitch, clear from just 1 meter away" },
+      { "value": "0", "unit": "mm", "label": "Bezel, for a perfectly seamless image" },
+      { "value": "COB", "unit": "", "label": "Encapsulated surface that resists impact, dust and moisture" }
+    ],
+    "needs": [
+      { "icon": "Users", "title": "Multi-site video conferencing", "text": "Show multiple remote sites and documents at once, connected to conference cameras and microphones." },
+      { "icon": "Presentation", "title": "Data presentation", "text": "Spreadsheets, maps and technical drawings displayed down to the finest detail." },
+      { "icon": "Building2", "title": "Control rooms", "text": "Monitor many signal sources 24/7 on one large display surface." }
+    ],
+    "system": [
+      { "icon": "Monitor", "title": "Fine-pitch LED cabinets", "text": "BOE MLED COB P0.9–P1.5 in a standard 16:9 ratio, tiled into 2K or 4K displays." },
+      { "icon": "Cpu", "title": "Multi-window processor", "text": "NovaStar and PixelHue show multiple sources at once and switch layouts by preset." },
+      { "icon": "Camera", "title": "Conferencing equipment", "text": "Integrates with your existing cameras, microphones, speakers and video conferencing system." },
+      { "icon": "SlidersHorizontal", "title": "One-touch control", "text": "Power, source selection and layout changes from a control panel or smartphone." }
+    ],
+    "productGroups": ["man-hinh-led", "xu-ly-hinh-anh"],
+    "faq": [
+      { "q": "Can an LED display replace a TV wall or LCD video wall?", "a": "Yes. Fine-pitch LED has no tiling bezels, uniform brightness and more flexible sizing than an LCD video wall, making it ideal for meeting rooms of 20 m² and up." },
+      { "q": "Does viewing an LED screen up close cause eye strain?", "a": "BOE's COB range has a dark, anti-glare surface and a high refresh rate, keeping close viewing comfortable through long meetings." },
+      { "q": "Will it work with Zoom, Teams or our existing meeting system?", "a": "Yes. The display takes HDMI/DP input from a computer or conference codec, so it works with any video conferencing platform." }
+    ]
+  },
+  {
+    "slug": "san-khau-su-kien",
+    "name": "Stages & Events",
+    "short": "Stages",
+    "headline": "Stages. Light makes the moment.",
+    "subhead": "A complete package of LED screens, moving heads and fog, CO2 and cold spark effects for events, performances and studios.",
+    "tileHeadline": "Light makes the moment.",
+    "theme": "dark",
+    "hero": "/images/solutions/san-khau-su-kien.webp",
+    "heroFocus": "center 40%",
+    "gallery": ["/images/solutions/san-khau-su-kien-2.webp", "/images/solutions/san-khau-su-kien-3.webp"],
+    "intro": "A memorable stage is a precise blend of **visuals, lighting and effects**. SKV designs, supplies and operates it all as a turnkey package, so you can focus on the show while we handle the rest.",
+    "highlights": [
+      { "value": "1", "unit": "contact", "label": "LED screens, lighting and effects from a single provider" },
+      { "value": "24/7", "unit": "", "label": "Technicians on hand before and during the show" },
+      { "value": "In stock", "unit": "", "label": "Equipment always available to meet your event date" }
+    ],
+    "needs": [
+      { "icon": "PartyPopper", "title": "Events & product launches", "text": "LED backdrops and opening effects with CO2, confetti and cold sparks." },
+      { "icon": "Music", "title": "Live music", "text": "Beam, wash, strobe and laser fixtures synced to the music via DMX." },
+      { "icon": "Video", "title": "Studios & game shows", "text": "Camera-friendly fine-pitch LED and broadcast-grade lighting." }
+    ],
+    "system": [
+      { "icon": "Monitor", "title": "Event LED cabinets", "text": "Quick to assemble, flat or curved, flown or ground-stacked on stage." },
+      { "icon": "Lightbulb", "title": "Moving heads", "text": "Yellow River beam, spot, wash and profile fixtures from 200 to 800W." },
+      { "icon": "Sparkles", "title": "Special-effects equipment", "text": "Fog, haze, CO2, flame, cold spark, snow and confetti machines from DJPOWER & SKV." },
+      { "icon": "SlidersHorizontal", "title": "DMX control", "text": "Lighting consoles with cues programmed for every segment of the show." }
+    ],
+    "productGroups": ["den-san-khau", "hieu-ung", "man-hinh-led"],
+    "faq": [
+      { "q": "Does SKV offer turnkey rental for events?", "a": "Yes. SKV rents LED screens by the day, week or project, including transport, installation and an on-site operator." },
+      { "q": "Are fog and flame effects safe indoors?", "a": "Each device has its own safety distance. SKV technicians survey the space, recommend suitable effects and operate them directly during the show." }
+    ]
+  },
+  {
+    "slug": "bar-karaoke",
+    "name": "Bars, Clubs & Karaoke",
+    "short": "Bars & Karaoke",
+    "headline": "Bars & Karaoke. A space that moves.",
+    "subhead": "LED screens, effect lighting and lasers synced to the music, custom-designed for every dance floor and karaoke room.",
+    "tileHeadline": "A space that moves.",
+    "theme": "dark",
+    "hero": "/images/solutions/bar-karaoke.webp",
+    "heroFocus": "center 55%",
+    "gallery": ["/images/solutions/bar-karaoke-2.webp", "/images/solutions/bar-karaoke-3.webp"],
+    "intro": "Guests come back for **the experience**. Lighting that moves with the beat, LED screens that tell your brand story and CO2 bursts right at the peak, all planned by SKV from the first drawing to opening night.",
+    "highlights": [
+      { "value": "Music-synced", "unit": "", "label": "Lights, lasers and effects automatically synced to the sound" },
+      { "value": "3D", "unit": "", "label": "Lighting visualization before installation" },
+      { "value": "Turnkey", "unit": "", "label": "From façade and lobby to every VIP room" }
+    ],
+    "needs": [
+      { "icon": "Music", "title": "Bars & clubs", "text": "DJ booth LED screens, moving heads, strobe matrices and CO2 for peak-hour nights." },
+      { "icon": "MicVocal", "title": "VIP karaoke rooms", "text": "KTV lights, mini lasers and ceiling or wall LED screens give every room its own atmosphere." },
+      { "icon": "Store", "title": "Façades & signage", "text": "Outdoor LED screens and logo projectors that draw guests in from the street." }
+    ],
+    "system": [
+      { "icon": "Monitor", "title": "Decorative LED screens", "text": "Stage, DJ booth, ceiling or column LED screens with themed content." },
+      { "icon": "Lightbulb", "title": "Effect lights & lasers", "text": "Mini moving heads, KTV lights, RGB lasers and strobes controlled by the music." },
+      { "icon": "CloudFog", "title": "Fog & CO2", "text": "Haze machines for crisp beams, CO2 and confetti for the big moments." },
+      { "icon": "Projector", "title": "Logo projectors", "text": "Project your brand logo onto sidewalks, walls and entrance halls." }
+    ],
+    "productGroups": ["den-san-khau", "hieu-ung", "den-chieu-logo"],
+    "faq": [
+      { "q": "Can you design lighting specifically for my venue concept?", "a": "Yes. SKV surveys the floor plan, prepares an equipment layout and visualization before installation, tailored to your budget and style." },
+      { "q": "Can our staff operate the system themselves?", "a": "The system comes preloaded with automatic music-synced programs, so staff only need to select a mode. SKV provides training and technical support after handover." }
+    ]
+  },
+  {
+    "slug": "tiec-cuoi-nha-hang",
+    "name": "Weddings & Restaurants",
+    "short": "Weddings",
+    "headline": "Weddings. Every moment worth remembering.",
+    "subhead": "LED backdrops instead of printed ones, banquet hall lighting and low fog, bubble and confetti effects for wedding venues, restaurants and hotels.",
+    "tileHeadline": "Every moment worth remembering.",
+    "theme": "light",
+    "hero": "/images/solutions/tiec-cuoi-nha-hang.webp",
+    "heroFocus": "center 60%",
+    "gallery": ["/images/solutions/tiec-cuoi-nha-hang-2.webp", "/images/solutions/tiec-cuoi-nha-hang-3.webp"],
+    "intro": "Every wedding has its own theme, and every day brings several receptions. **An LED backdrop** lets venues transform a hall in minutes, display the couple's names, wedding photos and videos, and eliminate backdrop printing costs entirely.",
+    "highlights": [
+      { "value": "Minutes", "unit": "", "label": "To change the hall theme, with no printing and no rebuilding" },
+      { "value": "P2.5–P4", "unit": "", "label": "Cost-optimized configurations for banquet halls" },
+      { "value": "0", "unit": "", "label": "Backdrop printing cost per event" }
+    ],
+    "needs": [
+      { "icon": "Heart", "title": "Wedding halls", "text": "LED backdrops, follow spots for the couple, low fog and bubbles for the grand entrance." },
+      { "icon": "UtensilsCrossed", "title": "Restaurants & hotels", "text": "LED screens to promote menus and events, plus decorative lighting for halls and gardens." },
+      { "icon": "Users", "title": "Client conferences", "text": "Turn a banquet hall into a conference room just by changing the on-screen content." }
+    ],
+    "system": [
+      { "icon": "Monitor", "title": "LED backdrop", "text": "P2.5–P4 LED screens sized to your stage, with the option to split into multiple screens." },
+      { "icon": "Lightbulb", "title": "Banquet hall lighting", "text": "Pars, moving heads, follow spots and decorative lights to suit the hall's style." },
+      { "icon": "Snowflake", "title": "Wedding effects", "text": "Low fog, bubbles, snow, confetti and indoor-safe cold sparks." },
+      { "icon": "Projector", "title": "Name & logo projectors", "text": "Project the couple's names or the restaurant's logo onto the floor, walls or stage." }
+    ],
+    "productGroups": ["man-hinh-led", "hieu-ung", "den-san-khau"],
+    "faq": [
+      { "q": "Does the restaurant need a dedicated technician?", "a": "Not necessarily. Content is prepared on a computer and played with simple software, and SKV trains your staff to operate it after handover." },
+      { "q": "Can LED screens be used in an outdoor garden?", "a": "Yes. For outdoor areas, SKV uses IP65 waterproof outdoor cabinets with high brightness for clear viewing even in daylight." }
+    ]
+  },
+  {
+    "slug": "truong-hoc-co-quan",
+    "name": "Schools & Government Offices",
+    "short": "Schools",
+    "headline": "Schools & Government Offices. Clear communication, built for every day.",
+    "subhead": "LED screens for auditoriums, schoolyards and digital notice boards at schools, academies and government agencies.",
+    "tileHeadline": "Clear communication, built for every day.",
+    "theme": "light",
+    "hero": "/images/solutions/truong-hoc-co-quan.webp",
+    "heroFocus": "center 50%",
+    "gallery": ["/images/solutions/truong-hoc-co-quan-2.webp", "/images/solutions/truong-hoc-co-quan-3.webp"],
+    "intro": "From opening ceremonies in the schoolyard to conferences in the auditorium, **a properly designed LED system** serves thousands of events over many years. SKV has delivered systems for academies, high schools, People's Committees and armed forces units across northern Vietnam.",
+    "highlights": [
+      { "value": "Indoor", "unit": "& Outdoor", "label": "One provider for both the auditorium and the schoolyard" },
+      { "value": "Complete", "unit": "documentation", "label": "CO, CQ and official import records" },
+      { "value": "Scheduled", "unit": "maintenance", "label": "Inspection, cleaning and software updates on a set schedule" }
+    ],
+    "needs": [
+      { "icon": "School", "title": "Schoolyards & opening ceremonies", "text": "Outdoor LED screens for flag ceremonies, school openings and extracurricular activities." },
+      { "icon": "Presentation", "title": "Lecture halls & seminars", "text": "Auditorium LED screens for teaching, academic conferences and major events." },
+      { "icon": "Megaphone", "title": "Notice boards & public information", "text": "Automatically scheduled content: announcements, slogans and public information videos." }
+    ],
+    "system": [
+      { "icon": "Monitor", "title": "Indoor/outdoor LED displays", "text": "Configured to the space, from P2.5 in auditoriums to P5–P10 outdoors." },
+      { "icon": "CalendarClock", "title": "Scheduled content playback", "text": "Scheduling software with centralized content management across multiple screens." },
+      { "icon": "Lightbulb", "title": "Auditorium sound & lighting", "text": "Integrated stage lighting for ceremonies and performances." },
+      { "icon": "ShieldCheck", "title": "Documentation & warranty", "text": "Complete paperwork for publicly funded projects, with warranty under the manufacturer's policy." }
+    ],
+    "productGroups": ["man-hinh-led", "xu-ly-hinh-anh"],
+    "faq": [
+      { "q": "Can SKV provide full documentation for state-funded projects?", "a": "Yes. Our products are officially imported, with CO, CQ and complete technical documentation, and SKV supports quotations and technical specifications as required by the project owner." },
+      { "q": "Can outdoor screens withstand rain and storms?", "a": "Outdoor cabinets are IP65-rated, the steel frame is engineered for wind loads, and the system is grounded for lightning protection." }
+    ]
+  },
+  {
+    "slug": "the-thao-cong-cong",
+    "name": "Sports Arenas & Public Buildings",
+    "short": "Public spaces",
+    "headline": "Public buildings. The right information, to the right people, at the right time.",
+    "subhead": "LED screens for sports arenas, bus stations, airports and hospitals, built for continuous operation and centralized management.",
+    "tileHeadline": "The right information, to the right people, at the right time.",
+    "theme": "dark",
+    "hero": "/images/solutions/the-thao-cong-cong.webp",
+    "heroFocus": "center 35%",
+    "gallery": ["/images/solutions/the-thao-cong-cong-2.webp", "/images/solutions/the-thao-cong-cong-3.webp"],
+    "intro": "Where thousands of people pass through every day, screens must be **bright, always on and easy to manage**. SKV has delivered LED systems for sports arenas and for Giap Bat and My Dinh bus stations, sites where downtime is not an option.",
+    "highlights": [
+      { "value": "24/7", "unit": "", "label": "Designed for years of continuous operation" },
+      { "value": "Multiple", "unit": "screens", "label": "Managed centrally from one system" },
+      { "value": "Redundancy", "unit": "", "label": "Backup power and signal for critical areas" }
+    ],
+    "needs": [
+      { "icon": "Trophy", "title": "Arenas & stadiums", "text": "Main screens, scoreboards and perimeter LED advertising for tournaments." },
+      { "icon": "Bus", "title": "Bus stations & airports", "text": "Timetable boards, passenger guidance and advertising in waiting areas." },
+      { "icon": "Hospital", "title": "Hospitals & clinics", "text": "Queue-calling displays, wayfinding information and health communication." }
+    ],
+    "system": [
+      { "icon": "Monitor", "title": "Large-format LED displays", "text": "P3.91 for the field of play, P2–P2.5 for waiting areas and information lobbies." },
+      { "icon": "Tv", "title": "Information displays", "text": "LED screens combined with TVs for timetables and queue calling." },
+      { "icon": "Cpu", "title": "Centralized control", "text": "Processors and software that manage multiple screens from one control room." },
+      { "icon": "Zap", "title": "Backup power", "text": "Redundant electrical, power and signal design to minimize downtime." }
+    ],
+    "productGroups": ["man-hinh-led", "xu-ly-hinh-anh", "phu-kien-led"],
+    "faq": [
+      { "q": "Can you install perimeter LED boards for an arena?", "a": "Yes. SKV supplies perimeter LED boards with soft protective padding, with content synced to the main screen." },
+      { "q": "Can screens in different areas be managed together?", "a": "Yes. The control system lets you update content on every screen from one central control room." }
+    ]
+  },
+  {
+    "slug": "quang-cao-ngoai-troi",
+    "name": "Outdoor Advertising & Façades",
+    "short": "Outdoor",
+    "headline": "Outdoor. Bright and clear in broad daylight.",
+    "subhead": "Outdoor LED displays, mesh screens and transparent displays for building façades, shopping malls, showrooms and billboards.",
+    "tileHeadline": "Bright and clear in broad daylight.",
+    "theme": "light",
+    "hero": "/images/solutions/quang-cao-ngoai-troi.webp",
+    "heroFocus": "center 70%",
+    "gallery": ["/images/solutions/quang-cao-ngoai-troi-2.webp", "/images/solutions/quang-cao-ngoai-troi-3.webp"],
+    "intro": "Outdoor screens have to stand up to **sun, rain, wind and dust** every day. SKV specifies IP65 cabinets, engineers the steel structure and lightning protection, and adds automatic brightness control, so your message always stands out while saving energy.",
+    "highlights": [
+      { "value": "IP65", "unit": "", "label": "Water- and dust-resistant for outdoor operation" },
+      { "value": "95%", "unit": "", "label": "Transparency of MUXWAVE glass LED displays" },
+      { "value": "P3.91–P10", "unit": "", "label": "A configuration range for every viewing distance" }
+    ],
+    "needs": [
+      { "icon": "Megaphone", "title": "Billboards", "text": "Large LED displays at intersections, along roads and on high-rise buildings." },
+      { "icon": "Building2", "title": "Building & mall façades", "text": "Lightweight, wind-permeable mesh screens covering large façade areas." },
+      { "icon": "Store", "title": "Showrooms & stores", "text": "Transparent LED displays and LED posters that attract customers without blocking the view inside." }
+    ],
+    "system": [
+      { "icon": "Monitor", "title": "Outdoor LED cabinets", "text": "IP65 waterproof cabinets with high brightness and front or rear service access." },
+      { "icon": "Layers", "title": "Mesh & transparent displays", "text": "GLOSHINE VA MAX and MUXWAVE: lightweight, wind-permeable and elegant on glass architecture." },
+      { "icon": "Hammer", "title": "Structure & lightning protection", "text": "Powder-coated steel frames, wind-load calculations and a grounding system for lightning protection." },
+      { "icon": "Sun", "title": "Automatic brightness control", "text": "Light sensors dim the screen at night, saving power and extending lifespan." }
+    ],
+    "productGroups": ["man-hinh-led", "phu-kien-led"],
+    "faq": [
+      { "q": "Do I need a permit to install an outdoor LED billboard?", "a": "Yes. Outdoor billboards require a construction permit and content approval under local regulations. SKV provides the technical documentation the project owner needs for the application." },
+      { "q": "Can you actually see through a transparent display?", "a": "Yes. MUXWAVE transparent LED displays reach up to 95% transparency, preserving the view from inside out and natural light for your store." }
+    ]
+  },
+  {
+    "slug": "nha-xuong",
+    "name": "Factory Wayfinding with Gobo Projectors",
+    "short": "Factories",
+    "headline": "Factories. Safety, in the spotlight.",
+    "subhead": "Gobo projectors that mark walkways, route forklift traffic and flag hazardous zones. Clear and durable, without the wear of painted floor markings.",
+    "tileHeadline": "Safety, in the spotlight.",
+    "theme": "light",
+    "hero": "/images/solutions/nha-xuong.webp",
+    "heroFocus": "center 65%",
+    "gallery": ["/images/solutions/nha-xuong-2.webp", "/images/solutions/nha-xuong-3.webp"],
+    "intro": "Painted floor markings fade within months, and signs are easily blocked. **Gobo projectors** cast arrows, warning signs and pedestrian walkways directly onto the floor with high brightness. They are easy to spot from a distance, never wear off and can be changed at any time.",
+    "highlights": [
+      { "value": "15–150", "unit": "W", "label": "Power range for every mounting height" },
+      { "value": "Custom", "unit": "", "label": "Symbols, logos and content tailored to your plant" },
+      { "value": "0", "unit": "", "label": "Wear, replacing traditional painted floor markings" }
+    ],
+    "needs": [
+      { "icon": "Forklift", "title": "Forklift traffic routing", "text": "Project routes, crossings and warnings for active forklifts." },
+      { "icon": "TriangleAlert", "title": "Hazardous zones", "text": "Mark machinery areas, high-voltage zones and mandatory PPE areas." },
+      { "icon": "Footprints", "title": "Walkways & emergency exits", "text": "Clear pedestrian routes and emergency exit directions." }
+    ],
+    "system": [
+      { "icon": "Projector", "title": "High-power LED gobo projectors", "text": "SKV projectors from 15 to 150W, indoor and outdoor, static or rotating." },
+      { "icon": "Palette", "title": "Custom gobo designs", "text": "Standard safety symbols or designs that follow your plant's visual identity." },
+      { "icon": "Ruler", "title": "Survey & layout", "text": "Position, projection angle and image size calculated for your floor plan." },
+      { "icon": "Wrench", "title": "Installation & warranty", "text": "Ceiling or wall mounting, electrical connection and on-site warranty service." }
+    ],
+    "productGroups": ["den-chieu-logo"],
+    "faq": [
+      { "q": "Are the projections clearly visible in a brightly lit factory?", "a": "High-power LED gobo projectors produce clear images under normal industrial lighting. SKV selects the wattage based on mounting height and the actual light level in your facility." },
+      { "q": "Can the projected content be changed?", "a": "Yes. Simply swap the gobo to switch to a new symbol, with no need to replace the projector." }
+    ]
+  }
+]

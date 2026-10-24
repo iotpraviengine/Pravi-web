@@ -3,6 +3,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { fmt, localize } from "@/i18n/config";
+import { useLocalePath, useUi } from "@/i18n/client";
 
 export type ProjectItem = {
   slug: string;
@@ -16,6 +18,8 @@ export type ProjectItem = {
 };
 
 export function ProjectGrid({ projects, filters }: { projects: ProjectItem[]; filters: { slug: string; label: string }[] }) {
+  const ui = useUi().projectFilter;
+  const { locale } = useLocalePath();
   const params = useSearchParams();
   const router = useRouter();
   const pathname = usePathname();
@@ -29,9 +33,9 @@ export function ProjectGrid({ projects, filters }: { projects: ProjectItem[]; fi
 
   return (
     <>
-      <div className="filters" role="group" aria-label="Lọc dự án theo giải pháp">
+      <div className="filters" role="group" aria-label={ui.label}>
         <button type="button" className="filter-chip" aria-pressed={!active} onClick={() => select("")}>
-          Tất cả ({projects.length})
+          {ui.all} ({projects.length})
         </button>
         {filters.map((f) => {
           const count = projects.filter((p) => p.solution === f.slug).length;
@@ -45,12 +49,12 @@ export function ProjectGrid({ projects, filters }: { projects: ProjectItem[]; fi
       </div>
 
       <p className="sr-only" aria-live="polite">
-        Đang hiển thị {shown.length} dự án
+        {fmt(ui.showing, { n: shown.length })}
       </p>
 
       <div className="grid grid-3">
         {shown.map((p) => (
-          <Link key={p.slug} href={`/du-an/${p.slug}`} className="media-card">
+          <Link key={p.slug} href={localize(locale, `/du-an/${p.slug}`)} className="media-card">
             <div className="media">
               <Image src={p.cover} alt="" fill sizes="(min-width: 1000px) 380px, (min-width: 640px) 50vw, 100vw" />
             </div>

@@ -1,0 +1,14 @@
+[
+  { "name": "BOE", "logo": { "src": "/images/brands/logos/boe.png", "width": 537, "height": 240 }, "badge": "独家经销商", "category": "LED显示屏", "text": "全球领先的显示科技集团。SKV Lighting 获 BOE MLED Technology 正式授权，为其越南独家经销商。", "featured": true },
+  { "name": "NovaStar", "logo": { "src": "/images/brands/logos/novastar.png", "width": 1292, "height": 240 }, "badge": "官方授权经销商", "category": "LED控制", "text": "全球领先的LED显示屏控制系统与视频处理品牌。", "featured": true },
+  { "name": "PixelHue", "logo": { "src": "/images/brands/logos/pixelhue.png", "width": 267, "height": 240 }, "category": "视频处理", "text": "面向活动与舞台的专业视频处理器和演播控制台。" },
+  { "name": "Ledman", "logo": { "src": "/images/brands/logos/ledman.png", "width": 570, "height": 240 }, "category": "LED显示屏", "text": "高端COB小间距LED显示屏，适用于会堂与会议室。" },
+  { "name": "MUXWAVE", "logo": { "src": "/images/brands/logos/muxwave.png", "width": 1028, "height": 240 }, "category": "透明屏", "text": "LED透明屏与LED海报屏，适用于展厅与玻璃幕墙。" },
+  { "name": "GLOSHINE", "logo": { "src": "/images/brands/logos/gloshine.png", "width": 2002, "height": 240 }, "category": "LED显示屏", "text": "室内、户外LED箱体及广告用格栅屏。" },
+  { "name": "Yellow River", "logo": { "src": "/images/brands/logos/yellow-river.png", "width": 1123, "height": 240 }, "category": "舞台灯光", "text": "摇头灯、LED帕灯、成像灯，适用于舞台与活动。" },
+  { "name": "DJPOWER", "logo": { "src": "/images/brands/logos/djpower.png", "width": 469, "height": 240 }, "category": "特效设备", "text": "烟雾机、雾机、喷火机、雪花机、冷焰火及特效耗材。" },
+  { "name": "MAGNIMAGE", "logo": { "src": "/images/brands/logos/magnimage.png", "width": 2611, "height": 240 }, "category": "视频处理", "text": "LED视频处理器与多屏显示解决方案。" },
+  { "name": "FILMBASE", "logo": { "src": "/images/brands/logos/filmbase.png", "width": 1255, "height": 240 }, "category": "LED显示屏", "text": "LED膜屏，可灵活贴附于玻璃与曲面。" },
+  { "name": "G-Energy", "category": "LED电源", "text": "LED显示屏专用电源，稳定耐用。" },
+  { "name": "SKV", "category": "自有品牌", "text": "SKV 自有品牌的Logo投影灯、Gobo灯、CO2机、雪花机、彩纸机和冷焰火。" }
+]

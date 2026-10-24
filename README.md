@@ -121,6 +121,14 @@ Nội dung bài viết, viết bằng Markdown. Dùng `## Tiêu đề` cho tiêu
 
 Tin tức làm tương tự trong `content/news/` và `public/images/news/` (không có `location`, `solution`, `tags`).
 
+### Tiếng Anh và tiếng Trung
+
+Website có 3 ngôn ngữ: tiếng Việt (đường dẫn gốc, ví dụ `/du-an`), tiếng Anh (`/en/du-an`) và tiếng Trung giản thể (`/zh/du-an`).
+
+- Bản dịch nội dung nằm trong `content/en/` và `content/zh/`, cùng tên và cùng cấu trúc với file tiếng Việt. Khi sửa một file tiếng Việt (ví dụ `content/solutions.json`), hãy sửa luôn file tương ứng ở hai thư mục này. Nếu thiếu file dịch, trang sẽ tạm hiện tiếng Việt.
+- Dự án và tin tức: chỉ dịch tiêu đề, tóm tắt (và địa điểm) trong `content/en/projects.json`, `content/en/news.json` (tương tự cho `zh`), theo tên file của bài. Thân bài giữ tiếng Việt, kèm dòng ghi chú. Khi thêm bài mới, thêm một mục vào hai file này.
+- Chữ giao diện (menu, nút, form): `src/i18n/ui.ts`. Chữ cố định của từng trang (tiêu đề, khẩu hiệu): `src/i18n/copy.ts`.
+
 Trong các file JSON, cặp dấu `**…**` trong đoạn giới thiệu dùng để nhấn mạnh chữ (hiển thị đậm, màu đen trên nền chữ xám).
 
 ---
@@ -130,7 +138,7 @@ Trong các file JSON, cặp dấu `**…**` trong đoạn giới thiệu dùng �
 ```
 content/            Nội dung (JSON + Markdown)
 public/images/      Hình ảnh (đã nén WebP)
-src/app/            Các trang (App Router)
+src/app/[lang]/     Các trang (App Router), một bộ cho mỗi ngôn ngữ vi / en / zh
   giai-phap/        Trang giải pháp
   dich-vu/          Trang dịch vụ
   san-pham/         Danh mục sản phẩm
@@ -142,7 +150,8 @@ src/app/            Các trang (App Router)
   api/contact/      API gửi email qua Resend
 src/components/     Thành phần giao diện dùng chung
 src/lib/            Đọc nội dung, kiểm tra form
-src/proxy.ts        Chuyển hướng đường dẫn cũ
+src/i18n/           Ngôn ngữ: cấu hình, chữ giao diện, chữ từng trang
+src/proxy.ts        Đường dẫn tiếng Việt không tiền tố + chuyển hướng đường dẫn cũ
 src/app/globals.css Hệ thống thiết kế (màu, chữ, khoảng cách, thành phần)
 ```
 

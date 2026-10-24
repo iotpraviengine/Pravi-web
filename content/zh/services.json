@@ -1,0 +1,96 @@
+[
+  {
+    "slug": "lap-dat-man-hinh-led",
+    "name": "LED显示屏安装",
+    "icon": "Monitor",
+    "headline": "LED显示屏安装。一站交付，准时完工。",
+    "subhead": "从现场勘测、方案设计、设备供应到施工交付，室内户外皆可，服务覆盖越南全国。",
+    "summary": "室内、户外LED显示屏一站式施工，原厂正品设备。",
+    "hero": "/images/services/lap-dat-man-hinh-led.webp",
+    "intro": "好的LED显示屏，始于**精准勘测与规范施工**。SKV 技术团队掌控全流程，从钢结构、配电柜到色彩校正，确保屏幕多年稳定运行。",
+    "benefits": [
+      { "icon": "BadgeCheck", "title": "原厂正品设备", "text": "BOE MLED 越南独家经销商、NovaStar 官方授权经销商；正规渠道进口，来源清晰可溯。" },
+      { "icon": "HandCoins", "title": "覆盖多档预算", "text": "产品线丰富，适配不同预算，按实际需求推荐最合适的配置。" },
+      { "icon": "Headset", "title": "贴心售后", "text": "快速技术响应，上门排除故障，按原厂政策提供长期质保。" }
+    ],
+    "process": [
+      { "title": "现场勘测", "text": "测量场地、观看距离，评估光照条件与供电情况。" },
+      { "title": "咨询与设计", "text": "提出配置建议，出具结构图纸与接线方案。" },
+      { "title": "报价与签约", "text": "分项透明报价，工期清晰明确。" },
+      { "title": "施工", "text": "钢架制作、电气布线、箱体/模组安装、信号接线。" },
+      { "title": "校正与交付", "text": "校正色彩与亮度，并为使用人员提供操作培训。" },
+      { "title": "质保与维护", "text": "定期巡检，在产品整个生命周期内提供技术支持。" }
+    ],
+    "solutions": ["hoi-truong", "phong-hop", "quang-cao-ngoai-troi", "truong-hoc-co-quan"]
+  },
+  {
+    "slug": "lap-dat-den-san-khau",
+    "name": "舞台灯光安装",
+    "icon": "Lightbulb",
+    "headline": "舞台灯光安装。光，如你所想。",
+    "subhead": "为活动、婚宴、酒吧、KTV、会堂及剧院设计并安装舞台灯光系统。",
+    "summary": "各种规模的舞台灯光系统设计与施工。",
+    "hero": "/images/services/lap-dat-den-san-khau.webp",
+    "intro": "灯光不只是为了照亮，更塑造**整场节目的情绪**。SKV 帮你选对灯具、放对位置，并为每个空间编排合适的灯光程序。",
+    "benefits": [
+      { "icon": "Package", "title": "现货充足", "text": "品类、功率、光效齐全；发货迅速，赶得上节目档期。" },
+      { "icon": "ClipboardCheck", "title": "交付前检测", "text": "所有设备在安装前均由技术人员严格检测。" },
+      { "icon": "Headset", "title": "全天候支持", "text": "随时为你提供咨询与技术处理。" }
+    ],
+    "process": [
+      { "title": "了解需求", "text": "节目类型、舞台规模及期望风格。" },
+      { "title": "灯光设计", "text": "灯位布置、功率计算、吊挂与控制方案。" },
+      { "title": "设备供应", "text": "原厂摇头灯、LED帕灯、成像灯、激光灯及特效设备。" },
+      { "title": "安装与编程", "text": "吊装灯具、铺设DMX线路，在控台上编排灯光程序。" },
+      { "title": "交付与培训", "text": "节目试运行，提供操作与保养指导。" }
+    ],
+    "solutions": ["san-khau-su-kien", "bar-karaoke", "tiec-cuoi-nha-hang", "hoi-truong"]
+  },
+  {
+    "slug": "cho-thue-man-hinh-led",
+    "name": "LED显示屏租赁",
+    "icon": "CalendarClock",
+    "headline": "LED显示屏租赁。灵活适配每一场活动。",
+    "subhead": "按天、按周、按月或按项目租赁，含运输、安装及现场技术人员操作。",
+    "summary": "LED屏按天、周或项目租赁，运输、安装、操作一站包办。",
+    "hero": "/images/services/cho-thue-man-hinh-led.webp",
+    "intro": "并非每场活动都需要专门购置一块屏幕。选择 SKV 租赁服务，你能在**合适的时间获得尺寸合适的高品质LED显示屏**，无需操心运输、安装与操作。",
+    "benefits": [
+      { "icon": "Truck", "title": "上门一站服务", "text": "在河内及各省市提供运输、搭建与拆除。" },
+      { "icon": "UserCog", "title": "现场技术人员", "text": "活动全程负责操作，即时处理故障。" },
+      { "icon": "Expand", "title": "尺寸灵活", "text": "按舞台尺寸拼接箱体，可平面亦可弧形。" }
+    ],
+    "process": [
+      { "title": "明确目的", "text": "活动类型、播放内容与观众人数。" },
+      { "title": "评估场地", "text": "测量尺寸，确认安装位置与现场供电。" },
+      { "title": "选定配置", "text": "尺寸、分辨率，以及落地搭建或吊挂方案。" },
+      { "title": "安装与试播", "text": "活动前完成搭建，与主办方共同核对内容。" },
+      { "title": "操作与拆除", "text": "技术人员全程值守，活动结束后回收设备。" }
+    ],
+    "solutions": ["san-khau-su-kien", "tiec-cuoi-nha-hang", "hoi-truong"]
+  },
+  {
+    "slug": "sua-chua-man-hinh-led",
+    "name": "LED显示屏维修与保养",
+    "icon": "Wrench",
+    "headline": "LED显示屏维修。找准故障，价格透明，按时交付。",
+    "subhead": "室内、户外LED显示屏的维护、保养与维修，覆盖各品牌及新老机型。",
+    "summary": "各品牌LED显示屏的故障诊断、维修与定期保养。",
+    "hero": "/images/services/sua-chua-man-hinh-led.webp",
+    "intro": "只要保养得当，LED显示屏寿命可达**100,000小时**。SKV 承接各品牌显示屏的定期保养与维修，更换原厂配件，并提供维修后质保。",
+    "benefits": [
+      { "icon": "Search", "title": "故障清楚，价格明白", "text": "诊断结果清晰，维修前先告知报价与完工时间。" },
+      { "icon": "Cpu", "title": "原厂配件", "text": "模组、接收卡、电源、处理器均来自 SKV 原厂备件库。" },
+      { "icon": "ShieldCheck", "title": "维修后质保", "text": "对更换的配件及维修项目承诺质保。" }
+    ],
+    "issues": ["屏幕无信号、不显示画面", "画面条纹、干扰、闪烁", "模组出现死点、暗块", "模组、箱体之间色差", "电源、接收卡、发送卡损坏", "控制软件或配置故障"],
+    "process": [
+      { "title": "受理", "text": "通过电话、Zalo 或图片、视频记录故障现象。" },
+      { "title": "上门检测", "text": "技术人员使用专业设备诊断故障。" },
+      { "title": "报价", "text": "说明原因、方案、费用与工期。" },
+      { "title": "维修", "text": "更换配件、升级软件、重新校色。" },
+      { "title": "交付与质保", "text": "试运行、交付，并为维修项目提供质保。" }
+    ],
+    "solutions": ["hoi-truong", "quang-cao-ngoai-troi", "the-thao-cong-cong"]
+  }
+]

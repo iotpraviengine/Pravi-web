@@ -1,5 +1,6 @@
 import { validateContact, type ContactPayload } from "@/lib/contact";
-import { getService, getSolution } from "@/lib/content";
+import { getContent } from "@/lib/content";
+import { isLocale, localize, type Locale } from "@/i18n/config";
 
 // Sends contact requests by email through Resend (https://resend.com).
 // Required env: RESEND_API_KEY. Optional: CONTACT_TO_EMAIL, CONTACT_FROM_EMAIL.
@@ -9,17 +10,19 @@ const escape = (s: string) => s.replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<":
 export async function POST(request: Request) {
   // A plain HTML form post (JS not loaded yet) gets a redirect back to the contact page instead of JSON.
   const isForm = !(request.headers.get("content-type") ?? "").includes("application/json");
+  let locale: Locale = "vi"; // the page the request came from, so a no-JS visitor returns to it
   const reply = (message: string, status = 200, extra?: object) =>
     isForm
-      ? Response.redirect(new URL(`/lien-he?gui=${status < 300 ? "ok" : "loi"}`, request.url), 303)
+      ? Response.redirect(new URL(localize(locale, `/lien-he?gui=${status < 300 ? "ok" : "loi"}`), request.url), 303)
       : Response.json({ message, ...extra }, { status });
 
-  let body: Partial<ContactPayload>;
+  let body: Partial<ContactPayload> & { lang?: string };
   try {
     body = isForm ? (Object.fromEntries(await request.formData()) as Partial<ContactPayload>) : await request.json();
   } catch {
     return reply("Dữ liệu gửi lên không hợp lệ.", 400);
   }
+  if (body.lang && isLocale(body.lang)) locale = body.lang;
 
   const data: ContactPayload = {
     name: String(body.name ?? "").slice(0, 120),
@@ -45,8 +48,10 @@ export async function POST(request: Request) {
     return reply("Hệ thống gửi email chưa được cấu hình.", 503);
   }
 
+  // the email goes to SKV staff, so it is always written in Vietnamese
+  const vi = getContent("vi");
   const topicLabel =
-    getSolution(data.topic)?.name ?? getService(data.topic)?.name ?? (data.topic === "san-pham" ? "Báo giá sản phẩm" : data.topic || "Không chọn");
+    vi.getSolution(data.topic)?.name ?? vi.getService(data.topic)?.name ?? (data.topic === "san-pham" ? "Báo giá sản phẩm" : data.topic || "Không chọn");
 
   const rows: [string, string][] = [
     ["Họ và tên", data.name],
@@ -54,6 +59,7 @@ export async function POST(request: Request) {
     ["Email", data.email || "—"],
     ["Cơ quan / Doanh nghiệp", data.company || "—"],
     ["Quan tâm", topicLabel],
+    ["Ngôn ngữ trang", { vi: "Tiếng Việt", en: "Tiếng Anh", zh: "Tiếng Trung" }[locale]],
   ];
   const html = `
     <h2 style="font-family:Arial,sans-serif">Yêu cầu tư vấn mới từ website</h2>

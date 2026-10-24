@@ -1,4 +1,5 @@
 // Shared between the contact form (client) and the /api/contact route (server).
+import { ui } from "@/i18n/ui";
 
 export type ContactPayload = {
   name: string;
@@ -11,16 +12,18 @@ export type ContactPayload = {
 };
 
 export type ContactErrors = Partial<Record<keyof ContactPayload, string>>;
+export type ContactMessages = (typeof ui)["vi"]["form"]["errors"];
 
-export const PHONE_RE = /^(\+?84|0)\d{8,10}$/;
+// Vietnamese numbers (0… / +84…), or any international number written with its country code.
+export const PHONE_RE = /^((\+?84|0)\d{8,10}|\+\d{7,15})$/;
 export const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-export function validateContact(p: ContactPayload): ContactErrors {
+export function validateContact(p: ContactPayload, messages: ContactMessages = ui.vi.form.errors): ContactErrors {
   const errors: ContactErrors = {};
-  if (p.name.trim().length < 2) errors.name = "Vui lòng nhập họ và tên (ít nhất 2 ký tự).";
-  if (!PHONE_RE.test(p.phone.replace(/[\s.\-()]/g, ""))) errors.phone = "Số điện thoại chưa đúng – ví dụ: 0968 240 789.";
-  if (p.email && !EMAIL_RE.test(p.email.trim())) errors.email = "Email chưa đúng định dạng – ví dụ: ten@congty.vn.";
-  if (p.message.trim().length < 10) errors.message = "Vui lòng mô tả nhu cầu của bạn (ít nhất 10 ký tự).";
-  if (p.message.length > 4000) errors.message = "Nội dung quá dài – tối đa 4.000 ký tự.";
+  if (p.name.trim().length < 2) errors.name = messages.name;
+  if (!PHONE_RE.test(p.phone.replace(/[\s.\-()]/g, ""))) errors.phone = messages.phone;
+  if (p.email && !EMAIL_RE.test(p.email.trim())) errors.email = messages.email;
+  if (p.message.trim().length < 10) errors.message = messages.message;
+  if (p.message.length > 4000) errors.message = messages.messageLong;
   return errors;
 }

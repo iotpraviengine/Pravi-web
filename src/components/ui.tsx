@@ -1,7 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ChevronRight, Mail, MapPin, Phone, Plus } from "lucide-react";
-import { emphasis, formatDate, getSolution, siteInfo, type Post, type Product, type Project } from "@/lib/content";
+import { emphasis, formatDate, type Post, type Product, type Project } from "@/lib/content";
+import { fmt } from "@/i18n/config";
+import { getI18n } from "@/i18n/server";
+
+// Server components: the ones that need words or links read the current language themselves.
 
 /** Renders copy where `**phrase**` marks the emphasised words (Apple "copy block" style). */
 export function Emphasis({ text }: { text: string }) {
@@ -43,24 +47,27 @@ export function SectionHead({
   );
 }
 
-export function Breadcrumb({ items }: { items: { href?: string; label: string }[] }) {
+/** Hrefs are language-free paths; they are localised here. */
+export async function Breadcrumb({ items }: { items: { href?: string; label: string }[] }) {
+  const { ui, href } = await getI18n();
   return (
-    <nav aria-label="Đường dẫn">
+    <nav aria-label={ui.common.breadcrumb}>
       <ol className="breadcrumb">
         {items.map((it) => (
-          <li key={it.label}>{it.href ? <Link href={it.href}>{it.label}</Link> : <span aria-current="page">{it.label}</span>}</li>
+          <li key={it.label}>{it.href ? <Link href={href(it.href)}>{it.label}</Link> : <span aria-current="page">{it.label}</span>}</li>
         ))}
       </ol>
     </nav>
   );
 }
 
-export function LocalNav({ title, links, dark }: { title: string; links: { href: string; label: string }[]; dark?: boolean }) {
+export async function LocalNav({ title, links, dark }: { title: string; links: { href: string; label: string }[]; dark?: boolean }) {
+  const { ui } = await getI18n();
   return (
     <div className={`localnav${dark ? " theme-dark" : ""}`}>
       <div className="container localnav-inner">
         <span className="localnav-title">{title}</span>
-        <nav className="localnav-menu" aria-label={`Mục trong trang ${title}`}>
+        <nav className="localnav-menu" aria-label={fmt(ui.common.sectionsOf, { title })}>
           {links.map((l) => (
             <a key={l.href} href={l.href}>
               {l.label}
@@ -72,10 +79,11 @@ export function LocalNav({ title, links, dark }: { title: string; links: { href:
   );
 }
 
-export function ProjectCard({ project, priority }: { project: Project; priority?: boolean }) {
-  const solution = getSolution(project.solution);
+export async function ProjectCard({ project, priority }: { project: Project; priority?: boolean }) {
+  const { c, href } = await getI18n();
+  const solution = c.getSolution(project.solution);
   return (
-    <Link href={`/du-an/${project.slug}`} className="media-card">
+    <Link href={href(`/du-an/${project.slug}`)} className="media-card">
       <div className="media">
         <Image src={project.cover} alt="" fill sizes="(min-width: 1000px) 380px, (min-width: 640px) 50vw, 100vw" priority={priority} />
       </div>
@@ -97,26 +105,28 @@ export function ProjectCard({ project, priority }: { project: Project; priority?
   );
 }
 
-export function NewsCard({ post }: { post: Post }) {
+export async function NewsCard({ post }: { post: Post }) {
+  const { locale, href } = await getI18n();
   return (
-    <Link href={`/tin-tuc/${post.slug}`} className="media-card">
+    <Link href={href(`/tin-tuc/${post.slug}`)} className="media-card">
       <div className="media" style={{ aspectRatio: "16 / 10" }}>
         <Image src={post.cover} alt="" fill sizes="(min-width: 1000px) 380px, (min-width: 640px) 50vw, 100vw" />
       </div>
       <p className="meta" style={{ marginTop: 16 }}>
-        <time dateTime={post.date}>{formatDate(post.date)}</time>
+        <time dateTime={post.date}>{formatDate(post.date, locale)}</time>
       </p>
       <h3 style={{ marginTop: 4 }}>{post.title}</h3>
     </Link>
   );
 }
 
-export function ProductCard({ product }: { product: Product }) {
+export async function ProductCard({ product }: { product: Product }) {
+  const { ui, href } = await getI18n();
   return (
     <Link
-      href={`/lien-he?san-pham=${encodeURIComponent(product.name)}`}
+      href={href(`/lien-he?san-pham=${encodeURIComponent(product.name)}`)}
       className="product-card"
-      aria-label={`${product.name} – yêu cầu thông tin và báo giá`}
+      aria-label={fmt(ui.common.productQuote, { name: product.name })}
     >
       <div className="media">
         <Image src={product.image} alt="" fill sizes="(min-width: 1000px) 280px, (min-width: 640px) 45vw, 90vw" />
@@ -155,12 +165,13 @@ export function Faq({ items }: { items: { q: string; a: string }[] }) {
   );
 }
 
-export function CtaBand({ title = "Bắt đầu dự án của bạn.", alt = true }: { title?: string; alt?: boolean }) {
-  const { contact } = siteInfo;
+export async function CtaBand({ title, alt = true }: { title?: string; alt?: boolean }) {
+  const { ui, t, c } = await getI18n();
+  const { contact } = c.siteInfo;
   return (
     <section className={`section cta-band${alt ? " theme-alt" : ""}`}>
       <div className="container reveal">
-        <h2 className="headline">{title}</h2>
+        <h2 className="headline">{title ?? t.cta.default}</h2>
         <p className="cta-phone">
           <a href={`tel:${contact.hotlineTel}`}>{contact.hotline}</a>
         </p>
@@ -172,7 +183,7 @@ export function CtaBand({ title = "Bắt đầu dự án của bạn.", alt = tr
             <Phone size={16} aria-hidden="true" /> Zalo
           </a>
           <span style={{ display: "inline-flex", alignItems: "center", gap: 8 }}>
-            <MapPin size={16} aria-hidden="true" /> Hà Nội · Hưng Yên · Toàn quốc
+            <MapPin size={16} aria-hidden="true" /> {ui.common.regions}
           </span>
         </div>
       </div>
@@ -180,13 +191,14 @@ export function CtaBand({ title = "Bắt đầu dự án của bạn.", alt = tr
   );
 }
 
-/** Section heading whose title is the link to the full list (replaces separate "see more" links). */
-export function LinkedHeading({ href, title, eyebrow }: { href: string; title: string; eyebrow?: string }) {
+/** Section heading whose title is the link to the full list (replaces separate "see more" links). Href is a language-free path. */
+export async function LinkedHeading({ href: path, title, eyebrow }: { href: string; title: string; eyebrow?: string }) {
+  const { href } = await getI18n();
   return (
     <div className="section-head reveal">
       {eyebrow && <span className="eyebrow">{eyebrow}</span>}
       <h2 className="headline">
-        <Link href={href} className="title-link">
+        <Link href={href(path)} className="title-link">
           {title}
           <ChevronRight size={36} strokeWidth={2} aria-hidden="true" />
         </Link>

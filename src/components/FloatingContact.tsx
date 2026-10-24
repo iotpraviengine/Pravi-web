@@ -2,6 +2,8 @@
 
 import { useEffect, useRef, useState } from "react";
 import { MessageCircle, Phone, X } from "lucide-react";
+import { fmt } from "@/i18n/config";
+import { useUi } from "@/i18n/client";
 
 type Contact = { zalo: string; messenger: string; hotline: string; hotlineTel: string };
 
@@ -12,6 +14,7 @@ type Contact = { zalo: string; messenger: string; hotline: string; hotlineTel: s
  */
 const CLOSE_DELAY_MS = 220;
 export function FloatingContact({ contact }: { contact: Contact }) {
+  const ui = useUi().quickContact;
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
   const closeTimer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
@@ -49,19 +52,19 @@ export function FloatingContact({ contact }: { contact: Contact }) {
       onBlur={(e) => !ref.current?.contains(e.relatedTarget as Node | null) && closeSoon()}
     >
       <div id="fc-items" className="fc-items">
-        <a className="fc-zalo" href={contact.zalo} target="_blank" rel="noopener noreferrer" aria-label="Chat Zalo">
+        <a className="fc-zalo" href={contact.zalo} target="_blank" rel="noopener noreferrer" aria-label={ui.zalo}>
           Zalo
           <span className="fc-label" aria-hidden="true">
-            Chat Zalo
+            {ui.zalo}
           </span>
         </a>
-        <a className="fc-messenger" href={contact.messenger} target="_blank" rel="noopener noreferrer" aria-label="Nhắn tin Messenger">
+        <a className="fc-messenger" href={contact.messenger} target="_blank" rel="noopener noreferrer" aria-label={ui.messenger}>
           <MessageCircle size={22} aria-hidden="true" />
           <span className="fc-label" aria-hidden="true">
             Messenger
           </span>
         </a>
-        <a className="fc-phone" href={`tel:${contact.hotlineTel}`} aria-label={`Gọi hotline ${contact.hotline}`}>
+        <a className="fc-phone" href={`tel:${contact.hotlineTel}`} aria-label={fmt(ui.call, { phone: contact.hotline })}>
           <Phone size={22} aria-hidden="true" />
           <span className="fc-label" aria-hidden="true">
             {contact.hotline}
@@ -73,7 +76,7 @@ export function FloatingContact({ contact }: { contact: Contact }) {
         className="fc-toggle"
         aria-expanded={open}
         aria-controls="fc-items"
-        aria-label={open ? "Đóng liên hệ nhanh" : "Liên hệ nhanh: gọi, Zalo, Messenger"}
+        aria-label={open ? ui.close : ui.open}
         onClick={() => setOpen((v) => !v)}
       >
         {open ? <X size={22} aria-hidden="true" /> : <Phone size={22} aria-hidden="true" />}

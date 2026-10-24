@@ -1,0 +1,96 @@
+[
+  {
+    "slug": "lap-dat-man-hinh-led",
+    "name": "LED display installation",
+    "icon": "Monitor",
+    "headline": "LED display installation. Turnkey, on schedule.",
+    "subhead": "From site survey, design and equipment supply to installation and handover. Indoor and outdoor, nationwide.",
+    "summary": "Turnkey indoor and outdoor LED display installation with genuine equipment.",
+    "hero": "/images/services/lap-dat-man-hinh-led.webp",
+    "intro": "A great LED screen starts with **the right survey and a proper installation**. SKV's engineers own the entire process, from steel frames and electrical cabinets to color calibration, so your display runs reliably for years.",
+    "benefits": [
+      { "icon": "BadgeCheck", "title": "Genuine equipment", "text": "Exclusive distributor of BOE MLED and authorized distributor of NovaStar in Vietnam. Officially imported, with full traceability." },
+      { "icon": "HandCoins", "title": "Options for every budget", "text": "A wide range of product lines and price points, with a configuration matched to your actual needs." },
+      { "icon": "Headset", "title": "Dedicated after-sales care", "text": "Fast technical support, on-site troubleshooting and long-term warranty under the manufacturer's policy." }
+    ],
+    "process": [
+      { "title": "Site survey", "text": "We measure the space, viewing distance, lighting conditions and power supply." },
+      { "title": "Consulting & design", "text": "A recommended configuration, structural drawings and a wiring plan." },
+      { "title": "Quotation & contract", "text": "A transparent, itemized quotation with a clear timeline." },
+      { "title": "Installation", "text": "Framing, electrical work, cabinet and module mounting, signal connection." },
+      { "title": "Calibration & handover", "text": "Color and brightness calibration, plus operator training." },
+      { "title": "Warranty & maintenance", "text": "Scheduled inspections and technical support for the life of the product." }
+    ],
+    "solutions": ["hoi-truong", "phong-hop", "quang-cao-ngoai-troi", "truong-hoc-co-quan"]
+  },
+  {
+    "slug": "lap-dat-den-san-khau",
+    "name": "Stage lighting installation",
+    "icon": "Lightbulb",
+    "headline": "Stage lighting installation. Light, exactly as intended.",
+    "subhead": "Stage lighting systems designed and installed for events, weddings, bars, karaoke venues, auditoriums and theatres.",
+    "summary": "Stage lighting design and installation at any scale.",
+    "hero": "/images/services/lap-dat-den-san-khau.webp",
+    "intro": "Lighting isn't just about being seen. It sets **the mood of the show**. SKV helps you choose the right fixtures, place them in the right positions and program the right cues for every space.",
+    "benefits": [
+      { "icon": "Package", "title": "Always in stock", "text": "A wide range of fixture types, wattages and beam styles, delivered fast to meet your show date." },
+      { "icon": "ClipboardCheck", "title": "Tested before handover", "text": "Every fixture is thoroughly checked by our technicians before installation." },
+      { "icon": "Headset", "title": "24/7 support", "text": "Ready to advise and resolve technical issues whenever you need us." }
+    ],
+    "process": [
+      { "title": "Understand your needs", "text": "Type of show, stage size and the look you want." },
+      { "title": "Lighting design", "text": "Fixture layout, power calculations, rigging and control plan." },
+      { "title": "Equipment supply", "text": "Genuine moving heads, LED pars, profiles, lasers and special-effects equipment." },
+      { "title": "Installation & programming", "text": "Rigging fixtures, running DMX cabling and programming cues on the console." },
+      { "title": "Handover & training", "text": "A full test run, plus operation and maintenance training." }
+    ],
+    "solutions": ["san-khau-su-kien", "bar-karaoke", "tiec-cuoi-nha-hang", "hoi-truong"]
+  },
+  {
+    "slug": "cho-thue-man-hinh-led",
+    "name": "LED screen rental",
+    "icon": "CalendarClock",
+    "headline": "LED screen rental. Flexible for every event.",
+    "subhead": "Daily, weekly, monthly or per-project packages, including transport, installation and an on-site operator.",
+    "summary": "LED screens for hire by the day, week or project, with transport, setup and operation included.",
+    "hero": "/images/services/cho-thue-man-hinh-led.webp",
+    "intro": "Not every event needs its own permanent screen. With SKV's rental service, you get **a high-quality LED screen in the right size, at the right time**, without worrying about transport, installation or operation.",
+    "benefits": [
+      { "icon": "Truck", "title": "Turnkey, on location", "text": "Transport, setup and dismantling in Hanoi and across the provinces." },
+      { "icon": "UserCog", "title": "On-site technicians", "text": "Operation and instant troubleshooting throughout your event." },
+      { "icon": "Expand", "title": "Flexible sizing", "text": "Cabinets configured to fit your stage, flat or curved." }
+    ],
+    "process": [
+      { "title": "Define the purpose", "text": "Event type, content to be shown and audience size." },
+      { "title": "Assess the venue", "text": "Dimensions, mounting position and power supply on site." },
+      { "title": "Choose a configuration", "text": "Size, resolution, and ground-stacked or flown setup." },
+      { "title": "Setup & test run", "text": "We build the screen before the show and check content with the organizers." },
+      { "title": "Operation & teardown", "text": "A technician stays on duty throughout the event and removes the equipment afterwards." }
+    ],
+    "solutions": ["san-khau-su-kien", "tiec-cuoi-nha-hang", "hoi-truong"]
+  },
+  {
+    "slug": "sua-chua-man-hinh-led",
+    "name": "LED display repair & maintenance",
+    "icon": "Wrench",
+    "headline": "LED display repair. The right fix, the right price, on time.",
+    "subhead": "Maintenance, servicing and repair for indoor and outdoor LED displays of every brand, new or old.",
+    "summary": "Diagnosis, repair and scheduled maintenance for LED displays of any brand.",
+    "hero": "/images/services/sua-chua-man-hinh-led.webp",
+    "intro": "LED displays can last **100,000 hours** when properly cared for. SKV provides scheduled maintenance and repairs for displays of every brand, with genuine replacement parts and a warranty on all repairs.",
+    "benefits": [
+      { "icon": "Search", "title": "Accurate diagnosis, fair pricing", "text": "A clear diagnosis, quotation and completion time before any work begins." },
+      { "icon": "Cpu", "title": "Genuine parts", "text": "Replacement modules, receiving cards, power supplies and processors from SKV's genuine parts inventory." },
+      { "icon": "ShieldCheck", "title": "Warranty on repairs", "text": "Guaranteed warranty on replaced components and repair work." }
+    ],
+    "issues": ["No signal or no picture", "Lines, noise or flickering", "Dead pixels or dark patches on modules", "Color mismatch between modules or cabinets", "Faulty power supplies, receiving cards or sending cards", "Control software or configuration errors"],
+    "process": [
+      { "title": "Report", "text": "Describe the issue by phone, via Zalo, or with photos and videos." },
+      { "title": "On-site inspection", "text": "A technician diagnoses the fault with specialized equipment." },
+      { "title": "Quotation", "text": "A clear explanation of the cause, solution, cost and timeline." },
+      { "title": "Repair", "text": "Component replacement, software updates and color recalibration." },
+      { "title": "Handover & warranty", "text": "Testing, handover and a warranty on the repair work." }
+    ],
+    "solutions": ["hoi-truong", "quang-cao-ngoai-troi", "the-thao-cong-cong"]
+  }
+]

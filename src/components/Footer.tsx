@@ -1,32 +1,36 @@
 import Link from "next/link";
-import { productGroups, services, siteInfo, solutions } from "@/lib/content";
+import { fmt } from "@/i18n/config";
+import { getI18n } from "@/i18n/server";
 
 // Evaluated once per build, outside render, so pages stay fully static.
 const year = new Date().getFullYear();
 
-export function Footer() {
+export async function Footer() {
+  const { ui, c, href } = await getI18n();
+  const { siteInfo, solutions, services, productGroups } = c;
   const { contact, offices, social } = siteInfo;
+  const f = ui.footer;
 
   const columns = [
-    { title: "Giải pháp", links: solutions.map((s) => ({ href: `/giai-phap/${s.slug}`, label: s.name })) },
-    { title: "Dịch vụ", links: services.map((s) => ({ href: `/dich-vu/${s.slug}`, label: s.name })) },
-    { title: "Sản phẩm", links: productGroups.map((g) => ({ href: `/san-pham#${g.id}`, label: g.name })) },
+    { title: f.solutions, links: solutions.map((s) => ({ href: href(`/giai-phap/${s.slug}`), label: s.name })) },
+    { title: f.services, links: services.map((s) => ({ href: href(`/dich-vu/${s.slug}`), label: s.name })) },
+    { title: f.products, links: productGroups.map((g) => ({ href: href(`/san-pham#${g.id}`), label: g.name })) },
     {
-      title: "Về SKV Lighting",
+      title: f.about,
       links: [
-        { href: "/gioi-thieu", label: "Giới thiệu" },
-        { href: "/du-an", label: "Dự án tiêu biểu" },
-        { href: "/doi-tac", label: "Đối tác & thương hiệu" },
-        { href: "/tin-tuc", label: "Tin tức" },
+        { href: href("/gioi-thieu"), label: f.aboutUs },
+        { href: href("/du-an"), label: f.projects },
+        { href: href("/doi-tac"), label: f.partners },
+        { href: href("/tin-tuc"), label: f.news },
       ],
     },
     {
-      title: "Liên hệ",
+      title: f.contact,
       links: [
-        { href: `tel:${contact.hotlineTel}`, label: `Hotline ${contact.hotline}` },
-        { href: `tel:${contact.phoneTel}`, label: `Điện thoại ${contact.phone}` },
+        { href: `tel:${contact.hotlineTel}`, label: fmt(f.hotline, { phone: contact.hotline }) },
+        { href: `tel:${contact.phoneTel}`, label: fmt(f.phone, { phone: contact.phone }) },
         { href: `mailto:${contact.email}`, label: contact.email },
-        { href: "/lien-he", label: "Gửi yêu cầu tư vấn" },
+        { href: href("/lien-he"), label: f.request },
       ],
     },
   ];
@@ -50,7 +54,7 @@ export function Footer() {
         </div>
 
         <div className="footer-note" style={{ borderBottom: 0 }}>
-          <strong style={{ color: "#f5f5f7" }}>{siteInfo.legalName}</strong>
+          <strong style={{ color: "var(--text)" }}>{siteInfo.legalName}</strong>
           <br />
           {offices.map((o) => (
             <span key={o.label}>
@@ -58,14 +62,12 @@ export function Footer() {
               <br />
             </span>
           ))}
-          Mã số thuế: {siteInfo.taxCode} – {siteInfo.taxIssued}
+          {f.taxCode}: {siteInfo.taxCode} – {siteInfo.taxIssued}
         </div>
 
         <div className="footer-legal">
-          <span>
-            Bản quyền © {year} {siteInfo.name}. Bảo lưu mọi quyền.
-          </span>
-          <ul aria-label="Mạng xã hội">
+          <span>{fmt(f.rights, { year, name: siteInfo.name })}</span>
+          <ul aria-label={f.social}>
             {social.map((s) => (
               <li key={s.name}>
                 <a href={s.url} target="_blank" rel="noopener noreferrer">

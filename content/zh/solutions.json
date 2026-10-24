@@ -1,0 +1,321 @@
+[
+  {
+    "slug": "hoi-truong",
+    "name": "会堂与文化中心",
+    "short": "会堂",
+    "headline": "会堂。最后一排，也清晰可见。",
+    "subhead": "LED显示屏、舞台灯光与控制系统协同一体，服务会议、庆典与文艺演出。",
+    "tileHeadline": "最后一排，也清晰可见。",
+    "theme": "dark",
+    "hero": "/images/solutions/hoi-truong.webp",
+    "heroFocus": "center 45%",
+    "gallery": ["/images/solutions/hoi-truong-2.webp", "/images/solutions/hoi-truong-3.webp", "/images/solutions/hoi-truong-4.webp"],
+    "intro": "开灯后投影画面发白，喷绘背景每场活动都要重做。**会堂LED显示屏**在任何光照下都清晰锐利，数秒即可更换内容，并可稳定运行**10年以上**。",
+    "highlights": [
+      { "value": "800–1,500", "unit": "nits", "label": "会堂灯光全开时依然清晰的亮度" },
+      { "value": "100,000", "unit": "小时", "label": "LED寿命，相当于8–10年使用期" },
+      { "value": "P1.86–P3", "unit": "", "label": "按观看距离选择合适点间距" }
+    ],
+    "needs": [
+      { "icon": "Presentation", "title": "会议与研讨会", "text": "幻灯片、报告与图表清晰呈现，数百座的会场每个角落都看得清。" },
+      { "icon": "PartyPopper", "title": "庆典与文艺演出", "text": "动态背景取代喷绘，一键即可按节目切换主题。" },
+      { "icon": "Video", "title": "现场直播", "text": "摄像机画面、直播流与多路视频源同屏呈现。" }
+    ],
+    "system": [
+      { "icon": "Monitor", "title": "室内LED显示屏", "text": "BOE、Ledman、GLOSHINE P1.86–P3 箱体，按舞台尺寸无缝拼接。" },
+      { "icon": "Cpu", "title": "视频处理器", "text": "NovaStar、PixelHue 多窗口分割，切换流畅，色彩精准校正。" },
+      { "icon": "Lightbulb", "title": "舞台灯光", "text": "LED帕灯、摇头灯、追光灯，为发言人和节目营造层次感。" },
+      { "icon": "SlidersHorizontal", "title": "配电与控制", "text": "独立配电柜，按时序上下电，控制软件简单易用。" }
+    ],
+    "compare": {
+      "title": "LED显示屏还是投影仪？",
+      "columns": ["会堂LED显示屏", "会堂投影仪"],
+      "rows": [
+        ["亮度", "800–1,500 nits，开灯依然清晰", "亮度低，环境光下画面发白"],
+        ["尺寸", "模组灵活拼接，尺寸不受限", "受投影幕尺寸限制"],
+        ["寿命", "80,000–100,000小时", "灯泡3,000–5,000小时"],
+        ["运营成本", "维护少，长期更省", "需更换灯泡、定期维护"],
+        ["内容", "幻灯片、视频、直播、现场摄像", "以幻灯片和视频为主"]
+      ]
+    },
+    "productGroups": ["man-hinh-led", "xu-ly-hinh-anh", "den-san-khau"],
+    "faq": [
+      { "q": "我的会堂应该选多大点间距的屏？", "a": "点间距取决于第一排座位到屏幕的距离。第一排距屏3–5米时，通常适合P2–P2.5；纵深超过8米的大型会堂可选P3。SKV 会实地勘测，推荐性价比最优的配置。" },
+      { "q": "安装一块会堂显示屏需要多久？", "a": "20–40 m² 的显示屏，到货后施工通常需3–7天，包括钢架制作、电气布线、模组安装、校正与交付。" },
+      { "q": "交付后由谁操作显示屏？", "a": "SKV 会直接培训负责人员，提供操作手册，并在质保期内提供远程技术支持。" }
+    ]
+  },
+  {
+    "slug": "phong-hop",
+    "name": "会议室与视频会议",
+    "short": "会议室",
+    "headline": "会议室。每个细节，一目了然。",
+    "subhead": "微间距LED显示屏，适用于决策会议室、视频会议与指挥中心。",
+    "tileHeadline": "每个细节，一目了然。",
+    "theme": "light",
+    "hero": "/images/solutions/phong-hop.webp",
+    "heroFocus": "center 55%",
+    "gallery": ["/images/solutions/phong-hop-2.webp", "/images/solutions/phong-hop-3.webp"],
+    "intro": "告别拼接缝，近看也不刺眼。**COB小间距LED箱体**画面浑然一体，宛如一台超大电视，清晰到能看清表格里的每一个数字。",
+    "highlights": [
+      { "value": "P0.9", "unit": "", "label": "微间距，1米距离依然清晰" },
+      { "value": "0", "unit": "mm", "label": "拼缝——画面完全无缝" },
+      { "value": "COB", "unit": "", "label": "表面封胶，防撞、防尘、防潮" }
+    ],
+    "needs": [
+      { "icon": "Users", "title": "多点视频会议", "text": "多个会场与文档同屏显示，可连接摄像机与会议麦克风。" },
+      { "icon": "Presentation", "title": "数据展示", "text": "表格、地图、工程图纸，细节清晰呈现。" },
+      { "icon": "Building2", "title": "指挥调度中心", "text": "在一块大屏上全天候监看多路信号。" }
+    ],
+    "system": [
+      { "icon": "Monitor", "title": "小间距LED箱体", "text": "BOE MLED COB P0.9–P1.5，标准16:9比例，可拼接为2K、4K屏。" },
+      { "icon": "Cpu", "title": "多窗口处理器", "text": "NovaStar、PixelHue 多信号同时显示，按预案切换布局。" },
+      { "icon": "Camera", "title": "会议设备", "text": "对接单位现有的摄像机、麦克风、音箱与视频会议系统。" },
+      { "icon": "SlidersHorizontal", "title": "一键控制", "text": "通过控制面板或手机开关屏、选择信号源、切换布局。" }
+    ],
+    "productGroups": ["man-hinh-led", "xu-ly-hinh-anh"],
+    "faq": [
+      { "q": "LED显示屏能取代拼接电视或LCD拼接屏吗？", "a": "可以。小间距LED屏没有拼缝，亮度均匀，尺寸比LCD拼接屏更灵活，适合20 m²以上的会议室。" },
+      { "q": "近距离观看LED屏会不会累眼？", "a": "BOE COB 系列表面黑度高、防眩光、刷新率高，长时间会议近距离观看依然舒适。" },
+      { "q": "能否连接 Zoom、Teams 或现有会议系统？", "a": "可以。显示屏通过 HDMI/DP 接收电脑或会议终端的信号，适用于各类视频会议平台。" }
+    ]
+  },
+  {
+    "slug": "san-khau-su-kien",
+    "name": "舞台与活动",
+    "short": "舞台",
+    "headline": "舞台。光，成就每个高光时刻。",
+    "subhead": "LED显示屏、摇头灯，以及烟雾、CO2、冷焰火等特效全套配齐，服务活动、演出与演播室。",
+    "tileHeadline": "光，成就每个高光时刻。",
+    "theme": "dark",
+    "hero": "/images/solutions/san-khau-su-kien.webp",
+    "heroFocus": "center 40%",
+    "gallery": ["/images/solutions/san-khau-su-kien-2.webp", "/images/solutions/san-khau-su-kien-3.webp"],
+    "intro": "震撼的舞台，来自**画面、灯光与特效**的精准配合。SKV 提供设计、供应与执行一站式服务——你专注节目，其余交给我们。",
+    "highlights": [
+      { "value": "1", "unit": "个对接方", "label": "LED屏、灯光与特效由同一家公司负责" },
+      { "value": "24/7", "unit": "", "label": "技术人员在节目前和节目中随时待命" },
+      { "value": "现货", "unit": "", "label": "设备常备库存，赶得上活动档期" }
+    ],
+    "needs": [
+      { "icon": "PartyPopper", "title": "活动与产品发布", "text": "LED背景屏，以CO2、彩纸、冷焰火打造开场效果。" },
+      { "icon": "Music", "title": "音乐演出", "text": "光束、染色、频闪摇头灯与激光，通过DMX随音乐同步。" },
+      { "icon": "Video", "title": "演播室与综艺节目", "text": "适合摄像的小间距LED屏，灯光达到拍摄标准。" }
+    ],
+    "system": [
+      { "icon": "Monitor", "title": "活动LED箱体", "text": "快速拼装，平面或弧形拼接，可吊挂或落地搭建。" },
+      { "icon": "Lightbulb", "title": "摇头灯", "text": "Yellow River 光束、图案、染色、成像摇头灯，功率200–800W。" },
+      { "icon": "Sparkles", "title": "特效设备", "text": "DJPOWER 与 SKV 的烟雾机、雾机、CO2、喷火机、冷焰火、雪花与彩纸设备。" },
+      { "icon": "SlidersHorizontal", "title": "DMX控制", "text": "灯光控台，按节目各环节编排灯光程序。" }
+    ],
+    "productGroups": ["den-san-khau", "hieu-ung", "man-hinh-led"],
+    "faq": [
+      { "q": "SKV 提供按活动的一站式租赁吗？", "a": "提供。SKV 可按天、按周或按项目租赁LED显示屏，含运输、安装及现场技术人员操作。" },
+      { "q": "室内使用烟雾、火焰特效安全吗？", "a": "每种设备都有各自的安全距离。SKV 技术人员会勘测场地，推荐合适的特效类型，并在节目中亲自操作。" }
+    ]
+  },
+  {
+    "slug": "bar-karaoke",
+    "name": "酒吧、夜店与KTV",
+    "short": "酒吧与KTV",
+    "headline": "酒吧与KTV。让空间动起来。",
+    "subhead": "LED显示屏、效果灯与激光随音乐同步，为每个舞池、每间包厢量身设计。",
+    "tileHeadline": "让空间动起来。",
+    "theme": "dark",
+    "hero": "/images/solutions/bar-karaoke.webp",
+    "heroFocus": "center 55%",
+    "gallery": ["/images/solutions/bar-karaoke-2.webp", "/images/solutions/bar-karaoke-3.webp"],
+    "intro": "客人回头，是因为**体验**。灯光随节拍律动，LED屏讲述品牌故事，CO2在高潮时刻喷发——从图纸到开业，SKV 一一精心规划。",
+    "highlights": [
+      { "value": "随乐而动", "unit": "", "label": "灯光、激光与特效自动随音乐同步" },
+      { "value": "3D", "unit": "", "label": "施工前出具灯光效果图" },
+      { "value": "一站式", "unit": "", "label": "从门头、大堂到每间VIP包厢" }
+    ],
+    "needs": [
+      { "icon": "Music", "title": "酒吧与夜店舞池", "text": "DJ台LED屏、摇头灯、矩阵频闪灯与CO2，点燃每个高潮之夜。" },
+      { "icon": "MicVocal", "title": "KTV VIP包厢", "text": "KTV灯、迷你激光、吊顶或墙面LED屏，打造每间包厢的专属氛围。" },
+      { "icon": "Store", "title": "门头与招牌", "text": "户外LED屏与Logo投影灯，在街边就把客人引进门。" }
+    ],
+    "system": [
+      { "icon": "Monitor", "title": "装饰LED显示屏", "text": "舞台、DJ台、吊顶或立柱LED屏，内容按主题定制。" },
+      { "icon": "Lightbulb", "title": "效果灯与激光", "text": "迷你摇头灯、KTV灯、RGB激光、频闪灯，随音乐控制。" },
+      { "icon": "CloudFog", "title": "烟雾与CO2", "text": "雾机让光束更清晰，CO2与彩纸点亮高潮时刻。" },
+      { "icon": "Projector", "title": "Logo投影灯", "text": "将品牌Logo投射到人行道、墙面与迎宾大堂。" }
+    ],
+    "productGroups": ["den-san-khau", "hieu-ung", "den-chieu-logo"],
+    "faq": [
+      { "q": "能否为我的店型单独设计灯光？", "a": "可以。SKV 会勘测场地，在施工前制定设备布置方案与效果图，兼顾预算与店面风格。" },
+      { "q": "店内员工可以自行操作吗？", "a": "系统预设了随音乐自动运行的程序，员工只需选择模式即可。交付后 SKV 提供培训与技术支持。" }
+    ]
+  },
+  {
+    "slug": "tiec-cuoi-nha-hang",
+    "name": "婚宴与餐厅",
+    "short": "婚宴",
+    "headline": "婚宴。每个瞬间，都值得铭记。",
+    "subhead": "以LED背景取代喷绘，配合宴会厅灯光与冷烟、泡泡、彩纸特效，服务婚宴中心、餐厅与酒店。",
+    "tileHeadline": "每个瞬间，都值得铭记。",
+    "theme": "light",
+    "hero": "/images/solutions/tiec-cuoi-nha-hang.webp",
+    "heroFocus": "center 60%",
+    "gallery": ["/images/solutions/tiec-cuoi-nha-hang-2.webp", "/images/solutions/tiec-cuoi-nha-hang-3.webp"],
+    "intro": "每场婚宴一个主题，每天多个宴会厅。**LED背景屏**让餐厅几分钟内焕然一新，显示新人姓名、婚纱照与视频，彻底省去喷绘费用。",
+    "highlights": [
+      { "value": "几分钟", "unit": "", "label": "更换宴会厅主题，无需印刷，无需拆装" },
+      { "value": "P2.5–P4", "unit": "", "label": "宴会厅性价比最优配置" },
+      { "value": "0元", "unit": "", "label": "每场宴会的喷绘费用" }
+    ],
+    "needs": [
+      { "icon": "Heart", "title": "婚宴大厅", "text": "LED背景、新人追光、冷烟与泡泡，打造入场仪式。" },
+      { "icon": "UtensilsCrossed", "title": "餐厅与酒店", "text": "LED屏推广菜单与活动；大堂与庭院装饰照明。" },
+      { "icon": "Users", "title": "客户答谢会", "text": "只需更换播放内容，宴会厅即刻变身会场。" }
+    ],
+    "system": [
+      { "icon": "Monitor", "title": "LED背景屏", "text": "P2.5–P4 LED屏，按舞台尺寸定制，可分为多块屏。" },
+      { "icon": "Lightbulb", "title": "宴会厅灯光", "text": "帕灯、摇头灯、追光灯及装饰灯，契合宴会厅风格。" },
+      { "icon": "Snowflake", "title": "婚宴特效", "text": "冷烟、泡泡、雪花、彩纸与冷焰火，室内使用安全。" },
+      { "icon": "Projector", "title": "姓名与Logo投影灯", "text": "将新人姓名、餐厅Logo投射到地面、墙面或舞台。" }
+    ],
+    "productGroups": ["man-hinh-led", "hieu-ung", "den-san-khau"],
+    "faq": [
+      { "q": "餐厅需要专职技术人员吗？", "a": "不是必须。内容在电脑上准备，用简单的软件即可播放；交付后 SKV 会培训餐厅员工操作。" },
+      { "q": "LED屏能用于户外庭院吗？", "a": "可以。户外区域 SKV 采用IP65防水、高亮度户外箱体，白天也能清晰显示。" }
+    ]
+  },
+  {
+    "slug": "truong-hoc-co-quan",
+    "name": "学校与机关单位",
+    "short": "学校",
+    "headline": "学校与机关。传播清晰，日日可靠。",
+    "subhead": "为学校、学院与国家机关提供会堂LED屏、校园LED屏与电子公告屏。",
+    "tileHeadline": "传播清晰，日日可靠。",
+    "theme": "light",
+    "hero": "/images/solutions/truong-hoc-co-quan.webp",
+    "heroFocus": "center 50%",
+    "gallery": ["/images/solutions/truong-hoc-co-quan-2.webp", "/images/solutions/truong-hoc-co-quan-3.webp"],
+    "intro": "从操场上的开学典礼到会堂里的会议，**设计得当的LED系统**可在多年间服务数千场活动。SKV 已为越南北部各地的学院、中学、人民委员会及武装力量单位完成部署。",
+    "highlights": [
+      { "value": "室内", "unit": "与户外", "label": "会堂与校园，一家搞定" },
+      { "value": "资料", "unit": "齐全", "label": "CO、CQ及正规进口单证" },
+      { "value": "定期", "unit": "保养", "label": "按计划检查、清洁与软件升级" }
+    ],
+    "needs": [
+      { "icon": "School", "title": "校园与开学典礼", "text": "户外LED屏，服务升旗仪式、开学典礼与课外活动。" },
+      { "icon": "Presentation", "title": "报告厅与研讨会", "text": "会堂LED屏，用于教学、学术研讨及大型活动。" },
+      { "icon": "Megaphone", "title": "公告与宣传", "text": "定时自动播放通知、标语与宣传视频。" }
+    ],
+    "system": [
+      { "icon": "Monitor", "title": "室内/户外LED显示屏", "text": "按空间配置，从会堂P2.5到户外P5–P10。" },
+      { "icon": "CalendarClock", "title": "定时播放内容", "text": "排程软件，多块屏幕内容集中管理。" },
+      { "icon": "Lightbulb", "title": "会堂音响灯光", "text": "舞台灯光协同配合各类典礼与文艺演出。" },
+      { "icon": "ShieldCheck", "title": "资料与质保", "text": "财政资金项目所需单证齐全，按原厂政策质保。" }
+    ],
+    "productGroups": ["man-hinh-led", "xu-ly-hinh-anh"],
+    "faq": [
+      { "q": "SKV 能为国家财政资金项目提供完整资料吗？", "a": "可以。产品经正规渠道进口，具备CO、CQ及完整技术资料；SKV 可按业主要求协助报价与技术配置。" },
+      { "q": "户外屏能经受暴风雨吗？", "a": "户外箱体达到IP65标准，钢结构经抗风计算，并配有防雷接地。" }
+    ]
+  },
+  {
+    "slug": "the-thao-cong-cong",
+    "name": "体育馆与公共设施",
+    "short": "公共设施",
+    "headline": "公共设施。信息准时送达每个人。",
+    "subhead": "为体育馆、客运站、机场与医院提供LED显示屏，持续运行，集中管理。",
+    "tileHeadline": "信息准时送达每个人。",
+    "theme": "dark",
+    "hero": "/images/solutions/the-thao-cong-cong.webp",
+    "heroFocus": "center 35%",
+    "gallery": ["/images/solutions/the-thao-cong-cong-2.webp", "/images/solutions/the-thao-cong-cong-3.webp"],
+    "intro": "在每天人流数千的场所，屏幕必须**明亮清晰、持续运行、易于管理**。SKV 已为体育馆、Giáp Bát 与 Mỹ Đình 客运站部署LED系统——这些都是不容中断的设施。",
+    "highlights": [
+      { "value": "24/7", "unit": "", "label": "为多年持续运行而设计" },
+      { "value": "多块", "unit": "屏幕", "label": "一套系统集中管理" },
+      { "value": "冗余备份", "unit": "", "label": "重点区域电源与信号双备份" }
+    ],
+    "needs": [
+      { "icon": "Trophy", "title": "体育馆与体育场", "text": "主屏、比分屏与场边广告LED屏，服务各类赛事。" },
+      { "icon": "Bus", "title": "客运站与机场", "text": "班次信息屏、旅客指引与候车区广告。" },
+      { "icon": "Hospital", "title": "医院与医疗机构", "text": "叫号屏、导视信息与健康宣传。" }
+    ],
+    "system": [
+      { "icon": "Monitor", "title": "大型LED显示屏", "text": "赛场用P3.91，候车区与信息大厅用P2–P2.5。" },
+      { "icon": "Tv", "title": "信息显示屏", "text": "LED屏与电视结合，显示班次与叫号信息。" },
+      { "icon": "Cpu", "title": "集中控制", "text": "处理器与管理软件，在一间控制室管理多块屏幕。" },
+      { "icon": "Zap", "title": "备用电源", "text": "电气、电源与信号链路冗余设计，最大限度减少中断。" }
+    ],
+    "productGroups": ["man-hinh-led", "xu-ly-hinh-anh", "phu-kien-led"],
+    "faq": [
+      { "q": "能为体育馆安装场边LED屏吗？", "a": "可以。SKV 提供带软质防护层的场边LED屏，内容与主屏同步。" },
+      { "q": "分布在不同区域的多块屏幕能统一管理吗？", "a": "能。控制系统可从中央控制室统一更新所有屏幕的内容。" }
+    ]
+  },
+  {
+    "slug": "quang-cao-ngoai-troi",
+    "name": "户外广告与建筑外立面",
+    "short": "户外",
+    "headline": "户外。烈日之下，依然夺目。",
+    "subhead": "户外LED屏、格栅屏与透明屏，适用于建筑外立面、购物中心、展厅与广告牌。",
+    "tileHeadline": "烈日之下，依然夺目。",
+    "theme": "light",
+    "hero": "/images/solutions/quang-cao-ngoai-troi.webp",
+    "heroFocus": "center 70%",
+    "gallery": ["/images/solutions/quang-cao-ngoai-troi-2.webp", "/images/solutions/quang-cao-ngoai-troi-3.webp"],
+    "intro": "户外屏每天都要经受**日晒、雨淋、风吹与灰尘**。SKV 选用IP65标准箱体，进行钢结构与防雷计算，并配置亮度自动调节——让你的信息始终醒目，同时节省电费。",
+    "highlights": [
+      { "value": "IP65", "unit": "", "label": "防水防尘，适合户外运行" },
+      { "value": "95%", "unit": "", "label": "MUXWAVE 玻璃LED屏通透率" },
+      { "value": "P3.91–P10", "unit": "", "label": "按观看距离选择的配置范围" }
+    ],
+    "needs": [
+      { "icon": "Megaphone", "title": "广告牌", "text": "十字路口、临街及高层建筑的大型LED屏。" },
+      { "icon": "Building2", "title": "建筑外立面与购物中心", "text": "轻量通风的格栅屏，大面积覆盖外立面。" },
+      { "icon": "Store", "title": "展厅与门店", "text": "LED透明屏、LED海报屏，吸引顾客又不遮挡店内视线。" }
+    ],
+    "system": [
+      { "icon": "Monitor", "title": "户外LED箱体", "text": "IP65防水箱体，高亮度，支持前维护或后维护。" },
+      { "icon": "Layers", "title": "格栅屏与透明屏", "text": "GLOSHINE VA MAX、MUXWAVE——轻量通风，与玻璃建筑相得益彰。" },
+      { "icon": "Hammer", "title": "结构与防雷", "text": "静电喷涂钢架，风荷载计算，防雷接地系统。" },
+      { "icon": "Sun", "title": "亮度自动调节", "text": "光感探头在夜间降低亮度，省电并延长寿命。" }
+    ],
+    "productGroups": ["man-hinh-led", "phu-kien-led"],
+    "faq": [
+      { "q": "安装户外LED广告屏需要审批吗？", "a": "需要。户外广告牌须按当地规定办理建设许可与内容审批。SKV 提供技术资料，协助业主办理手续。" },
+      { "q": "透明屏真的能透视吗？", "a": "能。MUXWAVE LED透明屏通透率高达95%，既保留由内向外的视野，也保留门店的自然采光。" }
+    ]
+  },
+  {
+    "slug": "nha-xuong",
+    "name": "Gobo灯厂房导视",
+    "short": "厂房",
+    "headline": "厂房。让安全被看见。",
+    "subhead": "Gobo投影灯用于通道指引、叉车分流与危险区域警示——清晰醒目，不像地面标线那样会磨损褪色。",
+    "tileHeadline": "让安全被看见。",
+    "theme": "light",
+    "hero": "/images/solutions/nha-xuong.webp",
+    "heroFocus": "center 65%",
+    "gallery": ["/images/solutions/nha-xuong-2.webp", "/images/solutions/nha-xuong-3.webp"],
+    "intro": "地面标线几个月就会褪色，警示牌容易被遮挡。**Gobo投影灯**将箭头、警示标志与人行通道以高亮度直接投射到地面——远处即可识别，不会磨损，内容随时可换。",
+    "highlights": [
+      { "value": "15–150", "unit": "W", "label": "功率范围覆盖各种安装高度" },
+      { "value": "按需定制", "unit": "", "label": "刻制工厂专属标识、Logo与内容" },
+      { "value": "0", "unit": "", "label": "磨损——替代传统地面标线" }
+    ],
+    "needs": [
+      { "icon": "Forklift", "title": "叉车分流", "text": "投射行车路线、交叉口及叉车作业警示。" },
+      { "icon": "TriangleAlert", "title": "危险区域", "text": "警示机械区域、高压电区域及必须佩戴防护用品的区域。" },
+      { "icon": "Footprints", "title": "人行通道与疏散", "text": "清晰指示人行通道与疏散方向。" }
+    ],
+    "system": [
+      { "icon": "Projector", "title": "大功率LED Gobo灯", "text": "SKV 15–150W投影灯，室内户外皆可，固定或旋转投射。" },
+      { "icon": "Palette", "title": "定制Gobo片", "text": "标准安全标识，或按工厂视觉识别定制。" },
+      { "icon": "Ruler", "title": "勘测与布置", "text": "根据平面图计算安装位置、投射角度与投影尺寸。" },
+      { "icon": "Wrench", "title": "安装与质保", "text": "吊顶、壁挂安装，接电调试，上门质保。" }
+    ],
+    "productGroups": ["den-chieu-logo"],
+    "faq": [
+      { "q": "照明充足的厂房里，投影图案能看清吗？", "a": "大功率LED Gobo灯在常规工业照明条件下投影清晰。SKV 会根据吊挂高度和厂房实际照度选择功率。" },
+      { "q": "投影内容可以更换吗？", "a": "可以。只需更换Gobo片即可切换为新标识，无需更换灯具。" }
+    ]
+  }
+]

@@ -491,6 +491,79 @@ body:has(.localnav) .globalnav {
     height: 44px;
   }
 }
+/* language switch: globe + current code, opening a small list of the three languages */
+.lang-switch {
+  position: relative;
+}
+.lang-toggle {
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 10px;
+  border: 0;
+  border-radius: 999px;
+  background: none;
+  color: var(--nav-text);
+  font: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color var(--dur-fast) var(--ease), transform 0.16s var(--ease-press);
+}
+.lang-toggle:hover,
+.lang-toggle[aria-expanded="true"] {
+  background: color-mix(in srgb, var(--nav-text) 12%, transparent);
+}
+.lang-toggle:active {
+  transform: scale(0.96);
+}
+.lang-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  min-width: 168px;
+  margin: 0;
+  padding: 6px;
+  list-style: none;
+  border-radius: 14px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.28);
+  animation: menu-in var(--dur) var(--ease-out);
+}
+.lang-menu a {
+  display: block;
+  padding: 10px 12px;
+  border-radius: 9px;
+  color: var(--text);
+  font-size: 15px;
+  text-decoration: none;
+}
+.lang-menu a:hover {
+  background: color-mix(in srgb, var(--text) 8%, transparent);
+}
+.lang-menu a[aria-current="true"] {
+  font-weight: 600;
+  color: var(--link);
+}
+@media (max-width: 999px) {
+  .lang-toggle {
+    height: 44px;
+  }
+}
+
+/* Chinese: system CJK faces, and no negative tracking (it crowds Han characters) */
+:root {
+  --font-cjk: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", "Source Han Sans SC";
+}
+html:lang(zh) body {
+  /* Latin from SF / Inter, Han characters from the CJK faces (before the generic family, which would match everything) */
+  font-family: "SF Pro Display", "SF Pro Text", -apple-system, BlinkMacSystemFont, var(--font-inter), var(--font-cjk), sans-serif;
+}
+html:lang(zh) * {
+  letter-spacing: normal !important;
+}
 /* show the icon of the mode you would switch to */
 .theme-icon-moon,
 :root[data-theme="light"] .theme-icon-sun {

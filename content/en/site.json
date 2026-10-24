@@ -1,0 +1,47 @@
+{
+  "name": "SKV Lighting",
+  "legalName": "Ho Gia Investment Development, Trading and Services Joint Stock Company",
+  "shortLegalName": "HO GIA ITS., JSC",
+  "tagline": "Professional display and lighting solutions",
+  "description": "SKV Lighting designs, supplies and installs turnkey LED displays, stage lighting and special-effects equipment for auditoriums, meeting rooms, event stages, bars and karaoke venues, wedding halls and public buildings nationwide.",
+  "url": "https://skv.lighting",
+  "taxCode": "0108234451",
+  "taxIssued": "Issued by the Hanoi Department of Planning and Investment on 13/04/2018",
+  "founded": 2018,
+  "contact": {
+    "hotline": "0968 240 789",
+    "hotlineTel": "0968240789",
+    "hotline2": "0902 163 816",
+    "hotline2Tel": "0902163816",
+    "phone": "024 6686 3633",
+    "phoneTel": "02466863633",
+    "email": "ceo@skv.lighting",
+    "zalo": "https://zalo.me/0968240789",
+    "messenger": "https://m.me/skvlighting",
+    "hours": "Consultation and technical support 24/7 via our hotline"
+  },
+  "offices": [
+    {
+      "label": "Head office",
+      "address": "Số 2, ngách 20, ngõ 77 Phố Lụa, tổ dân phố Hồng Phong, phường Vạn Phúc, quận Hà Đông, Hà Nội",
+      "map": "https://www.google.com/maps/search/?api=1&query=Ng%C3%A1ch%2020%20Ng%C3%B5%2077%20Ph%E1%BB%91%20L%E1%BB%A5a%20V%E1%BA%A1n%20Ph%C3%BAc%20H%C3%A0%20%C4%90%C3%B4ng%20H%C3%A0%20N%E1%BB%99i"
+    },
+    {
+      "label": "Representative office",
+      "address": "Phố Biển 16-08 & 16-10, Vinhomes Ocean Park 3, Nghĩa Trụ, Hưng Yên",
+      "map": "https://www.google.com/maps/search/?api=1&query=Vinhomes%20Ocean%20Park%203%20Ph%E1%BB%91%20Bi%E1%BB%83n%2016"
+    }
+  ],
+  "social": [
+    { "name": "Facebook", "url": "https://www.facebook.com/skvlighting/" },
+    { "name": "YouTube", "url": "https://www.youtube.com/@skvlighting" },
+    { "name": "TikTok", "url": "https://www.tiktok.com/@skvlighting" },
+    { "name": "Zalo", "url": "https://zalo.me/0968240789" }
+  ],
+  "stats": [
+    { "value": "3,245+", "label": "projects completed" },
+    { "value": "10+", "label": "years of industry experience" },
+    { "value": "11,400+", "label": "clients nationwide" },
+    { "value": "65+", "label": "partners and brands" }
+  ]
+}
