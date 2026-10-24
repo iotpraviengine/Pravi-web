@@ -1,5 +1,5 @@
 ---
-title: Lắp Ráp Cabin LED P3.91 Outdoor Cung Cấp Cho Đối Tác
+title: Lắp ráp cabin LED P3.91 outdoor cho đối tác
 date: '2023-09-27'
 location: Đối tác phân phối
 solution: quang-cao-ngoai-troi

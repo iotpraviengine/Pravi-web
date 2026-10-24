@@ -1,5 +1,5 @@
 ---
-title: 'Thi Công Màn Hình Led P2.5 Indoor Tại Việt Yên, Bắc Giang'
+title: 'Màn hình LED P2.5 indoor tại Việt Yên, Bắc Giang'
 date: '2025-01-23'
 location: 'Việt Yên, Bắc Giang'
 solution: hoi-truong

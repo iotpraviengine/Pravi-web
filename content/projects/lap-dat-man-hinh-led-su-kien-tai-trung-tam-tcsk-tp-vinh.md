@@ -1,5 +1,5 @@
 ---
-title: Lắp Đặt Màn Hình Led Sự Kiện Tại Trung Tâm TCSK TP Vinh
+title: Màn hình LED sự kiện tại Trung tâm tổ chức sự kiện TP. Vinh
 date: '2021-07-01'
 location: Trung Tâm TCSK TP Vinh
 solution: san-khau-su-kien

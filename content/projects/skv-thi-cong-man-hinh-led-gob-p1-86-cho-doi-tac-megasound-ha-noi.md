@@ -1,5 +1,5 @@
 ---
-title: 'Thi Công Màn Hình LED GOB P1.86 Cho Đối Tác MEGASOUND, Hà Nội'
+title: 'Màn hình LED GOB P1.86 cho Megasound, Hà Nội'
 date: '2023-11-27'
 location: Đối tác phân phối
 solution: san-khau-su-kien

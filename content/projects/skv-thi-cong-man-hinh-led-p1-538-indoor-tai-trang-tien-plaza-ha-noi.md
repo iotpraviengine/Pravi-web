@@ -1,5 +1,5 @@
 ---
-title: 'Thi Công Màn Hình LED P1.538 Indoor Tại Tràng Tiền Plaza, Hà Nội'
+title: 'Màn hình LED P1.538 indoor tại Tràng Tiền Plaza, Hà Nội'
 date: '2023-11-17'
 location: 'Tràng Tiền Plaza, Hà Nội'
 solution: phong-hop

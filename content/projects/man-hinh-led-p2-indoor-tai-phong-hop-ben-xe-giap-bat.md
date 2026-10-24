@@ -1,5 +1,5 @@
 ---
-title: Thi Công Màn Hình Led P2 Indoor Tại Phòng Họp Bến Xe Giáp Bát
+title: Màn hình LED P2 indoor tại phòng họp Bến xe Giáp Bát
 date: '2024-11-01'
 location: Phòng Họp Bến Xe Giáp Bát
 solution: phong-hop

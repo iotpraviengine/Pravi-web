@@ -1,7 +1,5 @@
 ---
-title: >-
-  Thi công lắp đặt Màn hình Led và Đèn sân khấu tại Trung tâm Văn hóa tỉnh Điện
-  Biên
+title: Màn hình LED và đèn sân khấu tại Trung tâm Văn hóa tỉnh Điện Biên
 date: '2023-06-13'
 location: Trung tâm Văn hóa tỉnh Điện Biên
 solution: hoi-truong

@@ -1,5 +1,5 @@
 ---
-title: 'Thi Công Màn Hình LED P10 Outdoor Tại UBND Huyện Yên Phong, Bắc Ninh'
+title: 'Màn hình LED P10 outdoor tại UBND huyện Yên Phong, Bắc Ninh'
 date: '2024-07-31'
 location: 'UBND Huyện Yên Phong, Bắc Ninh'
 solution: quang-cao-ngoai-troi

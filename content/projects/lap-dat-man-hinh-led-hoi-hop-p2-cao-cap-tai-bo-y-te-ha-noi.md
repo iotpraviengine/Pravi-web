@@ -1,5 +1,5 @@
 ---
-title: Lắp đặt màn hình led hội họp P2 cao cấp tại Bộ Y tế Hà Nội
+title: 'Màn hình LED hội họp P2 tại Bộ Y tế, Hà Nội'
 date: '2021-06-24'
 location: Bộ Y tế Hà Nội
 solution: phong-hop

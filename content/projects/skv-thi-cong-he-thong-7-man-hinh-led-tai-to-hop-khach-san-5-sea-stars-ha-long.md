@@ -1,5 +1,5 @@
 ---
-title: Thi Công Hệ Thống 7 Màn Hình Led Tại Tổ Hợp Khách Sạn 5* Sea Stars Hạ Long
+title: Hệ thống 7 màn hình LED tại khách sạn 5 sao Sea Stars Hạ Long
 date: '2024-01-16'
 location: Tổ Hợp Khách Sạn 5* Sea Stars Hạ Long
 solution: tiec-cuoi-nha-hang

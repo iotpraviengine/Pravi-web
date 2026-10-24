@@ -1,5 +1,5 @@
 ---
-title: 'Lắp Ráp Cabin Led P4 Outdoor Cho Phòng Khám Đa Khoa Số 50 Hàng Bún, Hà Nội'
+title: 'Cabin LED P4 outdoor cho Phòng khám Đa khoa 50 Hàng Bún, Hà Nội'
 date: '2023-10-26'
 location: 'Phòng Khám Đa Khoa Số 50 Hàng Bún, Hà Nội'
 solution: quang-cao-ngoai-troi

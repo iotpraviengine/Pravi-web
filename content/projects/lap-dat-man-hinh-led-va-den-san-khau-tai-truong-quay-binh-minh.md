@@ -1,5 +1,5 @@
 ---
-title: Lắp Đặt Màn Hình Led Và Đèn Sân Khấu Tại Trường Quay Bình Minh
+title: Màn hình LED và đèn sân khấu tại trường quay Bình Minh
 date: '2021-06-16'
 location: Trường Quay Bình Minh
 solution: san-khau-su-kien

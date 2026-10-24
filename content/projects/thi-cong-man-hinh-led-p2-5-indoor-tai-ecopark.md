@@ -1,5 +1,5 @@
 ---
-title: Thi Công Màn Hình Led P2.5 Indoor Tại Khu Đô Thị Ecopark Hưng Yên
+title: 'Màn hình LED P2.5 indoor tại khu đô thị Ecopark, Hưng Yên'
 date: '2024-12-20'
 location: Khu Đô Thị Ecopark Hưng Yên
 solution: hoi-truong

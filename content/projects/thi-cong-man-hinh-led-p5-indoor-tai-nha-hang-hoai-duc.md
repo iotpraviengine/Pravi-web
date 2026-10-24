@@ -1,5 +1,5 @@
 ---
-title: 'Thi Công Màn Hình Led P5 Indoor Tại Nhà Hàng Hoài Đức, Hà Nội'
+title: 'Màn hình LED P5 indoor tại nhà hàng Hoài Đức, Hà Nội'
 date: '2024-01-24'
 location: 'Nhà Hàng Hoài Đức, Hà Nội'
 solution: tiec-cuoi-nha-hang

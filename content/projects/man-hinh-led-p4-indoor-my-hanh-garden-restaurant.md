@@ -1,7 +1,5 @@
 ---
-title: >-
-  Thi Công Màn Hình Led P4 Indoor Tại Nhà Hàng Mỹ Hạnh Garden Restaurant, Hòa
-  Bình
+title: 'Màn hình LED P4 indoor tại nhà hàng Mỹ Hạnh Garden, Hòa Bình'
 date: '2024-06-04'
 location: 'Nhà Hàng Mỹ Hạnh Garden Restaurant, Hòa Bình'
 solution: tiec-cuoi-nha-hang

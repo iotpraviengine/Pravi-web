@@ -1,5 +1,5 @@
 ---
-title: 'Thi công, lắp đặt màn hình led tại công trình Monaza Trần Duy Hưng'
+title: 'Màn hình LED tại karaoke Monaza, Trần Duy Hưng'
 date: '2021-06-23'
 location: công trình Monaza Trần Duy Hưng
 solution: bar-karaoke

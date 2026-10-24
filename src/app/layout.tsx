@@ -62,7 +62,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <Nav hotline={siteInfo.contact.hotline} hotlineTel={siteInfo.contact.hotlineTel} />
         <main id="main">{children}</main>
         <Footer />
-        <FloatingContact />
+        <FloatingContact contact={siteInfo.contact} />
       </body>
     </html>
   );

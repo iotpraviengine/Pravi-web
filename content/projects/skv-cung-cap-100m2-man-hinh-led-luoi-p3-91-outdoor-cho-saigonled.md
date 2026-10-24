@@ -1,5 +1,5 @@
 ---
-title: Cung Cấp 100m2 Màn Hình LED Lưới P3.91 Outdoor Cho SAIGONLED
+title: 100 m² màn hình LED lưới P3.91 outdoor cho SaigonLED
 date: '2023-10-30'
 location: SAIGONLED
 solution: quang-cao-ngoai-troi

@@ -1,5 +1,5 @@
 ---
-title: Thi Công Màn Hình LED Hội Trường P3 Indoor Tại Bắc Ninh
+title: Màn hình LED hội trường P3 indoor tại Bắc Ninh
 date: '2025-03-29'
 location: Bắc Ninh
 solution: hoi-truong

@@ -1,5 +1,5 @@
 ---
-title: Thi Công Màn Hình LED Hội Trường P2.0 Tại Phòng Khám Đa Khoa 50 Hàng Bún
+title: Màn hình LED hội trường P2.0 tại Phòng khám Đa khoa 50 Hàng Bún
 date: '2023-10-30'
 location: Phòng Khám Đa Khoa 50 Hàng Bún
 solution: hoi-truong

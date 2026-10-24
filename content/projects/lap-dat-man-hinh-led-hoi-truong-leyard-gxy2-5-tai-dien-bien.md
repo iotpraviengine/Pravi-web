@@ -1,5 +1,5 @@
 ---
-title: Lắp đặt màn hình led hội trường Leyard GXY2.5 tại Điện Biên
+title: Màn hình LED hội trường Leyard GXY2.5 tại Điện Biên
 date: '2021-06-17'
 location: Điện Biên
 solution: hoi-truong

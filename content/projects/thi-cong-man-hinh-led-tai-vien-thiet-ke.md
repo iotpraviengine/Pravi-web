@@ -1,5 +1,5 @@
 ---
-title: 'Thi Công Bộ 2 Màn Hình Led Tại Viện Thiết Kế – Tổng Cục Hậu Cần, Hà Nội'
+title: 'Bộ 2 màn hình LED tại Viện Thiết kế – Tổng cục Hậu cần, Hà Nội'
 date: '2024-11-25'
 location: 'Viện Thiết Kế – Tổng Cục Hậu Cần, Hà Nội'
 solution: phong-hop

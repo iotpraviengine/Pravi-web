@@ -1,5 +1,5 @@
 ---
-title: Thi Công 100m2 Màn Hình Led P2 Indoor Tại Trung Tâm Văn Hóa Tỉnh Ninh Bình
+title: 100 m² màn hình LED P2 indoor tại Trung tâm Văn hóa tỉnh Ninh Bình
 date: '2024-04-05'
 location: Trung Tâm Văn Hóa Tỉnh Ninh Bình
 solution: hoi-truong

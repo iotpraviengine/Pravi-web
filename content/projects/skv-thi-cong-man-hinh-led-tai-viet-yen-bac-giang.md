@@ -1,7 +1,5 @@
 ---
-title: >-
-  Thi Công Màn Hình Led P2.5 Indoor Tại Trung Tâm Văn Hóa Huyện Việt Yên, Bắc
-  Giang
+title: 'Màn hình LED P2.5 indoor tại Trung tâm Văn hóa huyện Việt Yên, Bắc Giang'
 date: '2024-12-02'
 location: 'Trung Tâm Văn Hóa Huyện Việt Yên, Bắc Giang'
 solution: hoi-truong

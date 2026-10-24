@@ -1,5 +1,5 @@
 ---
-title: Thi Công Màn Hình LED Phòng Họp P1.5 Indoor Tại VPF Việt Nam
+title: Màn hình LED phòng họp P1.5 indoor tại VPF Việt Nam
 date: '2024-06-07'
 location: VPF Việt Nam
 solution: phong-hop

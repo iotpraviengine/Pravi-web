@@ -1,5 +1,5 @@
 ---
-title: 'Thi Công Hệ Thống 2 Màn Hình LED Tại Học Viện Quốc Phòng, Hà Nội'
+title: 'Hệ thống 2 màn hình LED tại Học viện Quốc phòng, Hà Nội'
 date: '2023-11-11'
 location: 'Học Viện Quốc Phòng, Hà Nội'
 solution: truong-hoc-co-quan

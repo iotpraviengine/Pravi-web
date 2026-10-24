@@ -1,5 +1,5 @@
 ---
-title: Lắp Đặt Màn Hình Led P2.5 Hội Họp Tại Tòa Tháp ITC Hà Nội
+title: 'Màn hình LED hội họp P2.5 tại tòa tháp ITC, Hà Nội'
 date: '2021-06-28'
 location: Tòa Tháp ITC Hà Nội
 solution: phong-hop

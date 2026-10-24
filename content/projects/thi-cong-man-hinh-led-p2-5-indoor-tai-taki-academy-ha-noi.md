@@ -1,5 +1,5 @@
 ---
-title: 'Thi Công Màn Hình Led P2.5 Indoor Tại Học viện Taki Academy, Hà Nội'
+title: 'Màn hình LED P2.5 indoor tại Học viện Taki Academy, Hà Nội'
 date: '2024-07-31'
 location: 'Học viện Taki Academy, Hà Nội'
 solution: truong-hoc-co-quan

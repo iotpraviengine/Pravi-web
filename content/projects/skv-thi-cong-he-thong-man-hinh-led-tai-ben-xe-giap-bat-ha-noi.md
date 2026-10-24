@@ -1,5 +1,5 @@
 ---
-title: 'Thi Công Hệ Thống Màn Hình LED Tại Bến Xe Giáp Bát, Hà Nội'
+title: 'Hệ thống màn hình LED tại Bến xe Giáp Bát, Hà Nội'
 date: '2023-09-27'
 location: 'Bến Xe Giáp Bát, Hà Nội'
 solution: the-thao-cong-cong

@@ -1,5 +1,5 @@
 ---
-title: 'Thi Công Màn Hình Led P5 Outdoor Tại Trường THCS Phượng Cách, Quốc Oai'
+title: 'Màn hình LED P5 outdoor tại Trường THCS Phượng Cách, Quốc Oai'
 date: '2024-02-20'
 location: 'Trường THCS Phượng Cách, Quốc Oai'
 solution: quang-cao-ngoai-troi

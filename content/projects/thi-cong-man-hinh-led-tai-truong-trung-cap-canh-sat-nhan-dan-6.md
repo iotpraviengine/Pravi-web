@@ -1,5 +1,5 @@
 ---
-title: Thi Công Màn Hình LED Tại Trường Trung Cấp Cảnh Sát Nhân Dân 6
+title: Màn hình LED tại Trường Trung cấp Cảnh sát nhân dân 6
 date: '2025-03-18'
 location: Trường Trung Cấp Cảnh Sát Nhân Dân 6
 solution: truong-hoc-co-quan

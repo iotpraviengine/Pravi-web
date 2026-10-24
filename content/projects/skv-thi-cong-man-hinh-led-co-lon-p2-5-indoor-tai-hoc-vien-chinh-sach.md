@@ -1,5 +1,5 @@
 ---
-title: Thi Công Màn Hình Led Cỡ Lớn P2.5 indoor Tại Học Viện Chính Sách
+title: Màn hình LED cỡ lớn P2.5 indoor tại Học viện Chính sách và Phát triển
 date: '2024-01-24'
 location: Học Viện Chính Sách
 solution: truong-hoc-co-quan

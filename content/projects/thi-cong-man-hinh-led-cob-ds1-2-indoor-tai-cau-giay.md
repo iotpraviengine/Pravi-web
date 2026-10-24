@@ -1,5 +1,5 @@
 ---
-title: 'Thi Công Màn Hình LED COB DS1.2 Indoor Tại Cầu Giấy, Hà Nội'
+title: 'Màn hình LED COB DS1.2 indoor tại Cầu Giấy, Hà Nội'
 date: '2025-01-17'
 location: 'Cầu Giấy, Hà Nội'
 solution: hoi-truong

@@ -1,5 +1,5 @@
 ---
-title: Thi Công Màn Hình LED P2.5 Tại Bộ Tư Lệnh Bộ Đội Biên Phòng Hà Nội
+title: 'Màn hình LED P2.5 tại Bộ Tư lệnh Bộ đội Biên phòng, Hà Nội'
 date: '2023-10-26'
 location: Bộ Tư Lệnh Bộ Đội Biên Phòng Hà Nội
 solution: hoi-truong

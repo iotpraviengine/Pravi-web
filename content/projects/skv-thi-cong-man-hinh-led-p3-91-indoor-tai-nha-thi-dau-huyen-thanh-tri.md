@@ -1,5 +1,5 @@
 ---
-title: Thi Công Màn Hình LED P3.91 Indoor Tại Nhà Thi Đấu Huyện Thanh Trì
+title: Màn hình LED P3.91 indoor tại Nhà thi đấu huyện Thanh Trì
 date: '2023-12-22'
 location: Nhà Thi Đấu Huyện Thanh Trì
 solution: the-thao-cong-cong

@@ -1,5 +1,5 @@
 ---
-title: 'Nhà Thầu Uy Tín Thi Công Màn Hình Led Sân Trường THPT Thạch Thất, Hà Nội'
+title: 'Màn hình LED sân trường THPT Thạch Thất, Hà Nội'
 date: '2023-08-09'
 location: 'THPT Thạch Thất, Hà Nội'
 solution: truong-hoc-co-quan

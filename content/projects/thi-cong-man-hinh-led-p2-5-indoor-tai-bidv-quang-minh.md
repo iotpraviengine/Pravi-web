@@ -1,5 +1,5 @@
 ---
-title: Thi Công Màn Hình Led P2.5 Indoor Tại Ngân Hàng BIDV Quang Minh
+title: Màn hình LED P2.5 indoor tại BIDV Quang Minh
 date: '2024-12-11'
 location: Ngân Hàng BIDV Quang Minh
 solution: phong-hop

@@ -1,7 +1,5 @@
 ---
-title: >-
-  Thi Công Lắp Đặt Hệ Thống Màn Hình Led Tại Nhà Hàng Phương Đông, Ân Thi, Hưng
-  Yên
+title: 'Hệ thống màn hình LED tại nhà hàng Phương Đông, Ân Thi, Hưng Yên'
 date: '2023-08-29'
 location: 'Nhà Hàng Phương Đông, Ân Thi, Hưng Yên'
 solution: tiec-cuoi-nha-hang

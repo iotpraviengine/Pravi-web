@@ -1,5 +1,5 @@
 ---
-title: Cung Cấp 40m2 Cabin Led GOB P3.076 Cho Đối Tác SaiGonLED
+title: 40 m² cabin LED GOB P3.076 cho SaigonLED
 date: '2023-12-11'
 location: Đối tác phân phối
 solution: san-khau-su-kien

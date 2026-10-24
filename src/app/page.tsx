@@ -5,11 +5,12 @@ import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 import { HeroVideo } from "@/components/HeroVideo";
 import { CtaBand, ProjectCard } from "@/components/ui";
-import { brands, getProjects, solutions } from "@/lib/content";
+import { brands, getProjects, siteInfo, solutions } from "@/lib/content";
 
 // Background video for the LED panel: drop files into public/videos/ and they are picked up at build time.
 const videoFile = (name: string) => (fs.existsSync(path.join(process.cwd(), "public/videos", name)) ? `/videos/${name}` : undefined);
-const ledPoster = "/images/home/led-boe-poster.webp";
+// Wide screens: the poster with its on-screen text blurred out, so nothing competes with the headline.
+const ledPoster = "/images/home/led-boe-poster-clean.webp";
 // Narrow screens get the right-hand crop of the poster: the full photo carries on-screen text that clashes with our headline.
 const ledPosterNarrow = "/images/home/led-boe-poster-narrow.webp";
 
@@ -62,22 +63,28 @@ export default function HomePage() {
 
   return (
     <>
-      <h1 className="sr-only">SKV Lighting – màn hình LED, đèn sân khấu và thiết bị hiệu ứng</h1>
-
       {/* LED: full-screen video (or poster photo until the video is supplied) */}
-      <Link href="/san-pham#man-hinh-led" className="hero-video" aria-label="Màn hình LED – xem sản phẩm">
+      <section className="hero-video" aria-labelledby="hero-title">
+        {/* The whole picture links to the LED products; the copy sits above it and lets clicks through except on the call button. */}
+        <Link href="/san-pham#man-hinh-led" className="hero-video-link" aria-label="Xem sản phẩm màn hình LED" />
         {mp4 ? (
           <HeroVideo mp4={mp4} webm={videoFile("led-hero.webm")} mobileMp4={videoFile("led-hero-mobile.mp4")} poster={ledPoster} />
         ) : (
           <LedPoster />
         )}
         <div className="hero-video-copy">
-          <span className="hero-video-eyebrow">Màn hình LED · BOE MLED · NovaStar</span>
-          <h2 className="hero-video-title">
+          <h1 id="hero-title" className="hero-video-title">
             <span className="accent">Sống động</span> đến từng điểm ảnh.
-          </h2>
+          </h1>
+          <p className="hero-video-lead">
+            SKV Lighting cung cấp và thi công màn hình LED, đèn sân khấu, thiết bị hiệu ứng – nhà phân phối độc quyền BOE MLED tại Việt
+            Nam.
+          </p>
+          <a href={`tel:${siteInfo.contact.hotlineTel}`} className="btn btn-primary hero-video-call">
+            Gọi {siteInfo.contact.hotline}
+          </a>
         </div>
-      </Link>
+      </section>
 
       {/* Stage lighting + effects: two columns that together match the LED panel */}
       <section className="duo" aria-label="Đèn sân khấu và thiết bị hiệu ứng">
@@ -137,18 +144,20 @@ export default function HomePage() {
       {/* Partners */}
       <section className="section" aria-labelledby="brands-title">
         <div className="container">
-          <h2 id="brands-title" className="headline center reveal" style={{ marginBottom: "clamp(28px, 4vw, 48px)" }}>
+          <h2 id="brands-title" className="headline reveal" style={{ marginBottom: "clamp(28px, 4vw, 48px)" }}>
             <Link href="/doi-tac" className="title-link">
               Chính hãng từ những thương hiệu dẫn đầu
+              <ChevronRight size={36} strokeWidth={2} aria-hidden="true" />
             </Link>
           </h2>
-          <div className="brand-grid reveal">
+          {/* One large line of names instead of a grid of identical boxes; the two exclusive partners lead in full white. */}
+          <p className="brand-line reveal">
             {brands.map((b) => (
-              <div key={b.name} className="brand-cell">
+              <span key={b.name} className={b.featured ? "is-featured" : undefined}>
                 {b.name}
-              </div>
+              </span>
             ))}
-          </div>
+          </p>
         </div>
       </section>
 

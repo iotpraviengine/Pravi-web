@@ -1,5 +1,5 @@
 ---
-title: Thi Công Hệ Thống Màn Hình LED Tại Dự Án Rue De Charme – 214 Nguyễn Xiển
+title: 'Hệ thống màn hình LED tại dự án Rue de Charme, 214 Nguyễn Xiển'
 date: '2023-09-06'
 location: Dự Án Rue De Charme – 214 Nguyễn Xiển
 solution: phong-hop

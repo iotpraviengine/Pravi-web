@@ -1,5 +1,5 @@
 ---
-title: 'Thi Công Màn Hình LED Hội Trường Tại KCN Quang Minh, Hà Nội'
+title: 'Màn hình LED hội trường tại KCN Quang Minh, Hà Nội'
 date: '2024-12-18'
 location: 'KCN Quang Minh, Hà Nội'
 solution: hoi-truong

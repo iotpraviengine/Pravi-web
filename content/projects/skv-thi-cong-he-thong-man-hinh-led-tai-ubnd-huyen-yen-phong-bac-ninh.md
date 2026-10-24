@@ -1,5 +1,5 @@
 ---
-title: 'Thi Công Hệ Thống Màn Hình LED Tại UBND Huyện Yên Phong, Bắc Ninh'
+title: 'Hệ thống màn hình LED tại UBND huyện Yên Phong, Bắc Ninh'
 date: '2023-10-26'
 location: 'UBND Huyện Yên Phong, Bắc Ninh'
 solution: hoi-truong

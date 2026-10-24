@@ -1,5 +1,5 @@
 ---
-title: Bàn giao dự án lắp đặt màn hình Led – Tivi – Ghế chờ tại bến xe Mỹ Đình
+title: 'Màn hình LED, tivi và ghế chờ tại Bến xe Mỹ Đình'
 date: '2023-12-21'
 location: bến xe Mỹ Đình
 solution: the-thao-cong-cong
