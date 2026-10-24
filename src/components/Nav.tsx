@@ -38,11 +38,22 @@ export function Nav({ hotline, hotlineTel }: { hotline: string; hotlineTel: stri
     };
   }, [open]);
 
+  // Home: the bar floats transparent over the LED picture, then turns solid once the visitor scrolls past it.
+  const overlay = pathname === "/";
+  const [scrolled, setScrolled] = useState(false);
+  useEffect(() => {
+    if (!overlay) return;
+    const onScroll = () => setScrolled(window.scrollY > window.innerHeight * 0.55);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [overlay]);
+
   const isCurrent = (href: string) => pathname === href || pathname.startsWith(href + "/");
 
   return (
     <>
-      <header className="globalnav">
+      <header className={`globalnav${overlay ? " is-overlay" : ""}`} data-solid={overlay && (scrolled || open) ? "true" : undefined}>
         <nav className="container globalnav-inner" aria-label="Điều hướng chính">
           <Link href="/" className="brand" aria-label="SKV Lighting – Trang chủ">
             <Image src="/images/brand/skv-logo.png" alt="" width={30} height={30} priority />

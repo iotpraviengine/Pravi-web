@@ -6,13 +6,25 @@ import { MessageCircle, Phone, X } from "lucide-react";
 type Contact = { zalo: string; messenger: string; hotline: string; hotlineTel: string };
 
 /**
- * Quick-contact buttons. On desktop the three buttons are always shown; below 1024px they fold
- * into one toggle so they don't sit on top of headlines and pictures.
+ * Quick-contact buttons folded into one toggle. With a mouse, hovering opens Zalo / Messenger / Call
+ * and leaving closes them (after a short grace period); on touch, a tap toggles; keyboard focus opens.
  * Contact details come in as props: this is a client component and must not import the fs-based content loader.
  */
+const CLOSE_DELAY_MS = 220;
 export function FloatingContact({ contact }: { contact: Contact }) {
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
+  const closeTimer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
+
+  const openNow = () => {
+    clearTimeout(closeTimer.current);
+    setOpen(true);
+  };
+  const closeSoon = () => {
+    clearTimeout(closeTimer.current);
+    closeTimer.current = setTimeout(() => setOpen(false), CLOSE_DELAY_MS);
+  };
+  useEffect(() => () => clearTimeout(closeTimer.current), []);
 
   useEffect(() => {
     if (!open) return;
@@ -27,7 +39,15 @@ export function FloatingContact({ contact }: { contact: Contact }) {
   }, [open]);
 
   return (
-    <div ref={ref} className="float-contact" data-open={open}>
+    <div
+      ref={ref}
+      className="float-contact"
+      data-open={open}
+      onPointerEnter={(e) => e.pointerType === "mouse" && openNow()}
+      onPointerLeave={(e) => e.pointerType === "mouse" && closeSoon()}
+      onFocus={openNow}
+      onBlur={(e) => !ref.current?.contains(e.relatedTarget as Node | null) && closeSoon()}
+    >
       <div id="fc-items" className="fc-items">
         <a className="fc-zalo" href={contact.zalo} target="_blank" rel="noopener noreferrer" aria-label="Chat Zalo">
           Zalo
