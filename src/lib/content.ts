@@ -23,6 +23,8 @@ export type Solution = {
   tileHeadline: string;
   theme: "dark" | "light";
   hero: string;
+  /** CSS object-position for the hero when it is cropped into a fixed frame, e.g. "center 30%" (default: centre). */
+  heroFocus?: string;
   gallery: string[];
   intro: string;
   highlights: { value: string; unit: string; label: string }[];

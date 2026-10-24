@@ -8,6 +8,7 @@
     "tileHeadline": "Rõ nét đến tận hàng ghế cuối.",
     "theme": "dark",
     "hero": "/images/solutions/hoi-truong.webp",
+    "heroFocus": "center 45%",
     "gallery": ["/images/solutions/hoi-truong-2.webp", "/images/solutions/hoi-truong-3.webp", "/images/solutions/hoi-truong-4.webp"],
     "intro": "Máy chiếu mờ đi khi bật đèn, phông in phải thay sau mỗi sự kiện. **Màn hình LED hội trường** hiển thị sắc nét trong mọi điều kiện ánh sáng, thay nội dung chỉ trong vài giây và vận hành bền bỉ **hơn 10 năm**.",
     "highlights": [
@@ -53,6 +54,7 @@
     "tileHeadline": "Mọi chi tiết đều hiện rõ.",
     "theme": "light",
     "hero": "/images/solutions/phong-hop.webp",
+    "heroFocus": "center 55%",
     "gallery": ["/images/solutions/phong-hop-2.webp", "/images/solutions/phong-hop-3.webp"],
     "intro": "Không còn đường viền giữa các tấm màn ghép, không còn lóa sáng khi nhìn gần. **Cabin LED COB điểm ảnh nhỏ** cho hình ảnh liền mạch như một chiếc TV khổng lồ, đủ sắc nét để đọc từng con số trong bảng tính.",
     "highlights": [
@@ -87,6 +89,7 @@
     "tileHeadline": "Ánh sáng làm nên khoảnh khắc.",
     "theme": "dark",
     "hero": "/images/solutions/san-khau-su-kien.webp",
+    "heroFocus": "center 40%",
     "gallery": ["/images/solutions/san-khau-su-kien-2.webp", "/images/solutions/san-khau-su-kien-3.webp"],
     "intro": "Một sân khấu ấn tượng là sự phối hợp chính xác giữa **hình ảnh, ánh sáng và hiệu ứng**. SKV thiết kế, cung cấp và vận hành trọn gói – để bạn tập trung vào chương trình, còn chúng tôi lo phần còn lại.",
     "highlights": [
@@ -120,6 +123,7 @@
     "tileHeadline": "Không gian biết chuyển động.",
     "theme": "dark",
     "hero": "/images/solutions/bar-karaoke.webp",
+    "heroFocus": "center 55%",
     "gallery": ["/images/solutions/bar-karaoke-2.webp", "/images/solutions/bar-karaoke-3.webp"],
     "intro": "Khách quay lại vì **trải nghiệm**. Ánh sáng chuyển động theo nhịp nhạc, màn LED kể câu chuyện thương hiệu và hiệu ứng CO2 đúng lúc cao trào – tất cả được SKV tính toán từ bản vẽ đến buổi khai trương.",
     "highlights": [
@@ -153,6 +157,7 @@
     "tileHeadline": "Mỗi khoảnh khắc đều đáng nhớ.",
     "theme": "light",
     "hero": "/images/solutions/tiec-cuoi-nha-hang.webp",
+    "heroFocus": "center 60%",
     "gallery": ["/images/solutions/tiec-cuoi-nha-hang-2.webp", "/images/solutions/tiec-cuoi-nha-hang-3.webp"],
     "intro": "Mỗi tiệc cưới một chủ đề, mỗi ngày nhiều sảnh tiệc. **Phông nền LED** giúp nhà hàng đổi không gian trong vài phút, hiển thị tên cô dâu chú rể, ảnh cưới, video – và loại bỏ hoàn toàn chi phí in phông.",
     "highlights": [
@@ -186,6 +191,7 @@
     "tileHeadline": "Truyền thông rõ ràng, bền bỉ mỗi ngày.",
     "theme": "light",
     "hero": "/images/solutions/truong-hoc-co-quan.webp",
+    "heroFocus": "center 50%",
     "gallery": ["/images/solutions/truong-hoc-co-quan-2.webp", "/images/solutions/truong-hoc-co-quan-3.webp"],
     "intro": "Từ lễ khai giảng ngoài sân trường đến hội nghị trong hội trường, **một hệ thống LED được thiết kế đúng** phục vụ hàng nghìn sự kiện trong nhiều năm. SKV đã triển khai cho học viện, trường phổ thông, UBND và các đơn vị lực lượng vũ trang trên khắp miền Bắc.",
     "highlights": [
@@ -219,6 +225,7 @@
     "tileHeadline": "Thông tin đến đúng người, đúng lúc.",
     "theme": "dark",
     "hero": "/images/solutions/the-thao-cong-cong.webp",
+    "heroFocus": "center 35%",
     "gallery": ["/images/solutions/the-thao-cong-cong-2.webp", "/images/solutions/the-thao-cong-cong-3.webp"],
     "intro": "Ở nơi có hàng nghìn lượt người qua lại mỗi ngày, màn hình phải **sáng rõ, hoạt động liên tục và dễ quản lý**. SKV đã triển khai hệ thống LED cho nhà thi đấu, bến xe Giáp Bát và Mỹ Đình – những công trình không được phép gián đoạn.",
     "highlights": [
@@ -252,6 +259,7 @@
     "tileHeadline": "Sáng rõ giữa ban ngày.",
     "theme": "light",
     "hero": "/images/solutions/quang-cao-ngoai-troi.webp",
+    "heroFocus": "center 70%",
     "gallery": ["/images/solutions/quang-cao-ngoai-troi-2.webp", "/images/solutions/quang-cao-ngoai-troi-3.webp"],
     "intro": "Màn hình ngoài trời phải chống chọi với **nắng, mưa, gió và bụi** mỗi ngày. SKV chọn cabin chuẩn IP65, tính toán kết cấu thép, chống sét và điều chỉnh độ sáng tự động – để thông điệp của bạn luôn nổi bật mà vẫn tiết kiệm điện.",
     "highlights": [
@@ -285,6 +293,7 @@
     "tileHeadline": "An toàn được chiếu sáng.",
     "theme": "light",
     "hero": "/images/solutions/nha-xuong.webp",
+    "heroFocus": "center 65%",
     "gallery": ["/images/solutions/nha-xuong-2.webp", "/images/solutions/nha-xuong-3.webp"],
     "intro": "Sơn kẻ vạch mờ dần sau vài tháng, biển báo dễ bị che khuất. **Đèn chiếu Gobo** chiếu trực tiếp mũi tên, biển cảnh báo, lối đi bộ xuống sàn với độ sáng cao – dễ nhận biết từ xa, không mài mòn và thay đổi nội dung bất cứ lúc nào.",
     "highlights": [

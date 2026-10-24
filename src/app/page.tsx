@@ -132,7 +132,7 @@ export default function HomePage() {
       <SolutionRail
         title="Giải pháp cho mọi không gian"
         href="/giai-phap"
-        items={solutions.map((s) => ({ slug: s.slug, name: s.short, line: s.tileHeadline, image: s.hero }))}
+        items={solutions.map((s) => ({ slug: s.slug, name: s.short, line: s.tileHeadline, image: s.hero, focus: s.heroFocus }))}
       />
 
       {/* Projects */}

@@ -5,12 +5,12 @@ import Link from "next/link";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { ChevronRight, Pause, Play } from "lucide-react";
 
-export type RailItem = { slug: string; name: string; line: string; image: string };
+export type RailItem = { slug: string; name: string; line: string; image: string; focus?: string };
 
 const SLIDE_MS = 5000;
 
 /**
- * Horizontal snap-scrolling row of solutions that advances on its own (Apple-style gallery):
+ * One solution per view (neighbours peeking in at the sides) that advances on its own (Apple-style gallery):
  * the active dot stretches into a progress bar, the other dots jump to their card, and a
  * pause/play button stops the rotation. It also holds still while off screen, while keyboard
  * focus is inside, and starts paused for visitors who prefer reduced motion. Swiping still works.
@@ -121,13 +121,22 @@ export function SolutionRail({ items, title, href }: { items: RailItem[]; title:
 
       <ul ref={track} className="rail-track" aria-label={title}>
         {items.map((s, i) => (
-          <li key={s.slug} className="rail-item reveal" aria-roledescription="slide" aria-label={`${i + 1} / ${items.length}: ${s.name}`}>
+          <li
+            key={s.slug}
+            className="rail-item reveal"
+            data-active={i === active ? "true" : undefined}
+            aria-roledescription="slide"
+            aria-label={`${i + 1} / ${items.length}: ${s.name}`}
+          >
+            {/* every slide shares one frame; the picture fills it, cropped around its focus, with the caption on a scrim */}
             <Link href={`/giai-phap/${s.slug}`} className="rail-card">
               <div className="rail-media">
-                <Image src={s.image} alt="" fill sizes="(min-width: 1000px) 400px, 78vw" />
+                <Image src={s.image} alt="" fill sizes="(min-width: 734px) 1100px, 92vw" style={{ objectPosition: s.focus }} />
               </div>
-              <h3 className="rail-name">{s.name}</h3>
-              <p className="rail-line">{s.line}</p>
+              <div className="rail-caption">
+                <h3 className="rail-name">{s.name}</h3>
+                <p className="rail-line">{s.line}</p>
+              </div>
             </Link>
           </li>
         ))}
