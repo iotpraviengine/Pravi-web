@@ -59,7 +59,15 @@ export type Product = {
 };
 export type ProductGroup = { id: string; name: string; blurb: string; items: Product[] };
 
-export type Brand = { name: string; badge?: string; category: string; text: string; featured?: boolean };
+export type Brand = {
+  name: string;
+  badge?: string;
+  category: string;
+  text: string;
+  featured?: boolean;
+  /** White-on-transparent mark for dark backgrounds (public/images/brands/logos/). */
+  logo?: { src: string; width: number; height: number };
+};
 
 export type Post = {
   slug: string;

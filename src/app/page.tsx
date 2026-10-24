@@ -6,6 +6,7 @@ import { ChevronRight } from "lucide-react";
 import type { CSSProperties } from "react";
 import { AmbientPlay } from "@/components/AmbientPlay";
 import { HeroVideo } from "@/components/HeroVideo";
+import { LogoMarquee } from "@/components/LogoMarquee";
 import { SolutionRail } from "@/components/SolutionRail";
 import { CtaBand, ProjectCard } from "@/components/ui";
 import { brands, getProjects, siteInfo, solutions } from "@/lib/content";
@@ -163,15 +164,8 @@ export default function HomePage() {
               <ChevronRight size={36} strokeWidth={2} aria-hidden="true" />
             </Link>
           </h2>
-          {/* One large line of names instead of a grid of identical boxes; the two exclusive partners lead in full white. */}
-          <p className="brand-line reveal">
-            {brands.map((b) => (
-              <span key={b.name} className={b.featured ? "is-featured" : undefined}>
-                {b.name}
-              </span>
-            ))}
-          </p>
         </div>
+        <LogoMarquee brands={brands} label="Thương hiệu đối tác" />
       </section>
 
       <CtaBand />

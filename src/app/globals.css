@@ -1794,26 +1794,63 @@ a.tile-link:hover .title {
   }
 }
 
-/* partners: brand names set as one large line of type */
-.brand-line {
+/* partners: logos gliding sideways in an endless loop, fading out at both edges */
+.marquee {
+  --logo-h: clamp(60px, 6.4vw, 96px); /* height of a square mark; wider wordmarks are drawn shorter */
+  overflow: hidden;
+  padding-block: clamp(28px, 4vw, 48px);
+  border-block: 1px solid var(--line);
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent);
+}
+.marquee-track {
   display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: 0.15em 0;
-  /* a statement, not a headline: capped at 36px desktop / 24px phone */
-  font-size: clamp(24px, 2.6vw, 36px);
-  line-height: 1.35;
-  font-weight: 600;
-  letter-spacing: -0.02em;
-  color: var(--text-3);
+  align-items: center;
+  width: max-content;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  /* the list is there twice: sliding by half the track lands exactly on the start of the copy */
+  animation: marquee var(--marquee-dur, 40s) linear infinite;
 }
-.brand-line span:not(:last-child)::after {
-  content: "·";
-  margin: 0 0.35em;
-  color: #424245;
+.marquee-item {
+  flex: none;
+  /* spacing as padding, not gap, so both copies are the same width */
+  padding-inline: clamp(28px, 3.6vw, 56px);
 }
-.brand-line .is-featured {
-  color: var(--text);
+.marquee-item img {
+  display: block;
+  width: auto;
+  opacity: 0.82;
+  transition: opacity var(--dur-fast) var(--ease);
+}
+.marquee-item img:hover {
+  opacity: 1;
+}
+.marquee:hover .marquee-track,
+.marquee:not([data-playing="true"]) .marquee-track {
+  animation-play-state: paused;
+}
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .marquee {
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+  .marquee-track {
+    animation: none;
+    width: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 32px;
+  }
+  .marquee-item[aria-hidden] {
+    display: none;
+  }
 }
 
 
