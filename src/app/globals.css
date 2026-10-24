@@ -1845,8 +1845,4 @@ a.tile-link:hover .title {
   .duo-ember .duo-media {
     inset: 34% -18% 4%;
   }
-  /* portrait crop of the landscape poster: keep the forest side, not the on-screen text */
-  img.hero-video-media {
-    object-position: 100% 50%;
-  }
 }

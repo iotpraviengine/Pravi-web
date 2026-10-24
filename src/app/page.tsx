@@ -1,6 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
-import Image from "next/image";
+import Image, { getImageProps } from "next/image";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 import { HeroVideo } from "@/components/HeroVideo";
@@ -10,6 +10,22 @@ import { brands, getProjects, solutions } from "@/lib/content";
 // Background video for the LED panel: drop files into public/videos/ and they are picked up at build time.
 const videoFile = (name: string) => (fs.existsSync(path.join(process.cwd(), "public/videos", name)) ? `/videos/${name}` : undefined);
 const ledPoster = "/images/home/led-boe-poster.webp";
+// Narrow screens get the right-hand crop of the poster: the full photo carries on-screen text that clashes with our headline.
+const ledPosterNarrow = "/images/home/led-boe-poster-narrow.webp";
+
+function LedPoster() {
+  const common = { alt: "Màn hình LED BOE MLED hiển thị phong cảnh rừng núi", sizes: "100vw", priority: true };
+  const { props: { srcSet: wide, ...rest } } = getImageProps({ ...common, src: ledPoster, width: 1454, height: 910 });
+  const { props: { srcSet: narrow } } = getImageProps({ ...common, src: ledPosterNarrow, width: 594, height: 910 });
+  return (
+    <picture>
+      <source media="(max-width: 1023px)" srcSet={narrow} />
+      <source media="(min-width: 1024px)" srcSet={wide} />
+      {/* eslint-disable-next-line jsx-a11y/alt-text -- alt comes from getImageProps via rest */}
+      <img {...rest} className="hero-video-media" />
+    </picture>
+  );
+}
 
 // The two product lines below the LED video, side by side, each in its own colour world.
 const duo = [
@@ -53,7 +69,7 @@ export default function HomePage() {
         {mp4 ? (
           <HeroVideo mp4={mp4} webm={videoFile("led-hero.webm")} mobileMp4={videoFile("led-hero-mobile.mp4")} poster={ledPoster} />
         ) : (
-          <Image src={ledPoster} alt="Màn hình LED BOE MLED hiển thị phong cảnh rừng núi" fill priority sizes="100vw" className="hero-video-media" />
+          <LedPoster />
         )}
         <div className="hero-video-copy">
           <span className="hero-video-eyebrow">Màn hình LED · BOE MLED · NovaStar</span>
