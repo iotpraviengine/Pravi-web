@@ -1571,54 +1571,6 @@ a.card:hover {
   }
 }
 
-/* ---------- solution grid (image tiles with names) ---------- */
-
-.solution-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
-}
-@media (min-width: 834px) {
-  .solution-grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
-  }
-}
-.solution-tile {
-  position: relative;
-  display: block;
-  aspect-ratio: 4 / 3;
-  border-radius: var(--radius-md);
-  overflow: hidden;
-  background: var(--bg-alt);
-  color: #fff;
-  text-decoration: none !important;
-}
-.solution-tile img {
-  object-fit: cover;
-  transition: transform 0.8s var(--ease-out);
-}
-.solution-tile::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 45%, rgba(0, 0, 0, 0.78) 100%);
-}
-.solution-tile span {
-  position: absolute;
-  left: clamp(14px, 2vw, 24px);
-  right: 14px;
-  bottom: clamp(12px, 1.8vw, 22px);
-  z-index: 1;
-  font-size: clamp(17px, 1.9vw, 24px);
-  font-weight: 600;
-  letter-spacing: -0.015em;
-  line-height: 1.15;
-}
-.solution-tile:hover img {
-  transform: scale(1.05);
-}
-
 /* a section title that is itself the link to the full list */
 .title-link {
   display: inline-flex;
@@ -1901,18 +1853,114 @@ a.tile-link:hover .title {
   color: var(--text);
 }
 
-/* nine solutions on a two-column grid: the last one takes the full row instead of sitting alone */
-@media (max-width: 833px) {
-  .solution-tile:last-child:nth-child(odd) {
-    grid-column: 1 / -1;
-    aspect-ratio: 8 / 3;
-  }
-}
 
 /* wide screens: the full poster carries on-screen text on its left half – sink it under a stronger scrim */
 @media (min-width: 1024px) {
   .hero-video::after {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.4) 40%, rgba(0, 0, 0, 0) 65%),
       linear-gradient(90deg, rgba(0, 0, 0, 0.78) 0%, rgba(0, 0, 0, 0.55) 38%, rgba(0, 0, 0, 0) 68%);
+  }
+}
+
+/* ---------- solutions rail (home): horizontal snap-scrolling row ---------- */
+
+.rail-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: clamp(28px, 4vw, 48px);
+}
+.rail-controls {
+  display: flex;
+  gap: 12px;
+  flex: none;
+}
+.rail-btn {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border: 0;
+  border-radius: 50%;
+  background: var(--bg-alt);
+  color: var(--text);
+  cursor: pointer;
+  transition: background-color var(--dur-fast) var(--ease), transform var(--dur-fast) var(--ease);
+}
+.rail-btn:hover:not(:disabled) {
+  background: #2c2c2e;
+}
+.rail-btn:active:not(:disabled) {
+  transform: scale(0.94);
+}
+.rail-btn:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+/* the row starts on the page's left margin and runs out past the right edge */
+.rail-track {
+  --rail-inset: max(var(--gutter), calc((100% - var(--container)) / 2));
+  display: flex;
+  gap: clamp(12px, 1.6vw, 20px);
+  margin: 0;
+  padding: 0 var(--rail-inset) 8px;
+  list-style: none;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-padding-inline: var(--rail-inset);
+  overscroll-behavior-x: contain;
+  scrollbar-width: none;
+}
+.rail-track::-webkit-scrollbar {
+  display: none;
+}
+.rail-item {
+  flex: 0 0 clamp(260px, 30vw, 400px);
+  scroll-snap-align: start;
+}
+.rail-card {
+  display: block;
+  color: inherit;
+  text-decoration: none !important;
+}
+.rail-media {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--bg-alt);
+}
+.rail-media img {
+  object-fit: cover;
+  transition: transform 0.8s var(--ease-out);
+}
+.rail-card:hover .rail-media img {
+  transform: scale(1.04);
+}
+.rail-name {
+  margin-top: 18px;
+  font-size: clamp(21px, 1.9vw, 26px);
+  line-height: 1.2;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  transition: color var(--dur-fast) var(--ease);
+}
+.rail-card:hover .rail-name {
+  color: var(--link);
+}
+.rail-line {
+  margin-top: 6px;
+  font-size: 17px;
+  line-height: 1.45;
+  color: var(--text-2);
+}
+@media (max-width: 733px) {
+  .rail-item {
+    flex-basis: 78%;
+  }
+  /* swipe is the control on phones */
+  .rail-controls {
+    display: none;
   }
 }

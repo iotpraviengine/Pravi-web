@@ -4,6 +4,7 @@ import Image, { getImageProps } from "next/image";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 import { HeroVideo } from "@/components/HeroVideo";
+import { SolutionRail } from "@/components/SolutionRail";
 import { CtaBand, ProjectCard } from "@/components/ui";
 import { brands, getProjects, siteInfo, solutions } from "@/lib/content";
 
@@ -102,25 +103,12 @@ export default function HomePage() {
         ))}
       </section>
 
-      {/* Solutions */}
-      <section className="section" aria-labelledby="solutions-title">
-        <div className="container">
-          <h2 id="solutions-title" className="headline reveal" style={{ marginBottom: "clamp(28px, 4vw, 48px)" }}>
-            <Link href="/giai-phap" className="title-link">
-              Giải pháp cho mọi không gian
-              <ChevronRight size={36} strokeWidth={2} aria-hidden="true" />
-            </Link>
-          </h2>
-          <div className="solution-grid">
-            {solutions.map((s, i) => (
-              <Link key={s.slug} href={`/giai-phap/${s.slug}`} className="solution-tile reveal" data-delay={String(i % 3)}>
-                <Image src={s.hero} alt="" fill sizes="(min-width: 834px) 33vw, 50vw" />
-                <span>{s.short}</span>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* Solutions: one horizontal, swipeable row */}
+      <SolutionRail
+        title="Giải pháp cho mọi không gian"
+        href="/giai-phap"
+        items={solutions.map((s) => ({ slug: s.slug, name: s.short, line: s.tileHeadline, image: s.hero }))}
+      />
 
       {/* Projects */}
       <section className="section theme-alt" aria-labelledby="projects-title">
