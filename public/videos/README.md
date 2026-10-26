@@ -6,3 +6,8 @@
 - led-hero-mobile.mp4 (không bắt buộc – bản dọc 1080×1350 cho điện thoại)
 
 Website tự nhận video khi file có mặt; nếu chưa có, khối dùng ảnh public/images/home/led-boe-screen.webp.
+
+Video cho hai khối sản phẩm dưới khối LED (chạy 1 lần mỗi lần tải trang, khi khối hiện ra trên màn hình):
+
+- effects.mp4 / effects.webm / effects-poster.jpg – khối Thiết bị hiệu ứng (nên quay trên nền đen)
+- stage.mp4 / stage.webm / stage-poster.jpg – khối Đèn sân khấu
