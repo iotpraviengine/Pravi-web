@@ -89,7 +89,7 @@ export default async function NewsPostPage({ params }: PageProps<"/[lang]/tin-tu
         </div>
       </section>
 
-      <CtaBand alt={false} />
+      <CtaBand />
     </>
   );
 }

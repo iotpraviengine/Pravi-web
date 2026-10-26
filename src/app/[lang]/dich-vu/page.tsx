@@ -35,7 +35,7 @@ export default async function ServicesPage() {
         ))}
       </div>
 
-      <CtaBand alt={false} />
+      <CtaBand />
     </>
   );
 }

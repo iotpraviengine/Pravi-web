@@ -92,7 +92,7 @@ export default async function AboutPage() {
         </div>
       </section>
 
-      <CtaBand alt={false} />
+      <CtaBand />
     </>
   );
 }

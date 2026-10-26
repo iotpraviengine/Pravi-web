@@ -4,6 +4,7 @@ import { ChevronRight, Mail, MapPin, Phone, Plus } from "lucide-react";
 import { emphasis, formatDate, type Post, type Product, type Project } from "@/lib/content";
 import { fmt } from "@/i18n/config";
 import { getI18n } from "@/i18n/server";
+import { LedNumber } from "./LedNumber";
 
 // Server components: the ones that need words or links read the current language themselves.
 
@@ -162,27 +163,29 @@ export function Faq({ items }: { items: { q: string; a: string }[] }) {
   );
 }
 
-export async function CtaBand({ title, alt = true }: { title?: string; alt?: boolean }) {
-  const { ui, t, c } = await getI18n();
+/** Closing call to action: the hotline as an LED wall. Always dark, like a panel that is switched off. */
+export async function CtaBand({ title }: { title?: string }) {
+  const { ui, t, c, href } = await getI18n();
   const { contact } = c.siteInfo;
   return (
-    <section className={`section cta-band${alt ? " theme-alt" : ""}`}>
-      <div className="container reveal">
+    <section className="cta-band theme-dark">
+      <div className="container cta-head reveal">
         <h2 className="headline">{title ?? t.cta.default}</h2>
-        <p className="cta-phone">
-          <a href={`tel:${contact.hotlineTel}`}>{contact.hotline}</a>
-        </p>
-        <div className="cta-contacts small muted">
-          <a href={`mailto:${contact.email}`}>
-            <Mail size={16} aria-hidden="true" /> {contact.email}
-          </a>
-          <a href={contact.zalo} target="_blank" rel="noopener noreferrer">
-            <Phone size={16} aria-hidden="true" /> Zalo
-          </a>
-          <span style={{ display: "inline-flex", alignItems: "center", gap: 8 }}>
-            <MapPin size={16} aria-hidden="true" /> {ui.common.regions}
-          </span>
-        </div>
+        <Link href={href("/lien-he")} className="btn btn-primary">
+          {ui.nav.cta}
+        </Link>
+      </div>
+      <LedNumber text={contact.hotline} href={`tel:${contact.hotlineTel}`} label={fmt(ui.common.call, { phone: contact.hotline })} />
+      <div className="container cta-contacts">
+        <a href={`mailto:${contact.email}`}>
+          <Mail size={18} aria-hidden="true" /> {contact.email}
+        </a>
+        <a href={contact.zalo} target="_blank" rel="noopener noreferrer">
+          <Phone size={18} aria-hidden="true" /> Zalo
+        </a>
+        <span>
+          <MapPin size={18} aria-hidden="true" /> {ui.common.regions}
+        </span>
       </div>
     </section>
   );

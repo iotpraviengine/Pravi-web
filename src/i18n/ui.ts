@@ -75,6 +75,7 @@ const vi = {
     sectionsOf: "Mục trong trang {title}",
     productQuote: "{name} – yêu cầu thông tin và báo giá",
     regions: "Hà Nội · Hưng Yên · Toàn quốc",
+    call: "Gọi {phone}",
     viewMap: "Xem bản đồ",
   },
   footer: {
@@ -171,6 +172,7 @@ const en: Ui = {
     sectionsOf: "Sections of {title}",
     productQuote: "{name} – request details and a quotation",
     regions: "Hanoi · Hung Yen · Nationwide",
+    call: "Call {phone}",
     viewMap: "View map",
   },
   footer: {
@@ -265,6 +267,7 @@ const zh: Ui = {
     sectionsOf: "{title}页面导航",
     productQuote: "{name} – 获取资料与报价",
     regions: "河内 · 兴安 · 越南全国",
+    call: "致电 {phone}",
     viewMap: "查看地图",
   },
   footer: {

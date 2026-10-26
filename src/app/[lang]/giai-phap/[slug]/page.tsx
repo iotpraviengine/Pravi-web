@@ -204,7 +204,7 @@ export default async function SolutionPage({ params }: PageProps<"/[lang]/giai-p
         </div>
       </section>
 
-      <CtaBand title={fmt(l.cta, { name: s.short.toLowerCase() })} alt={false} />
+      <CtaBand title={fmt(l.cta, { name: s.short.toLowerCase() })} />
 
       {/* Other solutions */}
       <section className="section-sm theme-alt">

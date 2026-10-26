@@ -1354,26 +1354,77 @@ a.card:hover {
 
 /* ---------- CTA band ---------- */
 
+/* the hotline as an LED wall: dark in both themes, full bleed, the number fills the content column */
 .cta-band {
-  text-align: center;
+  padding: clamp(72px, 10vw, 140px) 0 clamp(56px, 8vw, 104px);
+  background: #000;
+  overflow: hidden;
 }
-.cta-band .subhead {
-  margin: 14px auto 0;
-  max-width: 680px;
-  color: var(--text-2);
+.cta-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px 40px;
+  margin-bottom: clamp(24px, 4vw, 48px);
+}
+.led-wall {
+  position: relative;
+  touch-action: pan-y;
+}
+.led-canvas {
+  display: block;
+  width: 100%;
+  height: 0;
+}
+.led-number {
+  display: block;
+  color: var(--text);
+  text-decoration: none !important;
+}
+.led-fallback {
+  display: block;
+  font-size: clamp(3.5rem, 13vw, 11rem);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums;
+}
+/* once the panel is drawn, the link sits over it and the text is for screen readers only */
+.led-wall[data-ready] > .container {
+  position: absolute;
+  inset: 0;
+}
+.led-wall[data-ready] .led-number {
+  height: 100%;
+}
+.led-wall[data-ready] .led-fallback {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+}
+.led-number:focus-visible {
+  outline: 2px solid var(--link);
+  outline-offset: 4px;
 }
 .cta-contacts {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 8px 28px;
-  margin-top: 28px;
+  gap: 10px 32px;
+  margin-top: clamp(24px, 4vw, 44px);
   font-size: var(--step-body);
+  color: var(--text-2);
 }
-.cta-contacts a {
+.cta-contacts a,
+.cta-contacts span {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
+}
+.cta-contacts a {
+  color: var(--text);
 }
 
 /* ---------- forms ---------- */
@@ -1716,20 +1767,6 @@ a.product-card:hover h3 {
   color: var(--link);
 }
 
-.cta-phone {
-  margin-top: 18px;
-  font-size: var(--step-head);
-  font-weight: 600;
-  letter-spacing: -0.02em;
-  font-variant-numeric: tabular-nums;
-}
-.cta-phone a {
-  color: var(--text);
-}
-.cta-phone a:hover {
-  color: var(--link);
-  text-decoration: none;
-}
 
 a.tile-link {
   text-decoration: none !important;

@@ -35,7 +35,7 @@ export default async function SolutionsPage() {
         ))}
       </div>
 
-      <CtaBand title={t.solutions.cta} alt={false} />
+      <CtaBand title={t.solutions.cta} />
     </>
   );
 }
