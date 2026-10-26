@@ -98,9 +98,9 @@ export function LedNumber({ text, href, label }: { text: string; href: string; l
             } else {
               const head = behind < 6 ? 1 - behind / 6 : 0; // bright leading edge of the scan
               const mix = Math.min(1, head + s * 0.8); // towards white-hot
-              const g = Math.round(64 + mix * 150);
+              const g = Math.round(64 + mix * 150); // brand red #f44025, heating towards white
               const b = Math.round(37 + mix * 140);
-              ctx!.fillStyle = `rgb(255,${g},${b})`;
+              ctx!.fillStyle = `rgb(${Math.round(244 + mix * 11)},${g},${b})`;
             }
           } else {
             ctx!.fillStyle = `rgba(255,255,255,${0.07 + s * 0.4})`;

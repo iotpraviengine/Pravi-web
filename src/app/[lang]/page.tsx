@@ -7,6 +7,7 @@ import { AmbientPlay } from "@/components/AmbientPlay";
 import { HeroVideo } from "@/components/HeroVideo";
 import { LogoMarquee } from "@/components/LogoMarquee";
 import { SolutionRail } from "@/components/SolutionRail";
+import { TileVideo } from "@/components/TileVideo";
 import { CtaBand, ProjectCard } from "@/components/ui";
 import { fmt } from "@/i18n/config";
 import { getI18n } from "@/i18n/server";
@@ -33,7 +34,7 @@ function LedPoster({ alt }: { alt: string }) {
   );
 }
 
-// The two product lines below the LED video, side by side, each in its own colour world.
+// The two product lines below the LED video, one full-width tile each, each in its own colour world.
 // (words come from the page copy: home.stage / home.effects)
 const duo = [
   { key: "stage", href: "/san-pham#den-san-khau", image: "/images/home/stage-light.webp", tone: "violet" },
@@ -77,19 +78,33 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* Stage lighting + effects: two columns that together match the LED panel */}
-      <section className="duo" aria-label={h.duoLabel}>
-        {duo.map((d) => (
-          <Link key={d.href} href={href(d.href)} className={`duo-panel duo-${d.tone} reveal`}>
-            <div className="duo-media">
-              <Image src={d.image} alt={h[d.key].alt} fill sizes="(min-width: 734px) 50vw, 50vw" />
-            </div>
-            <div className="duo-copy">
-              <h2 className="duo-title">{h[d.key].title}</h2>
-              <p className="duo-line">{h[d.key].line}</p>
-            </div>
-          </Link>
-        ))}
+      {/* Stage lighting + effects: stacked full-width tiles (apple.com style), words centred on top, the product below.
+          The whole tile is the link. A clip dropped in public/videos as stage.mp4 / effects.mp4 (+ .webm, -poster.jpg)
+          replaces the picture and plays once per page load. */}
+      <section className="showcase" aria-label={h.duoLabel}>
+        {duo.map((d) => {
+          const clip = videoFile(`${d.key}.mp4`);
+          return (
+            <Link key={d.href} href={href(d.href)} className={`sc sc-${d.tone}`}>
+              <div className="sc-copy reveal">
+                <h2 className="sc-title">{h[d.key].title}</h2>
+                <p className="sc-line">{h[d.key].line}</p>
+              </div>
+              <div className="sc-media">
+                {clip ? (
+                  <TileVideo
+                    mp4={clip}
+                    webm={videoFile(`${d.key}.webm`)}
+                    poster={videoFile(`${d.key}-poster.jpg`) ?? d.image}
+                    label={h[d.key].alt}
+                  />
+                ) : (
+                  <Image src={d.image} alt={h[d.key].alt} fill sizes="100vw" />
+                )}
+              </div>
+            </Link>
+          );
+        })}
       </section>
       <AmbientPlay />
 
