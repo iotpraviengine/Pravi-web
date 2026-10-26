@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Inter } from "next/font/google";
+import { Familjen_Grotesk } from "next/font/google";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 import { FloatingContact } from "@/components/FloatingContact";
@@ -9,8 +9,9 @@ import { htmlLang, locales } from "@/i18n/config";
 import { alternates, getI18n } from "@/i18n/server";
 import "../globals.css";
 
-const inter = Inter({
-  variable: "--font-inter",
+// A compact, warm grotesk with Vietnamese glyphs, served from the site itself so every device sees the same face.
+const face = Familjen_Grotesk({
+  variable: "--font-face",
   subsets: ["latin", "vietnamese"],
   display: "swap",
 });
@@ -62,7 +63,7 @@ export default async function RootLayout({ children }: LayoutProps<"/[lang]">) {
 
   return (
     // the theme script sets data-theme on <html> before React hydrates
-    <html lang={htmlLang[locale]} className={inter.variable} suppressHydrationWarning>
+    <html lang={htmlLang[locale]} className={face.variable} suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }} />

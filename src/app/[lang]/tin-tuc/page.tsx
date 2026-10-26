@@ -18,7 +18,6 @@ export default async function NewsPage() {
     <>
       <section className="hero" style={{ paddingBottom: "clamp(32px, 5vw, 56px)" }}>
         <div className="container">
-          <span className="eyebrow reveal">{t.news.eyebrow}</span>
           <h1 className="display reveal">{t.news.headline}</h1>
         </div>
       </section>

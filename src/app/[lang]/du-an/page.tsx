@@ -30,7 +30,6 @@ export default async function ProjectsPage() {
     <>
       <section className="hero" style={{ paddingBottom: "clamp(40px, 6vw, 64px)" }}>
         <div className="container">
-          <span className="eyebrow reveal">{l.eyebrow}</span>
           <h1 className="display reveal">{l.headline}</h1>
           <p className="subhead reveal muted" data-delay="1">
             {stat.value} {stat.label}.

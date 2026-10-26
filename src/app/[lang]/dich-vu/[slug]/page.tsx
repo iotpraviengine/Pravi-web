@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { CircleCheck } from "lucide-react";
-import { Icon } from "@/components/Icon";
 import { CtaBand, Emphasis, LinkedHeading, LocalNav, ProjectCard, SectionHead } from "@/components/ui";
 import { alternates, getI18n } from "@/i18n/server";
 import { getContent } from "@/lib/content";
@@ -49,7 +48,6 @@ export default async function ServicePage({ params }: PageProps<"/[lang]/dich-vu
 
       <section className="hero" style={{ paddingBottom: "clamp(56px, 8vw, 96px)" }}>
         <div className="container">
-          <span className="eyebrow reveal">{l.eyebrow}</span>
           <h1 className="display reveal">{s.headline}</h1>
           <p className="subhead reveal" data-delay="1">
             {s.subhead}
@@ -65,29 +63,26 @@ export default async function ServicePage({ params }: PageProps<"/[lang]/dich-vu
           <p className="lead reveal" style={{ maxWidth: 980, marginBottom: "clamp(40px, 6vw, 72px)" }}>
             <Emphasis text={s.intro} />
           </p>
-          <div className="grid grid-3">
+          <ul className="points points-3">
             {s.benefits.map((b, i) => (
-              <div key={b.title} className="card reveal" data-delay={String(i)}>
-                <span className="card-icon">
-                  <Icon name={b.icon} size={34} />
-                </span>
+              <li key={b.title} className="reveal" data-delay={String(i)}>
                 <h3>{b.title}</h3>
                 <p>{b.text}</p>
-              </div>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       </section>
 
       {s.issues && (
         <section className="section theme-dark">
           <div className="container">
-            <SectionHead eyebrow={l.issuesEyebrow} title={l.issuesTitle} />
+            <SectionHead title={l.issuesTitle} />
             <ul className="grid grid-3" style={{ listStyle: "none", margin: 0, padding: 0 }}>
               {s.issues.map((issue, i) => (
                 <li key={issue} className="card reveal" data-delay={String(i % 3)} style={{ display: "flex", gap: 14, alignItems: "flex-start" }}>
                   <CircleCheck size={24} style={{ color: "var(--link)", flex: "none", marginTop: 2 }} aria-hidden="true" />
-                  <span style={{ fontSize: 19, fontWeight: 600 }}>{issue}</span>
+                  <span style={{ fontWeight: 600 }}>{issue}</span>
                 </li>
               ))}
             </ul>
@@ -97,7 +92,7 @@ export default async function ServicePage({ params }: PageProps<"/[lang]/dich-vu
 
       <section id="quy-trinh" className="section">
         <div className="container">
-          <SectionHead eyebrow={l.processEyebrow} title={l.processTitle} />
+          <SectionHead title={l.processTitle} />
           <ol className="steps">
             {s.process.map((step, i) => (
               <li key={step.title} className="reveal" data-delay={String(i % 3)}>
@@ -127,7 +122,7 @@ export default async function ServicePage({ params }: PageProps<"/[lang]/dich-vu
       {projects.length > 0 && (
         <section id="du-an" className="section">
           <div className="container">
-            <LinkedHeading eyebrow={l.projectsEyebrow} title={l.projectsTitle} href="/du-an" />
+            <LinkedHeading title={l.projectsTitle} href="/du-an" />
             <div className="grid grid-3">
               {projects.map((p, i) => (
                 <div key={p.slug} className="reveal" data-delay={String(i)}>

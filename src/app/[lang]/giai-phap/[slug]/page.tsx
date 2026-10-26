@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { Icon } from "@/components/Icon";
 import { CtaBand, Emphasis, Faq, LinkedHeading, LocalNav, ProductCard, ProjectCard, SectionHead } from "@/components/ui";
 import { fmt } from "@/i18n/config";
 import { alternates, getI18n } from "@/i18n/server";
@@ -37,7 +36,7 @@ export default async function SolutionPage({ params }: PageProps<"/[lang]/giai-p
   const projects = c.getProjectsBySolution(s.slug).slice(0, 3);
   const products = s.productGroups
     .flatMap((id) => c.productGroups.find((g) => g.id === id)?.items.slice(0, 2) ?? [])
-    .slice(0, 4);
+    .slice(0, 3); // one full row of three
   const others = c.solutions.filter((o) => o.slug !== s.slug).slice(0, 3);
 
   return (
@@ -56,7 +55,6 @@ export default async function SolutionPage({ params }: PageProps<"/[lang]/giai-p
       {/* Hero */}
       <section id="tong-quan" className={`hero${dark ? " theme-dark" : ""}`} style={{ paddingBottom: "clamp(56px, 8vw, 96px)" }}>
         <div className="container">
-          <span className="eyebrow reveal">{s.name}</span>
           <h1 className="display reveal">{s.headline}</h1>
           <p className="subhead reveal" data-delay="1">
             {s.subhead}
@@ -92,36 +90,30 @@ export default async function SolutionPage({ params }: PageProps<"/[lang]/giai-p
       {/* Needs */}
       <section className="section theme-alt">
         <div className="container">
-          <SectionHead eyebrow={l.needsEyebrow} title={l.needsTitle} />
-          <div className="grid grid-3">
+          <SectionHead title={l.needsTitle} />
+          <ul className="points points-3">
             {s.needs.map((n, i) => (
-              <div key={n.title} className="card reveal" data-delay={String(i)}>
-                <span className="card-icon">
-                  <Icon name={n.icon} size={34} />
-                </span>
+              <li key={n.title} className="reveal" data-delay={String(i)}>
                 <h3>{n.title}</h3>
                 <p>{n.text}</p>
-              </div>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       </section>
 
       {/* System */}
       <section id="he-thong" className={`section${dark ? " theme-dark" : ""}`}>
         <div className="container">
-          <SectionHead eyebrow={l.systemEyebrow} title={l.systemTitle} />
-          <div className="grid grid-4">
+          <SectionHead title={l.systemTitle} />
+          <ul className="points">
             {s.system.map((f, i) => (
-              <div key={f.title} className="feature reveal" data-delay={String(i)}>
-                <span className="card-icon">
-                  <Icon name={f.icon} size={34} />
-                </span>
+              <li key={f.title} className="reveal" data-delay={String(i % 2)}>
                 <h3>{f.title}</h3>
                 <p>{f.text}</p>
-              </div>
+              </li>
             ))}
-          </div>
+          </ul>
           {s.gallery.length > 0 && (
             <div className="gallery" style={{ marginTop: "clamp(48px, 6vw, 72px)" }}>
               {s.gallery.map((src, i) => (
@@ -137,7 +129,7 @@ export default async function SolutionPage({ params }: PageProps<"/[lang]/giai-p
       {/* Compare */}
       {s.compare && (
         <section className="section theme-alt">
-          <div className="container-narrow" style={{ maxWidth: 1000 }}>
+          <div className="container">
             <SectionHead title={s.compare.title} center />
             <div className="table-wrap reveal">
               <table className="compare">
@@ -173,8 +165,8 @@ export default async function SolutionPage({ params }: PageProps<"/[lang]/giai-p
       {products.length > 0 && (
         <section className={`section${s.compare ? "" : " theme-alt"}`}>
           <div className="container">
-            <LinkedHeading eyebrow={l.productsEyebrow} title={l.productsTitle} href={`/san-pham#${s.productGroups[0]}`} />
-            <div className="grid grid-4">
+            <LinkedHeading title={l.productsTitle} href={`/san-pham#${s.productGroups[0]}`} />
+            <div className="grid grid-4 products">
               {products.map((p, i) => (
                 <div key={p.slug} className="reveal" data-delay={String(i)} style={{ display: "grid" }}>
                   <ProductCard product={p} />
@@ -189,7 +181,7 @@ export default async function SolutionPage({ params }: PageProps<"/[lang]/giai-p
       {projects.length > 0 && (
         <section id="du-an" className="section">
           <div className="container">
-            <LinkedHeading eyebrow={l.projectsEyebrow} title={l.projectsTitle} href={`/du-an?giai-phap=${s.slug}`} />
+            <LinkedHeading title={l.projectsTitle} href={`/du-an?giai-phap=${s.slug}`} />
             <div className="grid grid-3">
               {projects.map((p, i) => (
                 <div key={p.slug} className="reveal" data-delay={String(i)}>
@@ -203,7 +195,8 @@ export default async function SolutionPage({ params }: PageProps<"/[lang]/giai-p
 
       {/* FAQ */}
       <section id="hoi-dap" className="section theme-alt">
-        <div className="container-narrow">
+        {/* heading on the left, questions on the right: the section uses the whole width */}
+        <div className="container split">
           <SectionHead title={l.faq} />
           <div className="reveal">
             <Faq items={s.faq} />

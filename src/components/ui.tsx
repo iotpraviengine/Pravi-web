@@ -26,13 +26,11 @@ export function MoreLink({ href, children }: { href: string; children: React.Rea
 }
 
 export function SectionHead({
-  eyebrow,
   title,
   subhead,
   center,
   as: Tag = "h2",
 }: {
-  eyebrow?: string;
   title: string;
   subhead?: string;
   center?: boolean;
@@ -40,7 +38,6 @@ export function SectionHead({
 }) {
   return (
     <div className={`section-head reveal${center ? " center" : ""}`}>
-      {eyebrow && <span className="eyebrow">{eyebrow}</span>}
       <Tag className="headline">{title}</Tag>
       {subhead && <p className="subhead">{subhead}</p>}
     </div>
@@ -192,11 +189,10 @@ export async function CtaBand({ title, alt = true }: { title?: string; alt?: boo
 }
 
 /** Section heading whose title is the link to the full list (replaces separate "see more" links). Href is a language-free path. */
-export async function LinkedHeading({ href: path, title, eyebrow }: { href: string; title: string; eyebrow?: string }) {
+export async function LinkedHeading({ href: path, title }: { href: string; title: string }) {
   const { href } = await getI18n();
   return (
     <div className="section-head reveal">
-      {eyebrow && <span className="eyebrow">{eyebrow}</span>}
       <h2 className="headline">
         <Link href={href(path)} className="title-link">
           {title}

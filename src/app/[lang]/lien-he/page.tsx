@@ -28,7 +28,6 @@ export default async function ContactPage() {
     <>
       <section className="hero" style={{ paddingBottom: "clamp(40px, 6vw, 64px)" }}>
         <div className="container">
-          <span className="eyebrow reveal">{l.eyebrow}</span>
           <h1 className="display reveal">{l.headline}</h1>
           <p className="subhead reveal" data-delay="1">
             {l.subhead}
@@ -57,7 +56,7 @@ export default async function ContactPage() {
                 <div>
                   <p className="label">Hotline / Zalo</p>
                   <p>
-                    <a href={`tel:${contact.hotlineTel}`} style={{ fontSize: 21, fontWeight: 600 }}>
+                    <a href={`tel:${contact.hotlineTel}`} style={{ fontSize: "var(--step-lead)", fontWeight: 600 }}>
                       {contact.hotline}
                     </a>
                     {" · "}

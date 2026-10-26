@@ -22,7 +22,6 @@ export default async function ProductsPage() {
     <>
       <section className="hero" style={{ paddingBottom: "clamp(40px, 6vw, 64px)" }}>
         <div className="container">
-          <span className="eyebrow reveal">{l.eyebrow}</span>
           <h1 className="display reveal">{l.headline}</h1>
           <p className="subhead reveal muted" data-delay="1">
             {l.subhead}
@@ -55,7 +54,7 @@ export default async function ProductsPage() {
                 <Image src={banners[g.id].src} alt="" fill sizes="(min-width: 1260px) 1180px, 94vw" />
               </div>
             )}
-            <div className="grid grid-4">
+            <div className="grid grid-4 products">
               {g.items.map((p, i) => (
                 <div key={p.slug} className="reveal" data-delay={String(i % 4)} style={{ display: "grid" }}>
                   <ProductCard product={p} />

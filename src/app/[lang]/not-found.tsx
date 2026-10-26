@@ -8,10 +8,9 @@ export default async function NotFound() {
   return (
     <section className="hero section" style={{ minHeight: "60vh" }}>
       <div className="container">
-        <span className="eyebrow">{l.eyebrow}</span>
         <h1 className="display">{l.headline}</h1>
         <p className="subhead">{l.subhead}</p>
-        <div className="actions center">
+        <div className="actions">
           <Link href={href("/")} className="btn btn-primary">
             {l.home}
           </Link>

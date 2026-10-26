@@ -23,8 +23,10 @@ export default async function SolutionsPage() {
         {c.solutions.map((s, i) => (
           <Link key={s.slug} href={href(`/giai-phap/${s.slug}`)} className="tile tile-link theme-alt">
             <div className="tile-copy reveal">
-              <span className="eyebrow">{s.name}</span>
-              <h2 className="title">{s.tileHeadline}</h2>
+              <h2 className="title">{s.name}</h2>
+              <p className="subhead" style={{ marginTop: 8 }}>
+                {s.tileHeadline}
+              </p>
             </div>
             <div className="tile-media reveal" data-delay="1">
               <Image src={s.hero} alt="" fill sizes="(min-width: 834px) 46vw, 92vw" priority={i < 2} />

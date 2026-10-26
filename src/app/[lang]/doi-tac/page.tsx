@@ -19,9 +19,8 @@ export default async function PartnersPage() {
     <>
       <section className="hero theme-dark" style={{ paddingBottom: "clamp(56px, 8vw, 96px)" }}>
         <div className="container">
-          <span className="eyebrow reveal">{l.eyebrow}</span>
           <h1 className="display reveal">{l.headline}</h1>
-          <p className="subhead reveal" data-delay="1" style={{ color: "var(--text-2)" }}>
+          <p className="subhead reveal" data-delay="1">
             {l.subhead}
           </p>
           <div className="hero-media framed reveal" data-delay="2">
@@ -37,7 +36,7 @@ export default async function PartnersPage() {
               <article key={b.name} className="card brand-card reveal" data-delay={String(i)} style={{ padding: "clamp(32px, 4vw, 48px)" }}>
                 <p className="wordmark">{b.name}</p>
                 <span className="badge">{b.badge}</span>
-                <h2 className="title" style={{ fontSize: "clamp(22px, 2.4vw, 28px)", marginTop: 20 }}>
+                <h2 className="title" style={{ marginTop: 20 }}>
                   {b.category}
                 </h2>
                 <p>{b.text}</p>
@@ -56,10 +55,10 @@ export default async function PartnersPage() {
           <div className="grid grid-3">
             {others.map((b, i) => (
               <article key={b.name} className="card reveal" data-delay={String(i % 3)}>
-                <p className="wordmark" style={{ fontSize: 24, fontWeight: 700 }}>
+                <p className="wordmark" style={{ fontSize: "var(--step-lead)", fontWeight: 700 }}>
                   {b.name}
                 </p>
-                <p style={{ marginTop: 4, color: "var(--link)", fontSize: 14, fontWeight: 600 }}>{b.category}</p>
+                <p className="small muted" style={{ marginTop: 4, fontWeight: 600 }}>{b.category}</p>
                 <p>{b.text}</p>
               </article>
             ))}
@@ -73,13 +72,12 @@ export default async function PartnersPage() {
             <Image src="/images/home/booth.webp" alt={l.boothAlt} fill sizes="(min-width: 640px) 50vw, 100vw" />
           </div>
           <div className="reveal" data-delay="1">
-            <span className="eyebrow">{l.eventsEyebrow}</span>
             <h2 className="headline">
               <Link href={href("/tin-tuc")} className="title-link">
                 {l.eventsTitle}
               </Link>
             </h2>
-            <p className="muted" style={{ marginTop: 16, fontSize: 19 }}>
+            <p style={{ marginTop: 16 }}>
               PLASE Show · NPSE Show · ISLE · InfoComm Asia
             </p>
           </div>
